@@ -4,13 +4,13 @@ A collection of processes and tools used by communities, DAOs and collaboratives
 
 ## The Community
 
-We host curated internal organisational processes and the independent tools used. 
+We host a community of curated internal organisational processes and the independent tools that are used. The SolarPunch members range from smaller teams over intermediate initiatives to bigger international movements.
 
 **Learn**  
 Test and integrate new solutions from the community. Learn about new processes, decentralized mangement methods and open-source tools.   
 
 **Experiment**  
-Become the owner of your data and documents by using decentralized or self-hosted tools. Inform yourself about sovereign solutions and find the right organisation solution.  
+Become the owner of your data and documents by using decentralized or self-hosted tools. Inform yourself about sovereign tech and find the right organisational solution with the right tool.  
 
 **Share**  
 Become a organisation architect and share your individual experience of organising yourself or your initiative. 
@@ -23,4 +23,4 @@ Become part of the solarpunch community - learn, experiment, share.
 
 Non-hierachical organisations are the future for distributed self-managed people. Already today many organisations coordinate themselves decentralized and as a collaboration of members inside a community. 
 
-Transparency of processes (e.g. communication, decision making and task management) are the key for better influence and responsive action. The members of the group are drivers of the organisation allows it to flourish.
+Transparency of processes (e.g. communication, decision making and task management) are the key for efficient organisation. Members are the drivers of change with responsive and influential actions. 
