@@ -24,3 +24,5 @@ Become part of the solarpunch community - learn, experiment, share.
 Non-hierachical organisations are the future for distributed self-managed people. Already today many organisations coordinate themselves decentralized and as a collaboration of members inside a community. 
 
 Transparency of processes (e.g. communication, decision making and task management) are the key for efficient organisation. Members are the drivers of change with responsive and influential actions. 
+
+![solarpunk](img/solarpunk.png "solarpunk")
