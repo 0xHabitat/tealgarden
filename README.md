@@ -1,6 +1,6 @@
 # SolarPunch :muscle: :sunny:
 
-A collection of processes and tools used by communities, DAOs and collaboratives around the globe.
+A collection of self-management processes and tools used by communities, DAOs and collaboratives around the globe.
 
 ## The Community
 
