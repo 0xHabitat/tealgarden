@@ -7,11 +7,11 @@ before_install:
   - pip install --user awscli
   - export PATH=$PATH:$HOME/.local/bin
 
-install: npm i
+install: yarn
 
 script:
   - unset CI
-  - npm run build
+  - yarn run gatsby-build
 
 cache: npm
 
@@ -22,7 +22,7 @@ deploy:
     secret_access_key: $aws_secret_access_key
     bucket: $prod_s3_bucket
     acl: public_read
-    local_dir: build
+    local_dir: packages/landing-gatsby/public
     skip_cleanup: true
     region: "eu-west-1"
     on:
