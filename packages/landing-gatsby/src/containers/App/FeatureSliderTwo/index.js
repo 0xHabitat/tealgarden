@@ -27,9 +27,6 @@ const FeatureSection = ({
         featuresSliderTwo {
           id
           title
-          image {
-            publicURL
-          }
         }
       }
     }
