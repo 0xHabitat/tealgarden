@@ -77,7 +77,8 @@ const CounterUpArea = styled.div`
     }
 
     &:hover {
-      box-shadow: 0px 16px 35px 0px rgba(16, 66, 97, 0.1);
+      border: 2px solid #82E3E3;
+      box-shadow: 2px 2px 0px #82E3E3;
     }
 
     img {

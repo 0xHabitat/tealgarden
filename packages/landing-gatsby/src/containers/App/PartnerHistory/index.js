@@ -9,11 +9,10 @@ import Button from 'common/src/components/Button';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import Container from 'common/src/components/UI/Container';
 import PartnerHistoryWrapper, { CounterUpArea } from './partnerHistory.style';
-import GoogleImg from 'common/src/assets/image/app/google.svg';
-import AppleImg from 'common/src/assets/image/app/apple.svg';
-import DribbleImg from 'common/src/assets/image/app/dribbble.svg';
+import ColonyImg from 'common/src/assets/image/app/Colony.png';
+import SlackImg from 'common/src/assets/image/app/Slack.png';
+import GnosisImg from 'common/src/assets/image/app/Gnosis.svg';
 import MailchimpImg from 'common/src/assets/image/app/mailchimp.svg';
-import BackgroundImg from 'common/src/assets/image/app/partner-bg.png';
 
 const PartnerHistory = ({
   row,
@@ -30,39 +29,39 @@ const PartnerHistory = ({
       <Container>
         <Box className="row" {...row}>
           <Box className="col" {...col} style={{ flexDirection: 'column' }}>
-            <Text content="TRUSTED PARTNERS" {...sectionSubTitle} />
+            <Text content="LOREM IPSUM" {...sectionSubTitle} />
             <FeatureBlock
               title={
                 <Heading
-                  content="Your Trusted Partner For Working Together"
+                  content="LOREM IPSUM DOLOR SIT AMET CONSECTETUR."
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="You can trust us for any kind of services and some of the world class companies have also trusted us ."
+                  content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                   {...description}
                 />
               }
-              button={<Button title="WORK HISTORY" {...btnStyle} />}
+              button={<Button title="SUBMIT A TOOL" {...btnStyle} />}
             />
           </Box>
           <Box className="col" {...col} {...cardArea}>
             <CounterUpArea>
               <Card className="card" {...cardStyle}>
-                <Image src={GoogleImg} alt="Google Inc" />
-                <Text content="Google Inc" />
+                <Image src={ColonyImg} alt="Colony" />
+                <Text content="Colony" />
               </Card>
               <Card className="card" {...cardStyle}>
-                <Image src={AppleImg} alt="Apple Inc" />
-                <Text content="Apple" />
+                <Image src={SlackImg} alt="Slack" />
+                <Text content="Slack" />
               </Card>
               <Card className="card" {...cardStyle}>
-                <Image src={DribbleImg} alt="Dribble Inc" />
-                <Text content="Dribble" />
+                <Image src={GnosisImg} alt="Gnosis Safe" />
+                <Text content="Gnosis Safe" />
               </Card>
               <Card className="card" {...cardStyle}>
-                <Image src={MailchimpImg} alt="MailChimp Inc" />
+                <Image src={MailchimpImg} alt="MailChimp" />
                 <Text content="MailChimp" />
               </Card>
             </CounterUpArea>
@@ -99,13 +98,14 @@ PartnerHistory.defaultProps = {
   cardStyle: {
     p: '53px 40px 35px',
     borderRadius: '10px',
-    boxShadow: '0px 8px 20px 0px rgba(16, 66, 97, 0.07)',
+    border: '2px solid #091632',
+    boxShadow: '2px 2px 0px #091632',
   },
   title: {
-    fontSize: ['24px', '26px', '30px', '36px', '48px'],
-    fontWeight: '300',
+    fontSize: ['20px', '24px', '24px', '24px', '30px'],
+    fontWeight: '700',
     color: '#0f2137',
-    letterSpacing: '-0.010em',
+    letterSpacing: '0.07em',
     mb: '20px',
     maxWidth: ['100%', '100%', '100%', '490px', '490px'],
   },
@@ -121,7 +121,7 @@ PartnerHistory.defaultProps = {
     fontSize: '14px',
     letterSpacing: '0.13em',
     fontWeight: '700',
-    color: '#1a73e8',
+    color: '#82E3E3',
     mb: '10px',
   },
   btnStyle: {

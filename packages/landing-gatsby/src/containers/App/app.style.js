@@ -131,7 +131,7 @@ const GlobalStyle = createGlobalStyle`
 
       &.search-modal,
       &.video-modal {
-        background-color: rgba(255, 255, 255, 0.96) !important;
+        background-color: #FAF4F3 !important;
         overflow-y: auto !important;
 
         .innerRndComponent {
@@ -355,6 +355,7 @@ const AppWrapper = styled.div`
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      background-color: none;
       @media (max-width: 767px) {
         flex-direction: column;
       }
@@ -396,6 +397,7 @@ const AppWrapper = styled.div`
         }
         .image-gallery-swipe {
           .image-gallery-slide {
+            background-color: transparent !important;
             .image-gallery-description {
               background: transparent;
               bottom: 0px;
@@ -405,9 +407,10 @@ const AppWrapper = styled.div`
                 box-sizing: border-box;
                 margin-top: -10px;
                 max-width: 550px;
-                font-size: 36px;
-                line-height: 50px;
-                color: #0f2137;
+                font-size: 24px;
+                font-family: 'poppins' sans-serif;
+                line-height: 34px;
+                color: #091632;
                 font-weight: 300;
                 -webkit-letter-spacing: -0.01em;
                 -moz-letter-spacing: -0.01em;
@@ -427,12 +430,12 @@ const AppWrapper = styled.div`
                   text-align: center;
                 }
                 &::before {
-                  content: 'CUSTOMER OPINIONS';
+                  content: 'INTERVIEWED ORGANISATIONS';
                   box-sizing: border-box;
                   margin-bottom: 10px;
                   margin-top: 0px;
                   font-size: 14px;
-                  color: #1a73e8;
+                  color: #82E3E3;
                   display: block;
                   font-weight: 700;
                   text-align: left;
@@ -474,7 +477,7 @@ const AppWrapper = styled.div`
           width: 15px;
           height: 2px;
           transition: width 0.25s ease-in-out;
-          background-image: url(${Substract});
+          background-color: url(${Substract});
           width: 20px;
           height: 30px;
           background-repeat-x: repeat;
@@ -484,10 +487,10 @@ const AppWrapper = styled.div`
             width: 35px;
             background-image: url(${SubstractHover});
             &::before {
-              background-color: #1a73e8;
+              background-color: #82E3E3;
             }
             &::after {
-              background-color: #1a73e8;
+              background-color: #82E3E3;
             }
           }
 
@@ -531,10 +534,10 @@ const AppWrapper = styled.div`
           background-size: contain;
           &:hover {
             &::before {
-              background-color: #1a73e8;
+              background-color: #82E3E3;
             }
             &::after {
-              background-color: #1a73e8;
+              background-color: #82E3E3;
             }
           }
 
@@ -543,7 +546,7 @@ const AppWrapper = styled.div`
             content: '';
             width: 10px;
             height: 2px;
-            background-color: #1a73e8;
+            background-color: #82E3E3;
             display: block;
             position: absolute;
             transform: rotate(36deg);
@@ -554,7 +557,7 @@ const AppWrapper = styled.div`
             content: '';
             width: 10px;
             height: 2px;
-            background-color: #1a73e8;
+            background-color: #82E3E3;
             display: block;
             position: absolute;
             bottom: 11px;

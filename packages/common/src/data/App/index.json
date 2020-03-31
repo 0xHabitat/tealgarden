@@ -23,66 +23,66 @@
     {
       "id": 1,
       "image": "../../assets/image/app/6.svg",
-      "title": "Super Performance"
+      "title": "Section 1"
     },
     {
       "id": 2,
       "image": "../../assets/image/app/1.svg",
-      "title": "Search Optimization"
+      "title": "Section 2"
     },
     {
       "id": 3,
       "image": "../../assets/image/app/2.svg",
-      "title": "Customer Support"
+      "title": "Section 3"
     },
 
     {
       "id": 4,
       "image": "../../assets/image/app/3.svg",
-      "title": "100% Response Time"
+      "title": "Section 4"
     },
 
     {
       "id": 5,
       "image": "../../assets/image/app/4.svg",
-      "title": "Maintaining Milestones"
+      "title": "Section 5"
     },
 
     {
       "id": 6,
       "image": "../../assets/image/app/5.svg",
-      "title": "Organised Code"
+      "title": "Section 6"
     }
   ],
   
   "menuItems": [
     {
-      "label": "Our Services",
+      "label": "Section 1",
       "path": "#services",
       "offset": "100"
     },
     {
-      "label": "Control Remotely",
+      "label": "Section 2",
       "path": "#control",
       "offset": "100"
     },
     {
-      "label": "Key Features",
+      "label": "Section 3",
       "path": "#keyfeature",
       "offset": "0"
     },
     {
-      "label": "Partners",
+      "label": "Section 4",
       "path": "#partners",
       "offset": "-100"
     },
     {
-      "label": "Payments",
+      "label": "Section 5",
       "path": "#payments",
       "offset": "100"
     },
     {
-      "label": "Testimonial",
+      "label": "Section 6",
       "path": "#testimonialSection",
       "offset": "100"
     }
@@ -90,36 +90,36 @@
   "testimonials": [
     {
       "id": 1,
-      "description": "Best working experience  with this amazing team & in future, we want to work together",
-      "name": "Jon Doe",
-      "designation": "Founder of Dumpy"
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "name": "Some One",
+      "designation": "A big organisation"
     },
     {
       "id": 2,
-      "description": "Impressed with master class support of the team and really look forward for the future.",
-      "name": "Roman Ul Oman",
-      "designation": "Co-founder of QatarDiaries"
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "name": "Cool person",
+      "designation": "Crypto Organisation"
     },
 
     {
       "id": 3,
-      "description": "I have bought more than 10 themes on ThemeForest, and this is the first one I review. Wow! Amazing React Theme",
-      "name": "Jeny Doe",
-      "designation": "Director of Beauty-queen"
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "name": "CEO",
+      "designation": "EVIL CORPS"
     },
 
     {
       "id": 4,
-      "description": "Really, really well made! Love that each component is handmade and customised. Great Work",
-      "name": "Jeny Doe",
-      "designation": "Co-founder of Softo"
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "name": "Hacker",
+      "designation": "F-Society"
     },
 
     {
       "id": 5,
-      "description": "It written well. The author has a firm understanding of React and other technologies. It been consistently updated. Great product. Thank you.",
-      "name": "Jon Doe",
-      "designation": "Co-founder of Antinio"
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "name": "Donald Trump",
+      "designation": "CEO Illuminati & USA"
     }
   ]
 }

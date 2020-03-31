@@ -58,21 +58,21 @@ const PaymentSection = ({
       <Container>
         <Box {...row} {...textAreaRow}>
           <Box {...col} {...textArea}>
-            <Text content="PAYMENT SECURITY" {...sectionSubTitle} />
+            <Text content="LOREM IPSUM" {...sectionSubTitle} />
             <FeatureBlock
               title={
                 <Heading
-                  content="Secure Payment and Transaction System With #1 ranking"
+                  content="Lorem ipsum dolor sit amet consectetur."
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="Security of our customer is our basic priority and we are best at it . So no need to worry about online payment and Transaction System ."
+                  content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                   {...description}
                 />
               }
-              button={<Button title="HOW IT WORKS" {...button} {...btnStyle} />}
+              button={<Button title="SUBMIT YOUR PROCESS" {...btnStyle} />}
             />
           </Box>
         </Box>
@@ -137,15 +137,15 @@ PaymentSection.defaultProps = {
     fontSize: '14px',
     letterSpacing: '0.11em',
     fontWeight: '700',
-    color: '#1a73e8',
+    color: '#E26C65',
     textTransform: 'uppercase',
     mb: '10px',
   },
   title: {
-    fontSize: ['24px', '26px', '30px', '36px', '48px'],
-    fontWeight: '300',
+    fontSize: ['20px', '24px', '24px', '24px', '30px'],
+    fontWeight: '700',
     color: '#0f2137',
-    letterSpacing: '-0.010em',
+    letterSpacing: '0.07em',
     mb: '20px',
     maxWidth: ['100%', '100%', '100%', '420px', '420px'],
     textAlign: ['center', 'left'],
@@ -153,7 +153,7 @@ PaymentSection.defaultProps = {
   description: {
     fontSize: '16px',
     color: '#343d48cc',
-    lineHeight: '2.1',
+    lineHeight: '1.75',
     mb: '33px',
     maxWidth: ['100%', '100%', '100%', '440px', '440px'],
     textAlign: ['center', 'left'],

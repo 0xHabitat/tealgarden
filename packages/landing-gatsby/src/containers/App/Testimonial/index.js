@@ -66,6 +66,7 @@ const TestimonialSection = ({ sectionWrapper }) => {
             items={images}
             originalClass="Testimonial-img"
             showPlayButton={false}
+            showNav={false}
             showFullscreenButton={false}
           />
         </Box>
