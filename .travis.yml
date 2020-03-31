@@ -13,7 +13,7 @@ script:
   - unset CI
   - yarn run gatsby-build
 
-cache: npm
+cache: yarn
 
 deploy:
   - provider: s3
