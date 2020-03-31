@@ -44,9 +44,6 @@ const FeatureSection = ({
             <Box className="col" {...col} key={index}>
               <Fade bottom delay={index * 120}>
                 <FeatureBlock
-                  icon={
-                    <Image src={feature.image.publicURL} alt="Demo Image" />
-                  }
                   wrapperStyle={blockWrapperStyle}
                   iconStyle={iconStyle}
                   contentStyle={contentStyle}
