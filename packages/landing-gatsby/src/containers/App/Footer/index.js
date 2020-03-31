@@ -10,9 +10,6 @@ import FooterWrapper, { List, ListItem } from './footer.style';
 import LogoImage from 'common/src/assets/image/app/logo.png';
 
 const Footer = ({
-  row,
-  col,
-  colOne,
   colTwo,
   titleStyle,
   logoStyle,
@@ -20,21 +17,6 @@ const Footer = ({
   copyrightMenu,
   copyright,
 }) => {
-  const Data = useStaticQuery(graphql`
-    query {
-      appJson {
-        menuWidget {
-          id
-          title
-          menuItems {
-            id
-            text
-            url
-          }
-        }
-      }
-    }
-  `);
 
   return (
     <FooterWrapper>
@@ -109,18 +91,18 @@ Footer.defaultProps = {
   },
   // widget title default style
   titleStyle: {
-    color: '#343d48',
+    color: '#091632',
     fontSize: '16px',
     fontWeight: '700',
   },
   // Default logo size
   logoStyle: {
-    width: 'auto',
+    width: '150px',
     mb: ['15px', 0],
   },
   // widget text default style
   textStyle: {
-    color: '#20201d',
+    color: '#091632',
     fontSize: '14px',
     mb: '10px',
     mr: '30px',

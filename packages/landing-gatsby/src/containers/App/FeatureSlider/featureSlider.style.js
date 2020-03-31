@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Mockup from 'common/src/assets/image/app/iphone-mockup.png';
 
 const FeatureSliderWrapper = styled.div`
   position: relative;
@@ -86,38 +85,13 @@ const FeatureSliderWrapper = styled.div`
     }
 
     .image-gallery-slide-wrapper {
-      width: 375px;
+      width: 775px;
       margin-left: auto;
       margin-right: auto;
       position: relative;
-      height: 749px;
-
-      &::before {
-        content: '';
-        background-image: url(${Mockup});
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
-      &:after {
-        content: '';
-        width: calc(100% - 20px);
-        height: calc(100% - 20px);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        box-shadow: 0 0 68px rgba(0, 0, 0, 1);
-        display: block;
-        position: absolute;
-        border-radius: 50px;
-      }
+     
       .image-gallery-swipe {
-        padding: 19px 24px 22px 23px;
+        padding-left: 0px;
         overflow: hidden;
       }
     }
@@ -134,7 +108,6 @@ const FeatureSliderWrapper = styled.div`
 
         .image-gallery-thumbnail {
           border: 0;
-          width: 125px;
           .image-gallery-thumbnail-inner {
             outline: none;
             &:focus {
@@ -142,50 +115,51 @@ const FeatureSliderWrapper = styled.div`
             }
           }
           img {
-            transition: all 0.35s ease;
-            width: 100px;
+            transition: 0.01 ease-in-out;
+            width: 40px;
           }
 
           &:nth-child(1) {
             position: absolute;
-            top: -80px;
+            top: -140px;
             left: 16.666%;
           }
           &:nth-child(2) {
             position: absolute;
-            top: -80px;
+            top: -140px;
             right: 16.666%;
           }
           &:nth-child(3) {
             position: absolute;
-            top: 50%;
+            top: 45%;
             right: 0;
             transform: translateY(-50%);
           }
           &:nth-child(4) {
             position: absolute;
-            bottom: -120px;
+            bottom: -125px;
             right: 16.666%;
           }
           &:nth-child(5) {
             position: absolute;
-            bottom: -120px;
+            bottom: -145px;
             left: 16.666%;
           }
           &:nth-child(6) {
             position: absolute;
-            top: 50%;
+            top: 45%;
             left: 0;
             transform: translateY(-50%);
           }
           .image-gallery-thumbnail-label {
             position: relative;
-            margin-top: 10px;
-            font-size: 19px;
-            line-height: 24px;
+            margin-top: 2px;
+            font-size: 14px;
+            line-height: 22px;
             letter-spacing: -0.01em;
-            color: #0f2137;
-            font-family: 'Open sans';
+            font-weight: 600;
+            color: #091632;
+            font-family: 'poppins', sans-serif;
             top: 0;
             text-shadow: none;
             transform: none;
@@ -199,50 +173,8 @@ const FeatureSliderWrapper = styled.div`
             }
             img {
               transition: all 0.35s ease;
-              transform: scale(1.4);
-              border: 0;
+              transform: scale(1.2);
             }
-          }
-        }
-      }
-    }
-    .image-gallery-bullets {
-      bottom: auto;
-      margin: 0;
-      position: absolute;
-      width: 100%;
-      z-index: 4;
-      top: 43%;
-      right: -65px;
-      left: auto;
-      display: flex;
-      justify-content: flex-end;
-      .image-gallery-bullets-container {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        width: 32px;
-        .image-gallery-bullet {
-          appearance: none;
-          border-radius: 70px;
-          cursor: pointer;
-          display: inline-block;
-          outline: none;
-          width: 19px;
-          height: 4px;
-          background: rgb(220, 226, 231);
-          border: 0;
-          box-shadow: none;
-          padding: 0;
-          margin: 0;
-          margin-bottom: 10px;
-          transition: all 0.3s ease;
-          &.active {
-            background-color: rgb(26, 115, 232);
-            width: 32px;
-            height: 4px;
           }
         }
       }

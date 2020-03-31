@@ -59,12 +59,6 @@ GatsbyJs server will start in `localhost:8000`
 4. Gatsby Js
 5. Styled System and Styled Components
 
-# Explaining Containers
-
-In the `containers` directory you will get folder for our every template. If you want to use App template. Then in the `App` directory you will get folders containing different section of the template like `Banner`, `Footer`, `Testimonial`, `Navbar` etc.
-
-All of these containers contains regular reactjs code.
-
 # Deployment
 
 For deploying your final project you have to build your project first. To build the project you have to follow below procedure.

@@ -34,10 +34,6 @@ const FeatureSectionWrapper = styled.section`
         background-color: rgba(0, 0, 0, 0.05);
       }
     }
-    &:hover {
-      box-shadow: 0 40px 90px -30px rgba(39, 79, 117, 0.2);
-      cursor: pointer;
-    }
   }
 
   .row {
@@ -45,16 +41,17 @@ const FeatureSectionWrapper = styled.section`
       &:nth-child(1) {
         .feature__block {
           .icon__wrapper {
-            color: #29cf8a;
+            color: #091632;
             transition: all 0.6s ease;
           }
         }
         &:hover {
           .feature__block {
             .icon__wrapper {
-              background: #29cf8a;
-              color: #fff;
-              border: 0;
+              background: #FFF85A;
+              color: #091632;
+              border: 2px solid #091632;
+              box-shadow: 2px 2px 0px #091632;
             }
           }
         }
@@ -62,16 +59,17 @@ const FeatureSectionWrapper = styled.section`
       &:nth-child(2) {
         .feature__block {
           .icon__wrapper {
-            color: #ff86ab;
+            color: #82E3E3;
             transition: all 0.6s ease;
           }
         }
         &:hover {
           .feature__block {
             .icon__wrapper {
-              background: #ff86ab;
-              color: #fff;
-              border: 0;
+              background: #82E3E3;
+              color: #091632;
+              border: 2px solid #091632;
+              box-shadow: 2px 2px 0px #091632;
             }
           }
         }
@@ -79,7 +77,7 @@ const FeatureSectionWrapper = styled.section`
       &:nth-child(3) {
         .feature__block {
           .icon__wrapper {
-            color: #ff9000;
+            color: #E26C65;
             transition: all 0.6s ease;
           }
         }
@@ -87,8 +85,10 @@ const FeatureSectionWrapper = styled.section`
       &:hover {
         .feature__block {
           .icon__wrapper {
-            background: #ff9000;
-            color: #fff;
+            background: #E26C65;
+            color: #091632;
+            border: 2px solid #091632;
+            box-shadow: 2px 2px 0px #091632;
           }
         }
       }

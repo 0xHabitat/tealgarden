@@ -4,7 +4,6 @@ import Fade from 'react-reveal/Fade';
 import Box from 'common/src/components/Box';
 import Text from 'common/src/components/Text';
 import Heading from 'common/src/components/Heading';
-import Button from 'common/src/components/Button';
 import Card from 'common/src/components/Card';
 import Image from 'common/src/components/Image';
 import FeatureBlock from 'common/src/components/FeatureBlock';
@@ -50,21 +49,20 @@ const ControllSection = ({
       <Container>
         <Box {...row} {...textAreaRow}>
           <Box {...col} {...textArea}>
-            <Text content="EASY DEPLOYMENT" {...sectionSubTitle} />
+            <Text content="LOREM IPSUM" {...sectionSubTitle} />
             <FeatureBlock
               title={
                 <Heading
-                  content="Deploy your site with simple commands"
+                  content="Lorem ipsum dolor sit amet."
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="You can deploy your site with firebase or Now.sh with some simple process. The deployment is made easy for our customers and according to their needs."
+                  content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                   {...description}
                 />
               }
-              button={<Button title="LEARN MORE" {...button} />}
             />
           </Box>
         </Box>
@@ -85,8 +83,8 @@ ControllSection.propTypes = {
 ControllSection.defaultProps = {
   sectionWrapper: {
     as: 'section',
-    pt: ['40px', '80px'],
-    pb: ['40px', '80px'],
+    pt: ['40px', '140px'],
+    pb: ['40px', '180px'],
   },
   row: {
     flexBox: true,
@@ -103,6 +101,7 @@ ControllSection.defaultProps = {
   },
   textArea: {
     width: ['100%', '100%', '50%', '50%', '50%'],
+    pl: '75px',
   },
   imageArea: {
     width: ['0px', '0px', '53%', '50%', '50%'],
@@ -126,16 +125,17 @@ ControllSection.defaultProps = {
     fontSize: '14px',
     letterSpacing: '0.11em',
     fontWeight: '700',
-    color: '#1a73e8',
+    color: '#82E3E3',
     textTransform: 'uppercase',
     mb: '10px',
     textAlign: ['center', 'left'],
   },
   title: {
-    fontSize: ['24px', '26px', '30px', '36px', '48px'],
-    fontWeight: '300',
-    color: '#0f2137',
-    letterSpacing: '-0.010em',
+    fontSize: ['18px', '24px', '24px', '30px', '34px'],
+    fontWeight: '700',
+    color: '#091632',
+    letterSpacing: '1.2px',
+    lineHeight: '42px',
     mb: '20px',
     maxWidth: ['100%', '100%', '100%', '420px', '420px'],
     textAlign: ['center', 'left'],

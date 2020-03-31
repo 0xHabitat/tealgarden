@@ -76,7 +76,8 @@ FeatureSection.propTypes = {
 FeatureSection.defaultProps = {
   // section header default style
   sectionHeader: {
-    mb: ['30px', '30px', '30px', '56px'],
+    mt: ['30px', '30px', '30px', '40px'],
+    mb: ['30px', '30px', '30px', '40px'],
   },
   // sub section default style
   sectionSubTitle: {
@@ -147,6 +148,7 @@ FeatureSection.defaultProps = {
     fontSize: ['14px', '15px'],
     lineHeight: '1.75',
     color: '#091632',
+    mb: ['20px', '20px', '20px', '45px'],
   },
 };
 

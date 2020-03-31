@@ -93,7 +93,7 @@ const GlobalStyle = createGlobalStyle`
       position: fixed !important;
       z-index: 999991 !important;
       background-color: transparent !important;
-      color: ${themeGet('colors.white', '#FAF4F3')} !important;
+      color: ${themeGet('colors.black', '#091632')} !important;
       top: 10px !important;
       right: 10px !important;
 
@@ -146,14 +146,6 @@ const GlobalStyle = createGlobalStyle`
             height: 100% !important;
             border-radius: 5px !important;
           }
-        }
-      }
-
-      &.demo_switcher_modal {
-        border: 0 !important;
-        background-color: rgba(16, 30, 77, 0.8) !important;
-        .innerRndComponent {
-          border-radius: 8px !important;
         }
       }
 
