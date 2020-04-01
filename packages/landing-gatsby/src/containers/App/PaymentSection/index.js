@@ -55,17 +55,19 @@ const PaymentSection = ({
       <Container>
         <Box {...row} {...textAreaRow}>
           <Box {...col} {...textArea}>
-            <Text content="LOREM IPSUM" {...sectionSubTitle} />
+            <Text content="TEAL GARDEN" {...sectionSubTitle} />
             <FeatureBlock
               title={
                 <Heading
-                  content="Lorem ipsum dolor sit amet consectetur."
+                  content="GET ON BOARD, JOIN THE CREW"
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                  content="Discover the latest dApps, plugins & processes for the future of work.
+                  Share your own organisation architectures!
+                  We are open for all submissions & inspirations."
                   {...description}
                 />
               }

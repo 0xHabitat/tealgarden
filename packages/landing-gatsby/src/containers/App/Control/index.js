@@ -49,17 +49,17 @@ const ControllSection = ({
       <Container>
         <Box {...row} {...textAreaRow}>
           <Box {...col} {...textArea}>
-            <Text content="LOREM IPSUM" {...sectionSubTitle} />
+            <Text content="THE GOAL IS A HEALTHY COMMUNITY:" {...sectionSubTitle} />
             <FeatureBlock
               title={
                 <Heading
-                  content="Lorem ipsum dolor sit amet."
+                  content="EDUCATING, SHARING, LEARNING."
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                  content="Promoting transparency & decisions ownership, we want to visualize the processes within a self-managed organization. We believe documenting & sharing the efforts of contributors towards decentralized & sovereign tech can benefit those in need of alternatives enormously."
                   {...description}
                 />
               }

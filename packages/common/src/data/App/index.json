@@ -4,19 +4,19 @@
       "id": 1,
       "icon": "flaticon-atom",
       "title": "Discover processes",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. "
+      "description": "Browse the processes & find all tools you need to get started and elevate your operations."
     },
     {
       "id": 2,
       "icon": "flaticon-trophy",
-      "title": "Vote on the best",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+      "title": "Vote for the best",
+      "description": "Share your review and experiences, take a coin and place your vote on the workflows you approve."
     },
     {
       "id": 3,
       "icon": "flaticon-conversation",
       "title": "Created by the community",
-      "description": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. "
+      "description": "Be part of the future of work & collaboration, within a community of contributors."
     }
   ],
   "featuresSliderTwo": [

@@ -132,7 +132,7 @@ DomainSection.defaultProps = {
     ml: 'auto',
   },
   title: {
-    content: 'Prozesses and tools for selfmanaged and distributed teams',
+    content: 'Processes and tools for selfmanaged and distributed teams',
     fontSize: ['18px', '24px', '24px', '30px', '34px'],
     fontWeight: '700',
     color: '#091632',
@@ -142,8 +142,7 @@ DomainSection.defaultProps = {
     mt: '160px',
   },
   description: {
-    content:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    content: 'Teal Garden is a collection of workflows to enhance performance & productivity of teams which manage themselves independently. Join our community of organisation architects!',
     fontSize: '16px',
     color: '#343d48',
     lineHeight: '28px',

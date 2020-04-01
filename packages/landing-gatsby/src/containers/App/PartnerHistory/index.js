@@ -29,17 +29,17 @@ const PartnerHistory = ({
       <Container>
         <Box className="row" {...row}>
           <Box className="col" {...col} style={{ flexDirection: 'column' }}>
-            <Text content="LOREM IPSUM" {...sectionSubTitle} />
+            <Text content="SEARCH AND GET FOUND" {...sectionSubTitle} />
             <FeatureBlock
               title={
                 <Heading
-                  content="LOREM IPSUM DOLOR SIT AMET CONSECTETUR."
+                  content="WE LOVE OPEN SOURCE"
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                  content="We encourage Open Source projects to contribute, share tools and achievements among the TealGarden Community."
                   {...description}
                 />
               }
