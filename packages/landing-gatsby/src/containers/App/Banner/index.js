@@ -139,7 +139,7 @@ DomainSection.defaultProps = {
     letterSpacing: '1.2px',
     lineHeight: '42px',
     mb: '10px',
-    mt: '15px',
+    mt: '160px',
   },
   description: {
     content:

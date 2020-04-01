@@ -89,7 +89,7 @@ ControllSection.defaultProps = {
   row: {
     flexBox: true,
     flexWrap: 'wrap',
-    ml: '-15px',
+    ml: '-25px',
     mr: '-15px',
   },
   textAreaRow: {
@@ -115,8 +115,8 @@ ControllSection.defaultProps = {
   },
   imageWrapperTwo: {
     alignSelf: 'flex-end',
-    mb: '-60px',
-    ml: ['0px', '0px', '-200px', '-250px', '-400px'],
+    mb: '-100px',
+    ml: ['0px', '0px', '-200px', '-250px', '-450px'],
     pointerEvents: 'none',
   },
   sectionSubTitle: {

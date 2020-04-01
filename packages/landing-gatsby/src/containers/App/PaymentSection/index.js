@@ -48,9 +48,6 @@ const PaymentSection = ({
               {...imageWrapperTwo}
               className="cardExtraImage"
             >
-              <Fade right>
-                <Image src={ImageTwo} alt="Info Image Two" />
-              </Fade>
             </Card>
           </Box>
         </Box>
@@ -94,8 +91,8 @@ PaymentSection.propTypes = {
 PaymentSection.defaultProps = {
   sectionWrapper: {
     as: 'section',
-    pt: ['20px', '40px', '40px', '80px', '80px'],
-    pb: ['80px', '80px', '80px', '180px', '280px'],
+    pt: ['20px', '40px', '40px', '80px', '200px'],
+    pb: ['80px', '80px', '80px', '180px', '250px'],
   },
   row: {
     flexBox: true,
@@ -111,11 +108,12 @@ PaymentSection.defaultProps = {
     pl: '15px',
   },
   textArea: {
-    width: [1, 1, '45%', '45%', '45%'],
+    width: [1, 1, '45%', '45%', '47%'],
+    mt: '-50px',
     zIndex: '1',
   },
   imageArea: {
-    width: [0, 0, '52%', '45%', '45%'],
+    width: [0, 0, '52%', '45%', '30%'],
     flexBox: true,
   },
   imageWrapper: {
@@ -123,12 +121,7 @@ PaymentSection.defaultProps = {
   },
   imageWrapperOne: {
     pointerEvents: 'none',
-  },
-  imageWrapperTwo: {
-    alignSelf: 'flex-start',
-    mt: ['0px', '0px', '40px', '50px', '90px'],
-    ml: ['-250px', '-250px', '-180px', '-220px', '-420px'],
-    pointerEvents: 'none',
+    ml: '90px',
   },
   sectionSubTitle: {
     as: 'span',

@@ -266,7 +266,7 @@ const AppWrapper = styled.div`
         }
       }
       .hamburgMenu__bar > span {
-        background-color: ${themeGet('colors.primary', '#1a73e8')};
+        background-color: ${themeGet('colors.black', '#091632')};
       }
     }
   }
@@ -924,8 +924,8 @@ const SunCircleShape = styled.div`
   background: #FFF85A;
   border-radius: 50%;
   position: absolute;
-  left: -2%;
-  top: -8%;
+  left: -12%;
+  top: -12%;
   z-index: -1;
   transform: translateY(-50%);
   pointer-events: none;
@@ -952,11 +952,11 @@ const SunCircleShape = styled.div`
 const PaymentCircleShape = styled.div`
   width: 700px;
   height: 700px;
-  background: #ffc845;
+  background: #FFF85A;
   border-radius: 50%;
   position: absolute;
-  left: 5%;
-  top: 47%;
+  left: -23%;
+  top: 45%;
   z-index: -1;
   transform: translateY(-50%);
   pointer-events: none;

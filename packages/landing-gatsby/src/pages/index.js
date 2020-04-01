@@ -73,7 +73,7 @@ export default () => {
           </ConditionWrapper>
           <PartnerHistory />
           <PaymentSection />
-          <TestimonialSection />
+          {/* <TestimonialSection /> */}
           <Footer />
         </AppWrapper>
       </Fragment>
