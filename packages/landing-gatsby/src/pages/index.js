@@ -16,6 +16,7 @@ import ControllSection from '../containers/App/Control';
 import TestimonialSection from '../containers/App/Testimonial';
 import PartnerHistory from '../containers/App/PartnerHistory';
 import PaymentSection from '../containers/App/PaymentSection';
+import SupportBlock from '../containers/App/SupportBlock';
 import Footer from '../containers/App/Footer';
 import FeatureSlider from '../containers/App/FeatureSlider';
 import FeatureSliderTwo from '../containers/App/FeatureSliderTwo';
@@ -74,6 +75,7 @@ export default () => {
           <PartnerHistory />
           <PaymentSection />
           {/* <TestimonialSection /> */}
+          <SupportBlock />
           <Footer />
         </AppWrapper>
       </Fragment>

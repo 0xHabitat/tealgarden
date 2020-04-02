@@ -57,34 +57,54 @@
   
   "menuItems": [
     {
-      "label": "Section 1",
+      "label": "About",
       "path": "#services",
       "offset": "100"
     },
     {
-      "label": "Section 2",
+      "label": "Learn",
       "path": "#control",
       "offset": "100"
     },
     {
-      "label": "Section 3",
+      "label": "Feauters",
       "path": "#keyfeature",
       "offset": "0"
     },
     {
-      "label": "Section 4",
+      "label": "Tools",
       "path": "#partners",
       "offset": "-100"
     },
     {
-      "label": "Section 5",
+      "label": "Processes",
       "path": "#payments",
       "offset": "100"
     },
     {
-      "label": "Section 6",
+      "label": "Community",
       "path": "#testimonialSection",
       "offset": "100"
+    }
+  ],
+  "supporter": [
+    {
+      "id": 1,
+      "logo": "../../assets/image/app/supporter/1.png",
+      "name": "European Union",
+      "link": "#1"
+    },
+    {
+      "id": 2,
+      "logo": "../../assets/image/app/supporter/2.png",
+      "name": "Atom Leap",
+      "link": "#2"
+    },
+    {
+      "id": 3,
+      "logo": "../../assets/image/app/supporter/3.png",
+      "name": "City of Berlin",
+      "link": "#3"
     }
   ],
   "testimonials": [

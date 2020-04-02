@@ -212,7 +212,7 @@ const AppWrapper = styled.div`
         color: ${themeGet('colors.white', '#FAF4F3')};
         font-size: 18px;
         @media only screen and (max-width: 1100px) {
-          color: ${themeGet('colors.primary', '#1a73e8')};
+          color: ${themeGet('colors.white', '#FAF4F3')};
         }
         @media only screen and (max-width: 420px) {
           font-size: 14px;
@@ -234,9 +234,9 @@ const AppWrapper = styled.div`
         width: 40px;
       }
       > span {
-        background-color: ${themeGet('colors.white', '#FAF4F3')};
+        background-color: ${themeGet('colors.black', '#091632')};
         @media only screen and (max-width: 990px) {
-          background-color: ${themeGet('colors.primary', '#1a73e8')};
+          background-color: ${themeGet('colors.black', '#091632')};
         }
       }
     }
@@ -262,7 +262,7 @@ const AppWrapper = styled.div`
 
       .reusecore__button {
         .btn-icon {
-          color: ${themeGet('colors.primary', '#1a73e8')};
+          color: ${themeGet('colors.black', '#091632')};
         }
       }
       .hamburgMenu__bar > span {
@@ -952,7 +952,7 @@ const SunCircleShape = styled.div`
 const PaymentCircleShape = styled.div`
   width: 700px;
   height: 700px;
-  background: #FFF85A;
+  background: #FFDE00;
   border-radius: 50%;
   position: absolute;
   left: -23%;

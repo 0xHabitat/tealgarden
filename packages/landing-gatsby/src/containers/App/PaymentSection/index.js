@@ -12,7 +12,6 @@ import Container from 'common/src/components/UI/Container';
 import { PaymentCircleShape } from '../app.style';
 
 import ImageOne from 'common/src/assets/image/app/mockup.png';
-import ImageTwo from 'common/src/assets/image/app/credit-card.png';
 
 const PaymentSection = ({
   sectionWrapper,
@@ -94,7 +93,7 @@ PaymentSection.defaultProps = {
   sectionWrapper: {
     as: 'section',
     pt: ['20px', '40px', '40px', '80px', '200px'],
-    pb: ['80px', '80px', '80px', '180px', '250px'],
+    pb: ['80px', '80px', '80px', '180px', '150px'],
   },
   row: {
     flexBox: true,

@@ -17,7 +17,6 @@ const ControllSection = ({
   col,
   title,
   description,
-  button,
   textArea,
   imageArea,
   textAreaRow,
@@ -26,7 +25,6 @@ const ControllSection = ({
   imageWrapperOne,
   imageWrapperTwo,
   sectionSubTitle,
-  btnStyle,
 }) => {
   return (
     <Box {...sectionWrapper} id="control">
@@ -83,7 +81,7 @@ ControllSection.propTypes = {
 ControllSection.defaultProps = {
   sectionWrapper: {
     as: 'section',
-    pt: ['40px', '140px'],
+    pt: ['40px', '120px'],
     pb: ['40px', '180px'],
   },
   row: {
@@ -101,10 +99,11 @@ ControllSection.defaultProps = {
   },
   textArea: {
     width: ['100%', '100%', '50%', '50%', '50%'],
+    pt: '80px',
     pl: '75px',
   },
   imageArea: {
-    width: ['0px', '0px', '53%', '50%', '50%'],
+    width: ['0px', '0px', '53%', '50%', '48%'],
     flexBox: true,
   },
   imageWrapper: {

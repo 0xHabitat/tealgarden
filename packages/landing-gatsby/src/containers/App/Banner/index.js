@@ -12,10 +12,11 @@ import ParticlesComponent from '../particles';
 import Container from 'common/src/components/UI/Container';
 import { Icon } from 'react-icons-kit';
 import { ic_arrow_forward } from 'react-icons-kit/md/ic_arrow_forward';
-import { BannerSquareShape, BannerCircleShape, SunCircleShape } from '../app.style';
+import { BannerSquareShape, SunCircleShape } from '../app.style';
 import {
   ButtonWrapper,
   EmailInputWrapper,
+  Sun,
 } from './banner.style';
 
 const DomainSection = ({
@@ -44,9 +45,8 @@ const DomainSection = ({
   return (
     <Box {...SectionWrapper}>
       <ParticlesComponent />
-      <SunCircleShape />
+      <Sun />
       <BannerSquareShape />
-      {/* <BannerCircleShape /> */}
       <Container>
         <Box {...row}>
           <Box {...col}>
@@ -107,7 +107,7 @@ DomainSection.propTypes = {
 DomainSection.defaultProps = {
   SectionWrapper: {
     as: 'section',
-    pt: '80px',
+    pt: '70px',
     pb: '80px',
     overflow: 'hidden',
   },

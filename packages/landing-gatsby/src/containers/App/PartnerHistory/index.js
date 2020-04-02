@@ -12,12 +12,13 @@ import PartnerHistoryWrapper, { CounterUpArea } from './partnerHistory.style';
 import ColonyImg from 'common/src/assets/image/app/Colony.png';
 import SlackImg from 'common/src/assets/image/app/Slack.png';
 import GnosisImg from 'common/src/assets/image/app/Gnosis.svg';
-import MailchimpImg from 'common/src/assets/image/app/mailchimp.svg';
+import TealgardenImg from 'common/src/assets/image/app/TealGarden.svg';
 
 const PartnerHistory = ({
   row,
   col,
   cardStyle,
+  cardStyleDotted,
   title,
   description,
   btnStyle,
@@ -53,16 +54,16 @@ const PartnerHistory = ({
                 <Text content="Colony" />
               </Card>
               <Card className="card" {...cardStyle}>
-                <Image src={SlackImg} alt="Slack" />
-                <Text content="Slack" />
+                <Image src={SlackImg} alt="Mattermost" />
+                <Text content="Mattermost" />
               </Card>
               <Card className="card" {...cardStyle}>
                 <Image src={GnosisImg} alt="Gnosis Safe" />
                 <Text content="Gnosis Safe" />
               </Card>
-              <Card className="card" {...cardStyle}>
-                <Image src={MailchimpImg} alt="MailChimp" />
-                <Text content="MailChimp" />
+              <Card className="card" {...cardStyleDotted}>
+                <Image src={TealgardenImg} alt="your tool" />
+                <Text content="submit a tool"/>
               </Card>
             </CounterUpArea>
           </Box>
@@ -100,6 +101,13 @@ PartnerHistory.defaultProps = {
     borderRadius: '10px',
     border: '2px solid #091632',
     boxShadow: '2px 2px 0px #091632',
+  },
+  cardStyleDotted: {
+    p: '53px 40px 35px',
+    borderRadius: '10px',
+    border: '2px dashed #E1E4E8',
+    backgroundColor: 'transparent !important',
+    boxShadow: 'none',
   },
   title: {
     fontSize: ['20px', '24px', '24px', '24px', '30px'],
