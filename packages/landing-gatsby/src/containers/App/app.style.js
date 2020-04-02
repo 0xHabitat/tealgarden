@@ -131,7 +131,7 @@ const GlobalStyle = createGlobalStyle`
 
       &.search-modal,
       &.video-modal {
-        background-color: #FAF4F3 !important;
+        background-color: #F4F4F1 !important;
         overflow-y: auto !important;
 
         .innerRndComponent {
@@ -209,10 +209,10 @@ const AppWrapper = styled.div`
 
     .reusecore__button {
       .btn-icon {
-        color: ${themeGet('colors.white', '#FAF4F3')};
+        color: ${themeGet('colors.white', '#F4F4F1')};
         font-size: 18px;
         @media only screen and (max-width: 1100px) {
-          color: ${themeGet('colors.white', '#FAF4F3')};
+          color: ${themeGet('colors.white', '#F4F4F1')};
         }
         @media only screen and (max-width: 420px) {
           font-size: 14px;
@@ -243,7 +243,7 @@ const AppWrapper = styled.div`
   }
   .sticky-nav-active {
     .reusecore__navbar {
-      background-color: ${themeGet('colors.white', '#FAF4F3')};
+      background-color: ${themeGet('colors.white', '#F4F4F1')};
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       padding: 5px 15px;
       transition: all 0.2s ease;

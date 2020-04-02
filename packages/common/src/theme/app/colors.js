@@ -12,7 +12,7 @@ const colors = {
   yellowHover: '#FFDE00',
   borderColor: '#091632',
   black: '#091632',
-  white: '#FAF4F3',
+  white: '#F4F4F1',
   primary: '#FFDE00',
   headingColor: '#0f2137',
   quoteText: '#343d48',
