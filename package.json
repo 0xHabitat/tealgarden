@@ -35,7 +35,7 @@
     "next-start": "yarn workspace next-landing run start",
     "next-export": "yarn workspace next-landing run export",
     "gatsby-dev": "yarn workspace gatsby-landing run dev",
-    "gatsby-build": "yarn workspace gatsby-landing run build",
+    "gatsby-build": "yarn workspace gatsby-landing run build && npm run unpin",
     "gatsby-serve": "yarn workspace gatsby-landing run serve",
     "prebuild-public": "rimraf \"dist/functions/**\" && rimraf \"dist/public\"",
     "prefirebase-serve": "yarn run build-public && yarn run build-funcs && yarn workspace next-landing run build && yarn run copy-deps && yarn run install-deps",
@@ -50,7 +50,8 @@
     "gatsby-firebase-serve": "cross-env NODE_ENV=production firebase serve",
     "pregatsby-firebase-deploy": "rimraf dist && yarn run gatsby-build && cpx \"packages/landing-gatsby/public/**/*.*\" \"dist/public\" -C",
     "gatsby-firebase-deploy": "firebase deploy",
-    "netlify-deploy": "yarn workspace next-landing run netlify-build"
+    "netlify-deploy": "yarn workspace next-landing run netlify-build",
+    "unpin": "node unpin"
   },
   "husky": {
     "hooks": {
@@ -62,5 +63,8 @@
       "prettier --trailing-comma es5 --single-quote --write",
       "git add"
     ]
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
   }
 }
