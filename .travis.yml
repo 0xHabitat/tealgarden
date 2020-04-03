@@ -19,5 +19,6 @@ cache: yarn
 deploy:
   - provider: script
     script: ./scripts/update-route53.sh
+    skip_cleanup: true
     on:
       all_branches: true
