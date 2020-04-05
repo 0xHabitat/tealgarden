@@ -12,7 +12,7 @@ import PartnerHistoryWrapper, { CounterUpArea } from './partnerHistory.style';
 import ColonyImg from 'common/src/assets/image/app/Colony.png';
 import SlackImg from 'common/src/assets/image/app/Slack.png';
 import GnosisImg from 'common/src/assets/image/app/Gnosis.svg';
-import TealgardenImg from 'common/src/assets/image/app/TealGarden.svg';
+import TealgardenImg from 'common/src/assets/image/app/tealgarden.svg';
 
 const PartnerHistory = ({
   row,
