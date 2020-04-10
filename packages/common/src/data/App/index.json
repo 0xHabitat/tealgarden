@@ -4,19 +4,19 @@
       "id": 1,
       "icon": "flaticon-atom",
       "title": "Discover processes",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. "
+      "description": "Browse industry specific processes & tools that optimize your self-management workflow."
     },
     {
       "id": 2,
       "icon": "flaticon-trophy",
-      "title": "Vote on the best",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+      "title": "Reward the best",
+      "description": "Share your review and experience. Vote for your best processes to support the community."
     },
     {
       "id": 3,
       "icon": "flaticon-conversation",
       "title": "Created by the community",
-      "description": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. "
+      "description": "Be part of the future of work & collaboration, within a community of pioneers.."
     }
   ],
   "featuresSliderTwo": [
@@ -57,34 +57,54 @@
   
   "menuItems": [
     {
-      "label": "Section 1",
+      "label": "About",
       "path": "#services",
       "offset": "100"
     },
     {
-      "label": "Section 2",
+      "label": "Learn",
       "path": "#control",
       "offset": "100"
     },
     {
-      "label": "Section 3",
+      "label": "Features",
       "path": "#keyfeature",
       "offset": "0"
     },
     {
-      "label": "Section 4",
+      "label": "Tools",
       "path": "#partners",
       "offset": "-100"
     },
     {
-      "label": "Section 5",
+      "label": "Processes",
       "path": "#payments",
       "offset": "100"
     },
     {
-      "label": "Section 6",
+      "label": "Community",
       "path": "#testimonialSection",
       "offset": "100"
+    }
+  ],
+  "supporter": [
+    {
+      "id": 1,
+      "logo": "../../assets/image/app/supporter/1.png",
+      "name": "European Union",
+      "link": "#1"
+    },
+    {
+      "id": 2,
+      "logo": "../../assets/image/app/supporter/2.png",
+      "name": "Atom Leap",
+      "link": "#2"
+    },
+    {
+      "id": 3,
+      "logo": "../../assets/image/app/supporter/3.png",
+      "name": "City of Berlin",
+      "link": "#3"
     }
   ],
   "testimonials": [

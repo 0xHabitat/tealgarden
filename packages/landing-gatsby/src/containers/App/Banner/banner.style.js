@@ -31,9 +31,61 @@ export const ButtonWrapper = styled.div`
     }
   }
 `;
+
+export const Sun = styled.div`
+  width: 350px;
+	height: 350px;
+  position: absolute;
+  display: block;
+  top: -34%;
+  left: -11%;
+  z-index: -1;
+	background-color: #FFDE00;
+	border-radius: 50%;
+	box-shadow:
+		0 0 0 20px #FFDE0080,
+		0 0 0 40px #FFDE0040,
+		0 0 0 60px #FFDE0020,
+		0 0 0 80px #FFDE0010,
+		0 0 0 100px #FFDE0000,
+		0 0 40px 100px #FFDE0010;
+	animation:
+		sunrise 2s infinite linear forwards,
+		rays 2s 2s infinite linear;
+
+  @keyframes sunrise {
+    0% {
+      box-shadow: none;
+    }
+  }
+
+  @keyframes rays {
+    0% {
+      box-shadow: 
+      0 0 0 0 #FFDE0080,
+      0 0 0 20px #FFDE0080,
+      0 0 0 40px #FFDE0040,
+      0 0 0 60px #FFDE0020,
+      0 0 0 80px #FFDE0010,
+      0 0 40px 100px #FFDE0010;
+    }
+    100% {
+      box-shadow: 
+      0 0 0 20px #FFDE0080,
+      0 0 0 40px #FFDE0040,
+      0 0 0 60px #FFDE0020,
+      0 0 0 80px #FFDE0010,
+      0 0 0 100px #FFDE0000,
+      0 0 40px 100px #FFDE0010;
+    }
+  }
+`;
+  
+
+
 export const EmailInputWrapper = styled.div`
   position: relative;
-  width: 100%;
+  width: 85%;
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -72,7 +124,7 @@ export const EmailInputWrapper = styled.div`
   .input-icon {
     left: 10px !important;
     right: auto;
-    top: 7px !important;
+    top: 10px !important;
     height: 40px !important;
     svg {
       color: #E26C65;

@@ -24,42 +24,42 @@ const images = [
   {
     original: `${Image1}`,
     thumbnail: `${Thumb1}`,
-    thumbnailLabel: 'Bonuty rewards',
+    thumbnailLabel: 'Crypto',
     originalAlt: 'slide one',
     thumbnailAlt: 'thumb one',
   },
   {
     original: `${Image2}`,
     thumbnail: `${Thumb2}`,
-    thumbnailLabel: 'Reputation',
+    thumbnailLabel: 'Meetings',
     originalAlt: 'slide two',
     thumbnailAlt: 'thumb two',
   },
   {
     original: `${Image3}`,
     thumbnail: `${Thumb3}`,
-    thumbnailLabel: 'Task Management',
+    thumbnailLabel: 'Governance',
     originalAlt: 'slide three',
     thumbnailAlt: 'thumb three',
   },
   {
     original: `${Image2}`,
     thumbnail: `${Thumb4}`,
-    thumbnailLabel: 'Governance',
+    thumbnailLabel: 'Finance',
     originalAlt: 'slide four',
     thumbnailAlt: 'thumb four',
   },
   {
     original: `${Image4}`,
     thumbnail: `${Thumb5}`,
-    thumbnailLabel: 'Fund Management',
+    thumbnailLabel: 'Know-how',
     originalAlt: 'slide five',
     thumbnailAlt: 'thumb five',
   },
   {
     original: `${Image5}`,
     thumbnail: `${Thumb6}`,
-    thumbnailLabel: 'Communication',
+    thumbnailLabel: 'Automation',
     originalAlt: 'slide six',
     thumbnailAlt: 'thumb six',
   },
@@ -68,11 +68,7 @@ const images = [
 const FeatureSlider = ({ sectionSubTitle, sectionTitle, sectionHeader }) => {
   return (
     <FeatureSliderWrapper>
-      <div className="FeatureSliderInner">
-        <span> </span>
-        <span> </span>
-        <span> </span>
-      </div>
+      <div className="sun" />
       <Container>
         <Box {...sectionHeader}>
           <Text {...sectionSubTitle} />
@@ -105,7 +101,7 @@ FeatureSlider.propTypes = {
 FeatureSlider.defaultProps = {
   sectionHeader: {},
   sectionSubTitle: {
-    content: 'LOREM IPSUM',
+    content: 'DEORA EMPOWERS',
     as: 'span',
     display: 'block',
     textAlign: 'center',
@@ -117,7 +113,7 @@ FeatureSlider.defaultProps = {
   },
   // section title default style
   sectionTitle: {
-    content: 'Lorem ipsum dolor sit',
+    content: 'DISTRIBUTED ORGANISATION ARCHITECUTRES',
     textAlign: 'center',
     fontSize: ['18px', '24px', '24px', '30px', '34px'],
     fontWeight: '700',

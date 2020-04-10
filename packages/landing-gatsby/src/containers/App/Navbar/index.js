@@ -63,7 +63,7 @@ const Navbar = ({ navbarStyle, logoStyle, buttonStyle }) => {
         <Logo
           href="#"
           logoSrc={LogoImage}
-          title="Agency"
+          title="Teal Garden by Deora"
           logoStyle={logoStyle}
         />
         <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -96,10 +96,11 @@ Navbar.propTypes = {
 
 Navbar.defaultProps = {
   navbarStyle: {
-    minHeight: '70px',
+    minHeight: '80px',
   },
   logoStyle: {
-    width: ['100px', '140px'],
+    pt: '3px',
+    width: ['200px', '240px'],
   },
   buttonStyle: {
     minHeight: '70px',

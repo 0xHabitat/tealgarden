@@ -81,7 +81,7 @@ FeatureSection.defaultProps = {
   },
   // sub section default style
   sectionSubTitle: {
-    content: 'LOREM IPSUM',
+    content: 'TEAL.GARDEN FEATURES',
     as: 'span',
     display: 'block',
     fontSize: '14px',
@@ -93,7 +93,7 @@ FeatureSection.defaultProps = {
   },
   // section title default style
   sectionTitle: {
-    content: 'Lorem ipsum dolor sit amet',
+    content: 'ALL YOU NEED IS HERE:',
     fontSize: ['20px', '24px', '24px', '24px', '30px'],
     fontWeight: '700',
     color: '#0f2137',
