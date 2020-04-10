@@ -47,7 +47,7 @@ const ControllSection = ({
       <Container>
         <Box {...row} {...textAreaRow}>
           <Box {...col} {...textArea}>
-            <Text content="THE GOAL IS A HEALTHY COMMUNITY:" {...sectionSubTitle} />
+            <Text content="BUILDING A HEALTHY COMMUNITY" {...sectionSubTitle} />
             <FeatureBlock
               title={
                 <Heading
@@ -57,7 +57,7 @@ const ControllSection = ({
               }
               description={
                 <Text
-                  content="Promoting transparency & decisions ownership, we want to visualize the processes within a self-managed organization. We believe documenting & sharing the efforts of contributors towards decentralized & sovereign tech can benefit those in need of alternatives enormously."
+                  content="Teal.Garden incentives sharing, learning and exchanging of new experiences in the teal community. Together we document & visualize the processes within self-managed organizations. This makes it easier for everyone to adapt new concepts and ideas."
                   {...description}
                 />
               }

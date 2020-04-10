@@ -142,7 +142,7 @@ DomainSection.defaultProps = {
     mt: '160px',
   },
   description: {
-    content: 'Teal Garden is a collection of workflows to enhance performance & productivity of teams which manage themselves independently. Join our community of organisation architects!',
+    content: 'Become part of the future of digital collaboration. Join our community of teal organisation architects.',
     fontSize: '16px',
     color: '#343d48',
     lineHeight: '28px',

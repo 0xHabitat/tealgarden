@@ -54,7 +54,7 @@ const PaymentSection = ({
       <Container>
         <Box {...row} {...textAreaRow}>
           <Box {...col} {...textArea}>
-            <Text content="TEAL GARDEN" {...sectionSubTitle} />
+            <Text content="TEAL.GARDEN" {...sectionSubTitle} />
             <FeatureBlock
               title={
                 <Heading

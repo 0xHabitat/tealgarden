@@ -81,7 +81,7 @@ FeatureSection.defaultProps = {
   },
   // sub section default style
   sectionSubTitle: {
-    content: 'TEALGARDEN FEATURES',
+    content: 'TEAL.GARDEN FEATURES',
     as: 'span',
     display: 'block',
     fontSize: '14px',

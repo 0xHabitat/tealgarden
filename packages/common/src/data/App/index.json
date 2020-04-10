@@ -4,19 +4,19 @@
       "id": 1,
       "icon": "flaticon-atom",
       "title": "Discover processes",
-      "description": "Browse the processes & find all tools you need to get started and elevate your operations."
+      "description": "Browse industry specific processes & tools that optimize your self-management workflow."
     },
     {
       "id": 2,
       "icon": "flaticon-trophy",
-      "title": "Vote for the best",
-      "description": "Share your review and experiences, take a coin and place your vote on the workflows you approve."
+      "title": "Reward the best",
+      "description": "Share your review and experience. Vote for your best processes to support the community."
     },
     {
       "id": 3,
       "icon": "flaticon-conversation",
       "title": "Created by the community",
-      "description": "Be part of the future of work & collaboration, within a community of contributors."
+      "description": "Be part of the future of work & collaboration, within a community of pioneers.."
     }
   ],
   "featuresSliderTwo": [
@@ -67,7 +67,7 @@
       "offset": "100"
     },
     {
-      "label": "Feauters",
+      "label": "Features",
       "path": "#keyfeature",
       "offset": "0"
     },

@@ -40,7 +40,7 @@ const PartnerHistory = ({
               }
               description={
                 <Text
-                  content="We encourage Open Source projects to contribute, share tools and achievements among the TealGarden Community."
+                  content="We encourage Open Source projects to contribute, share tools and achievements among the Teal.Garden Community."
                   {...description}
                 />
               }
