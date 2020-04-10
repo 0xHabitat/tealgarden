@@ -62,5 +62,8 @@
       "prettier --trailing-comma es5 --single-quote --write",
       "git add"
     ]
+  },
+  "dependencies": {
+    "react-ga": "^2.7.0"
   }
 }
