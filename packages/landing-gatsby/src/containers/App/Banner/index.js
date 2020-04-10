@@ -132,7 +132,7 @@ DomainSection.defaultProps = {
     ml: 'auto',
   },
   title: {
-    content: 'Processes and tools for selfmanaged and distributed teams',
+    content: 'Processes and tools for self-managed and distributed teams',
     fontSize: ['18px', '24px', '24px', '30px', '34px'],
     fontWeight: '700',
     color: '#091632',
