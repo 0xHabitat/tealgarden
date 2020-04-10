@@ -1,6 +1,5 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import { ThemeProvider } from 'styled-components';
-import Sticky from 'react-stickynode';
 import { Modal } from '@redq/reuse-modal';
 import { appTheme } from 'common/src/theme/app';
 import {
@@ -13,7 +12,7 @@ import Navbar from '../containers/App/Navbar';
 import DomainSection from '../containers/App/Banner';
 import FeatureSection from '../containers/App/FeatureSection';
 import ControllSection from '../containers/App/Control';
-import TestimonialSection from '../containers/App/Testimonial';
+// import TestimonialSection from '../containers/App/Testimonial';
 import PartnerHistory from '../containers/App/PartnerHistory';
 import PaymentSection from '../containers/App/PaymentSection';
 import SupportBlock from '../containers/App/SupportBlock';
@@ -63,9 +62,9 @@ export default () => {
         <ResetCSS />
         <GlobalStyle />
         <AppWrapper>
-            <DrawerProvider>
-              <Navbar />
-            </DrawerProvider>
+          <DrawerProvider>
+            <Navbar />
+          </DrawerProvider>
           <DomainSection />
           <FeatureSection />
           <ControllSection />
