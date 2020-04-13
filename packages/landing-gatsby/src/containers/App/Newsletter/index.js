@@ -38,7 +38,7 @@ const Newsletter = ({
                 className="email_input"
                 arial-label="email"
               />
-              <Button {...buttonStyle} title="GET ACCESS    " />
+              <Button {...buttonStyle} title="SIGN UP" />
             </ContactFormWrapper>
           </Box>
         </NewsletterWrapper>

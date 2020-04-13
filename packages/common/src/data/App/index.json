@@ -110,36 +110,36 @@
   "testimonials": [
     {
       "id": 1,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "name": "Some One",
-      "designation": "A big organisation"
+      "description": "Our team wants to setup our own crowdfunding campaign, without a 3rd party involved.",
+      "name": "Lea",
+      "designation": "member of a local health organization"
     },
     {
       "id": 2,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "name": "Cool person",
-      "designation": "Crypto Organisation"
+      "description": "We had too many calls in too many different meeting rooms. Now we found a way to structure our meetings better!",
+      "name": "Chris",
+      "designation": "project manager during corona lockdown"
     },
 
     {
       "id": 3,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "name": "CEO",
-      "designation": "EVIL CORPS"
+      "description": "We are working on many different projects and want to set a better focus on important tasks, so we switched to bounties.",
+      "name": "Simon",
+      "designation": "member of a freelancer cooperative"
     },
 
     {
       "id": 4,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "name": "Hacker",
-      "designation": "F-Society"
+      "description": "Our team is distributed and we want to measure the involvement of all contributors & reward them accordingly. Is there a way to automate that?",
+      "name": "Max",
+      "designation": "member of LeapDAO"
     },
 
     {
       "id": 5,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "name": "Donald Trump",
-      "designation": "CEO Illuminati & USA"
+      "description": "We finally found a way to automate the tracking of rewards & expenses and can build a real balance-sheet.",
+      "name": "Johann",
+      "designation": "DAO Member"
     }
   ]
 }

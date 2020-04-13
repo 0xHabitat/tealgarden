@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const SectionWrapper = styled.section`
-  padding: 100px 0 40px 0;
+  padding: 100px 0 80px 0;
   @media (max-width: 990px) {
     padding: 80px 0 40px 0;
   }
@@ -30,16 +30,12 @@ const SectionWrapper = styled.section`
       border: 0;
     }
     .rc-tabs-nav-container {
-      margin-bottom: 45px;
       @media (max-width: 767px) {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
       }
       &:after {
-        content: '';
         position: absolute;
         width: 100%;
-        height: 2px;
-        background: #82e3e3;
         display: block;
         left: 0;
         bottom: 0;
@@ -61,21 +57,21 @@ const SectionWrapper = styled.section`
       }
       .rc-tabs-tab {
         font-size: 18px;
-        color: #6f7a87;
-        font-weight: 400;
+        color: #091632;
+        font-weight: 700;
+        font-style: italic;
+        text-transform: uppercase;
         min-width: 230px;
-        padding: 0 0 25px 0;
         text-align: center;
         margin-right: 0;
         transition: 0.25s ease-in-out;
         &:hover {
-          color: #e26c65;
+          color: #82e3e3;
         }
         &:after {
-          content: '';
           position: absolute;
+          font-weight: 700;
           width: 100%;
-          height: 2px;
           bottom: 0;
           left: 0;
           display: block;
@@ -84,13 +80,13 @@ const SectionWrapper = styled.section`
           }
         }
         &:after {
-          background: #e26c65;
+          background: #82e3e3;
           transform: scaleX(0);
           transform-origin: right center 0;
           transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1) 0s;
         }
         &.rc-tabs-tab-active {
-          color: #e26c65;
+          color: #82e3e3;
           &:after {
             transform: scaleX(1);
             transform-origin: left center 0;
@@ -119,9 +115,7 @@ const SectionWrapper = styled.section`
     }
     .rc-tabs-content {
       .rc-tabs-tabpane {
-        border-radius: 10px;
         overflow: hidden;
-        box-shadow: 0px 5px 60px 0px rgba(27, 67, 111, 0.15);
         &.rc-tabs-tabpane-active {
           animation: 0.7s ScaleInUp;
         }

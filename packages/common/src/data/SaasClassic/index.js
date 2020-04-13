@@ -1,4 +1,7 @@
 import RemoteTeams from '../../assets/image/App/remote-teams.png';
+import Organisations from '../../assets/image/App/Organisations.png';
+import DAO from '../../assets/image/App/DAO.png';
+import Freelancer from '../../assets/image/App/Freelancer.png';
 
 export const SCREENSHOTS = [
   {
@@ -6,15 +9,15 @@ export const SCREENSHOTS = [
     image: RemoteTeams,
   },
   {
-    title: 'Create & Adjust',
-    image: RemoteTeams,
+    title: 'Organisations',
+    image: Organisations,
   },
   {
-    title: 'View Reports',
-    image: RemoteTeams,
+    title: 'DAOs',
+    image: DAO,
   },
   {
-    title: 'Integrations',
-    image: RemoteTeams,
+    title: 'Freelancer',
+    image: Freelancer,
   },
 ];

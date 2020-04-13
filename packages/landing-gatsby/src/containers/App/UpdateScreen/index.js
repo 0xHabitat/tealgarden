@@ -18,13 +18,6 @@ const UpdateScreen = ({ secTitleWrapper, secText, secHeading }) => {
   return (
     <SectionWrapper id="screenshot_section">
       <Container>
-        <Box {...secTitleWrapper}>
-          <Text {...secText} content="DEORA" />
-          <Heading
-            {...secHeading}
-            content="DECENTRALIZED ORGANISATIONS ARCHITECTURES"
-          />
-        </Box>
         <Tabs
           renderTabBar={() => <ScrollableInkTabBar />}
           renderTabContent={() => <TabContent animated={false} />}
