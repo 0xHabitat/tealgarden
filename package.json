@@ -62,5 +62,8 @@
       "prettier --trailing-comma es5 --single-quote --write",
       "git add"
     ]
+  },
+  "dependencies": {
+    "react-external-link": "^1.1.1"
   }
 }
