@@ -62,5 +62,8 @@
       "prettier --trailing-comma es5 --single-quote --write",
       "git add"
     ]
+  },
+  "dependencies": {
+    "gatsby-plugin-google-analytics": "^2.2.2"
   }
 }
