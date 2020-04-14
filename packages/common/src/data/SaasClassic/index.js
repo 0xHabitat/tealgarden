@@ -1,7 +1,7 @@
-import RemoteTeams from '../../assets/image/App/remote-teams.png';
-import Organisations from '../../assets/image/App/Organisations.png';
-import DAO from '../../assets/image/App/DAO.png';
-import Freelancer from '../../assets/image/App/Freelancer.png';
+import RemoteTeams from '../../assets/image/app/remote-teams.png';
+import Organisations from '../../assets/image/app/Organisations.png';
+import DAO from '../../assets/image/app/DAO.png';
+import Freelancer from '../../assets/image/app/Freelancer.png';
 
 export const SCREENSHOTS = [
   {
