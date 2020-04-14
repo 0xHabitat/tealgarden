@@ -47,6 +47,7 @@
     "dev": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "lint": "gatsby lint",
     "now-build": "yarn run build"
   }
 }

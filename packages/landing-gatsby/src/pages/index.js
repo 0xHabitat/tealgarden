@@ -58,7 +58,7 @@ export default () => {
   return (
     <ThemeProvider theme={appTheme}>
       <Fragment>
-        <SEO title="The best processes for self managed and distributed teams" />
+        <SEO title="The best processes for self-managed and distributed teams" />
         <Modal />
         <ResetCSS />
         <GlobalStyle />
