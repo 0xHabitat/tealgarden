@@ -39,7 +39,7 @@ const Navbar = ({ navbarStyle, logoStyle, buttonStyle }) => {
         <Logo
           href="#"
           logoSrc={LogoImage}
-          title="Teal Garden by Deora"
+          title="Teal.Garden by Deora"
           logoStyle={logoStyle}
         />
         <div style={{ display: 'flex', alignItems: 'center' }}>

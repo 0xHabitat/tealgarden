@@ -113,7 +113,7 @@ FeatureSlider.defaultProps = {
   },
   // section title default style
   sectionTitle: {
-    content: 'DISTRIBUTED ORGANISATION ARCHITECUTRES',
+    content: 'DISTRIBUTED ORGANISATION ARCHITECTURES',
     textAlign: 'center',
     fontSize: ['18px', '24px', '24px', '30px', '34px'],
     fontWeight: '700',
