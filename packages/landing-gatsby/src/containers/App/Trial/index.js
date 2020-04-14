@@ -8,7 +8,7 @@ import Image from 'common/src/components/Image';
 import Container from 'common/src/components/UI/Container';
 
 import SectionWrapper from './trial.style';
-import VendorLogos from 'common/src/assets/image/App/vendor-logos.png';
+import VendorLogos from 'common/src/assets/image/app/vendor-logos.png';
 import { Link } from 'gatsby';
 import { ExternalLink } from 'react-external-link';
 
