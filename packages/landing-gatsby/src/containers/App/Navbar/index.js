@@ -43,7 +43,7 @@ const Navbar = ({ navbarStyle, logoStyle, buttonStyle }) => {
           logoStyle={logoStyle}
         />
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Drawer
+          {/* <Drawer
             width="420px"
             placement="right"
             drawerHandler={<HamburgMenu />}
@@ -56,6 +56,7 @@ const Navbar = ({ navbarStyle, logoStyle, buttonStyle }) => {
               offset={-100}
             />
           </Drawer>
+           */}
         </div>
       </Container>
     </NavbarWrapper>

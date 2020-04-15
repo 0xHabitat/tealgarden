@@ -12,7 +12,6 @@ import Navbar from '../containers/App/Navbar';
 import DomainSection from '../containers/App/Banner';
 import FeatureSection from '../containers/App/FeatureSection';
 import ControllSection from '../containers/App/Control';
-import TestimonialSection from '../containers/App/Testimonial';
 import PartnerHistory from '../containers/App/PartnerHistory';
 import PaymentSection from '../containers/App/PaymentSection';
 import SupportBlock from '../containers/App/SupportBlock';
@@ -72,7 +71,6 @@ export default () => {
           <UpdateScreen />
           <PartnerHistory />
           <PaymentSection />
-          <TestimonialSection />
           <TrialSection />
           <Newsletter />
           <SupportBlock />

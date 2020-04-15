@@ -10,10 +10,9 @@ import Input from 'common/src/components/Input';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import ParticlesComponent from '../particles';
 import Container from 'common/src/components/UI/Container';
-import { Icon } from 'react-icons-kit';
-import { ic_arrow_forward } from 'react-icons-kit/md/ic_arrow_forward';
 import { BannerSquareShape } from '../app.style';
 import { ButtonWrapper, EmailInputWrapper, Sun } from './banner.style';
+import { ExternalLink } from 'react-external-link';
 
 const DomainSection = ({
   SectionWrapper,
@@ -23,8 +22,6 @@ const DomainSection = ({
   description,
   image,
   imageArea,
-  btnStyleTwo,
-  btnStyle,
 }) => {
   const Data = useStaticQuery(graphql`
     query {
@@ -60,16 +57,7 @@ const DomainSection = ({
                 aria-label="email"
               />
             </EmailInputWrapper>
-            <ButtonWrapper>
-              <Button title="SIGN UP" {...btnStyle} />
-              <Button
-                {...btnStyle}
-                {...btnStyleTwo}
-                icon={<Icon icon={ic_arrow_forward} />}
-                title="SUBMIT PROCESS"
-                className="withoutBg"
-              />
-            </ButtonWrapper>
+            <ButtonWrapper></ButtonWrapper>
           </Box>
           <Box {...col} {...imageArea}>
             <Box {...image}>

@@ -5,7 +5,7 @@ import Text from 'common/src/components/Text';
 import Logo from 'common/src/components/UIElements/Logo';
 import Container from 'common/src/components/UI/Container';
 import FooterWrapper from './footer.style';
-import LogoImage from 'common/src/assets/image/app/logo.png';
+import LogoImage from 'common/src/assets/image/app/deoraLogo.png';
 
 const Footer = ({
   colTwo,

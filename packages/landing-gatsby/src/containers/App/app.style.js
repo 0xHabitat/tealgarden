@@ -4,9 +4,12 @@ import { themeGet } from 'styled-system';
 import Substract from 'common/src/assets/image/app/substract.png';
 import SubstractHover from 'common/src/assets/image/app/substract-hover.png';
 import BannerPattern from 'common/src/assets/image/app/pattern.png';
+import bgTexture from 'common/src/assets/image/app/deoratexture.png';
 
 const GlobalStyle = createGlobalStyle`
   body {
+    background-color: #f4f4f1;
+    background-image: url(${bgTexture});
     font-family: 'Poppins', sans-serif;
   }
 
@@ -268,6 +271,46 @@ const AppWrapper = styled.div`
       .hamburgMenu__bar > span {
         background-color: ${themeGet('colors.black', '#091632')};
       }
+    }
+  }
+
+  .subscribeButton {
+    max-width: 156px !important;
+    max-height: 50px !important;
+    font-size: 16px;
+    font-family: poppins, sans-serif !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: ${themeGet('colors.black', '#091632')};
+    border: 2px solid #091632 !important;
+    position: relative;
+    left: -20px !important;
+    box-shadow: 2px 2px 0px #091632 !important;
+    border-radius: 4px;
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+    background-color: ${themeGet('colors.primary', '#FFDE00')} !important;
+  }
+
+  .listmonk-form {
+    margin-top: -2px;
+
+    .lable {
+      font-family: poppins, sans-serif !important;
+      font-weight: 500;
+      font-size: 14px;
+      display: block !important;
+      padding-left: 30px !important;
+      margin-top: -3px !important;
+    }
+    .checkbox {
+      width: 13px;
+      height: 13px;
+      float: left !important;
+      vertical-align: bottom !important;
+      position: relative !important;
+      top: -1px !important;
+      *overflow: hidden;
     }
   }
 
