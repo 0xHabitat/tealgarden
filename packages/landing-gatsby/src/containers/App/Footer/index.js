@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from 'gatsby';
 import Box from 'common/src/components/Box';
 import Text from 'common/src/components/Text';
+import Heading from 'common/src/components/Heading';
 import Logo from 'common/src/components/UIElements/Logo';
 import Container from 'common/src/components/UI/Container';
-import FooterWrapper from './footer.style';
-import LogoImage from 'common/src/assets/image/app/deoraLogo.png';
+import FooterWrapper, { List, ListItem } from './footer.style';
+import LogoImage from 'common/src/assets/image/app/logo.png';
 
 const Footer = ({
   colTwo,
@@ -15,29 +17,27 @@ const Footer = ({
   copyrightMenu,
   copyright,
 }) => {
+
   return (
     <FooterWrapper>
       <Container>
-        <Box {...colTwo} className="copyrightClass">
-          <Logo
-            href="/app"
-            logoSrc={LogoImage}
-            title="App"
-            logoStyle={logoStyle}
-          />
-          <Box {...copyrightMenu} className="copyrightMenu">
-            <Text content="Deora" {...textStyle} />
-            <Text content="Privacy" {...textStyle} />
-            <Text content="Terms" {...textStyle} />
-          </Box>
-          <Box {...copyright} className="copyrightText">
-            <Text
-              content="©2020 deora - created with &hearts; in Berlin"
-              {...textStyle}
+          <Box {...colTwo} className="copyrightClass">
+            <Logo
+              href="/app"
+              logoSrc={LogoImage}
+              title="App"
+              logoStyle={logoStyle}
             />
+            <Box {...copyrightMenu} className="copyrightMenu">
+              <Text content="Deora" {...textStyle} />
+              <Text content="Privacy" {...textStyle} />
+              <Text content="Terms" {...textStyle} />
+            </Box>
+            <Box {...copyright} className="copyrightText">
+              <Text content="©2020 deora - created with &hearts; in Berlin" {...textStyle} />
+            </Box>
           </Box>
-        </Box>
-        {/* End of footer List column */}
+          {/* End of footer List column */}
       </Container>
     </FooterWrapper>
   );

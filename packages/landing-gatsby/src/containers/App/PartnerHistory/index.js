@@ -13,7 +13,6 @@ import ColonyImg from 'common/src/assets/image/app/Colony.png';
 import SlackImg from 'common/src/assets/image/app/Slack.png';
 import GnosisImg from 'common/src/assets/image/app/Gnosis.svg';
 import TealgardenImg from 'common/src/assets/image/app/tealgarden.svg';
-import { ExternalLink } from 'react-external-link';
 
 const PartnerHistory = ({
   row,
@@ -33,45 +32,38 @@ const PartnerHistory = ({
           <Box className="col" {...col} style={{ flexDirection: 'column' }}>
             <Text content="SEARCH AND GET FOUND" {...sectionSubTitle} />
             <FeatureBlock
-              title={<Heading content="WE LOVE OPEN SOURCE" {...title} />}
+              title={
+                <Heading
+                  content="WE LOVE OPEN SOURCE"
+                  {...title}
+                />
+              }
               description={
                 <Text
                   content="We encourage Open Source projects to contribute, share tools and achievements among the Teal.Garden Community."
                   {...description}
                 />
               }
-              button={
-                <ExternalLink href="https://calendly.com/deora-earth/teal-garden">
-                  <Button title="SUBMIT A TOOL" {...btnStyle} />
-                </ExternalLink>
-              }
+              button={<Button title="SUBMIT A TOOL" {...btnStyle} />}
             />
           </Box>
           <Box className="col" {...col} {...cardArea}>
             <CounterUpArea>
               <Card className="card" {...cardStyle}>
-                <ExternalLink href="https://colony.io/">
-                  <Image src={ColonyImg} alt="Colony" />
-                  <Text content="Colony" />
-                </ExternalLink>
+                <Image src={ColonyImg} alt="Colony" />
+                <Text content="Colony" />
               </Card>
               <Card className="card" {...cardStyle}>
-                <ExternalLink href="https://mattermost.com/">
-                  <Image src={SlackImg} alt="Mattermost" />
-                  <Text content="Mattermost" />
-                </ExternalLink>
+                <Image src={SlackImg} alt="Mattermost" />
+                <Text content="Mattermost" />
               </Card>
               <Card className="card" {...cardStyle}>
-                <ExternalLink href="https://gnosis-safe.io/">
-                  <Image src={GnosisImg} alt="Gnosis Safe" />
-                  <Text content="Gnosis Safe" />
-                </ExternalLink>
+                <Image src={GnosisImg} alt="Gnosis Safe" />
+                <Text content="Gnosis Safe" />
               </Card>
               <Card className="card" {...cardStyleDotted}>
-                <ExternalLink href="https://calendly.com/deora-earth/teal-garden">
-                  <Image src={TealgardenImg} alt="your tool" />
-                  <Text content="submit a tool" />
-                </ExternalLink>
+                <Image src={TealgardenImg} alt="your tool" />
+                <Text content="submit a tool"/>
               </Card>
             </CounterUpArea>
           </Box>
