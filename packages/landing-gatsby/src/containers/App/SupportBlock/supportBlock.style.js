@@ -25,7 +25,6 @@ const SectionWrapper = styled.div`
 `;
 
 export const ImageSlider = styled.div`
-  max-width: 1124px;
   width: 100%;
   height: 130px;
   display: flex;
@@ -50,7 +49,7 @@ export const ImageSlider = styled.div`
     height: 100%;
     position: absolute;
     top: 0;
-    background: linear-gradient(to right, #F4F4F1, rgba(255, 255, 255, 0));
+    background: linear-gradient(to right, #f4f4f1, rgba(255, 255, 255, 0));
     z-index: 1;
     cursor: default !important;
   }

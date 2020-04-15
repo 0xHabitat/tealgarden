@@ -7632,6 +7632,11 @@ gatsby-page-utils@^0.1.1:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
+gatsby-plugin-eslint-v2@^2.0.0-beta.0:
+  version "2.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-eslint-v2/-/gatsby-plugin-eslint-v2-2.0.0-beta.0.tgz#6c5748916c8cdd54f0c93a55cdc4e2e894b9b651"
+  integrity sha512-LZxc82Ijw0P6nn6+3RkmcSnIoiqDppskVznyUYR7w1xUxf6ZwGB34LokXQWz21hUoRq0kEoYanGbs7dKeldOmw==
+
 gatsby-plugin-google-analytics@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.2.2.tgz#b4d2a10e1863bb4c92084a1778c4a2aab53292f5"
@@ -7639,16 +7644,6 @@ gatsby-plugin-google-analytics@^2.2.2:
   dependencies:
     "@babel/runtime" "^7.8.7"
     minimatch "3.0.4"
-
-gatsby-plugin-eslint-v2@^2.0.0-beta.0:
-  version "2.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-eslint-v2/-/gatsby-plugin-eslint-v2-2.0.0-beta.0.tgz#6c5748916c8cdd54f0c93a55cdc4e2e894b9b651"
-  integrity sha512-LZxc82Ijw0P6nn6+3RkmcSnIoiqDppskVznyUYR7w1xUxf6ZwGB34LokXQWz21hUoRq0kEoYanGbs7dKeldOmw==
-
-gatsby-plugin-eslint@^2.0.8:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-eslint/-/gatsby-plugin-eslint-2.0.8.tgz#1ff7f546a427d274dc2de3932ba29822aae330c3"
-  integrity sha512-vAMy37povmQJNg6ZxY78fkWR3pKwG8MNMhO3u+4vXj2MYT5avhFvHPJTAb126ZCuygf30gAWlpwbV50zP894Jw==
 
 gatsby-plugin-manifest@^2.2.39:
   version "2.3.2"
@@ -13860,6 +13855,11 @@ react-error-overlay@^6.0.3:
   version "6.0.7"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.7.tgz#1dcfb459ab671d53f660a991513cb2f0a0553108"
   integrity sha512-TAv1KJFh3RhqxNvhzxj6LeT5NWklP6rDr2a0jaTfsZ5wSZWHOGeqQyejUp3xxLfPt2UpyJEcVQB/zyPcmonNFA==
+
+react-external-link@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-external-link/-/react-external-link-1.1.1.tgz#1caaa0f359d4a04b3052d98b67410c7877fe2f3d"
+  integrity sha512-e2WnTWkg81cuqxmDfjOalliAE20+Y/uD+lserN4uuwkwu+ciGLB3BMz4m7GnXh2+TowIi4sLtCL7zr7aDnIaqA==
 
 react-fast-compare@^2.0.2:
   version "2.0.4"

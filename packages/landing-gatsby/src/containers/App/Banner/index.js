@@ -10,14 +10,9 @@ import Input from 'common/src/components/Input';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import ParticlesComponent from '../particles';
 import Container from 'common/src/components/UI/Container';
-import { Icon } from 'react-icons-kit';
-import { ic_arrow_forward } from 'react-icons-kit/md/ic_arrow_forward';
-import { BannerSquareShape, SunCircleShape } from '../app.style';
-import {
-  ButtonWrapper,
-  EmailInputWrapper,
-  Sun,
-} from './banner.style';
+import { BannerSquareShape } from '../app.style';
+import { ButtonWrapper, EmailInputWrapper, Sun } from './banner.style';
+import { ExternalLink } from 'react-external-link';
 
 const DomainSection = ({
   SectionWrapper,
@@ -27,12 +22,12 @@ const DomainSection = ({
   description,
   image,
   imageArea,
-  btnStyleTwo,
-  btnStyle,
 }) => {
   const Data = useStaticQuery(graphql`
     query {
-      appScreenshot: file(relativePath: { eq: "image/app/HeroScreenshot.png" }) {
+      appScreenshot: file(
+        relativePath: { eq: "image/app/HeroScreenshot.png" }
+      ) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid
@@ -62,16 +57,7 @@ const DomainSection = ({
                 aria-label="email"
               />
             </EmailInputWrapper>
-            <ButtonWrapper>
-              <Button title="SIGN UP" {...btnStyle} />
-              <Button
-                {...btnStyle}
-                {...btnStyleTwo}
-                icon={<Icon icon={ic_arrow_forward} />}
-                title="SUBMIT PROCESS"
-                className="withoutBg"
-              />
-            </ButtonWrapper>
+            <ButtonWrapper></ButtonWrapper>
           </Box>
           <Box {...col} {...imageArea}>
             <Box {...image}>
@@ -142,7 +128,8 @@ DomainSection.defaultProps = {
     mt: '160px',
   },
   description: {
-    content: 'Become part of the future of digital collaboration. Join our community of teal organisation architects.',
+    content:
+      'Become part of the future of digital collaboration. Join our community of teal organisation architects.',
     fontSize: '16px',
     color: '#343d48',
     lineHeight: '28px',

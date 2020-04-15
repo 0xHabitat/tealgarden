@@ -64,6 +64,7 @@
     ]
   },
   "dependencies": {
-    "gatsby-plugin-google-analytics": "^2.2.2"
+    "gatsby-plugin-google-analytics": "^2.2.2",
+    "react-external-link": "^1.1.1"
   }
 }
