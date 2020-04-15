@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const FooterWrapper = styled.section`
   padding: 50px 0 55px;
-  background-color: #FAF4F3;
   @media (max-width: 480px) {
     padding: 60px 0 30px;
   }

@@ -10,9 +10,9 @@ import Image from 'common/src/components/Image';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import Container from 'common/src/components/UI/Container';
 import { PaymentCircleShape } from '../app.style';
+import { ExternalLink } from 'react-external-link';
 
 import ImageOne from 'common/src/assets/image/app/mockup.png';
-import ImageTwo from 'common/src/assets/image/app/credit-card.png';
 
 const PaymentSection = ({
   sectionWrapper,
@@ -47,32 +47,34 @@ const PaymentSection = ({
               {...imageWrapper}
               {...imageWrapperTwo}
               className="cardExtraImage"
-            >
-              <Fade right>
-                <Image src={ImageTwo} alt="Info Image Two" />
-              </Fade>
-            </Card>
+            ></Card>
           </Box>
         </Box>
       </Container>
       <Container>
         <Box {...row} {...textAreaRow}>
           <Box {...col} {...textArea}>
-            <Text content="LOREM IPSUM" {...sectionSubTitle} />
+            <Text content="TEAL.GARDEN" {...sectionSubTitle} />
             <FeatureBlock
               title={
                 <Heading
-                  content="Lorem ipsum dolor sit amet consectetur."
+                  content="GET ON BOARD, JOIN THE COMMUNITY"
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                  content="Discover the latest dApps, plugins & processes for the future of work.
+                  Share your own organisation architectures!
+                  We are open for all submissions & inspirations."
                   {...description}
                 />
               }
-              button={<Button title="SUBMIT YOUR PROCESS" {...btnStyle} />}
+              button={
+                <ExternalLink href="https://calendly.com/deora-earth/teal-garden">
+                  <Button title="SUBMIT YOUR PROCESS" {...btnStyle} />
+                </ExternalLink>
+              }
             />
           </Box>
         </Box>
@@ -94,8 +96,8 @@ PaymentSection.propTypes = {
 PaymentSection.defaultProps = {
   sectionWrapper: {
     as: 'section',
-    pt: ['20px', '40px', '40px', '80px', '80px'],
-    pb: ['80px', '80px', '80px', '180px', '280px'],
+    pt: ['20px', '40px', '40px', '80px', '200px'],
+    pb: ['80px', '80px', '80px', '180px', '150px'],
   },
   row: {
     flexBox: true,
@@ -111,11 +113,12 @@ PaymentSection.defaultProps = {
     pl: '15px',
   },
   textArea: {
-    width: [1, 1, '45%', '45%', '45%'],
+    width: [1, 1, '45%', '45%', '47%'],
+    mt: '-50px',
     zIndex: '1',
   },
   imageArea: {
-    width: [0, 0, '52%', '45%', '45%'],
+    width: [0, 0, '52%', '45%', '30%'],
     flexBox: true,
   },
   imageWrapper: {
@@ -123,12 +126,7 @@ PaymentSection.defaultProps = {
   },
   imageWrapperOne: {
     pointerEvents: 'none',
-  },
-  imageWrapperTwo: {
-    alignSelf: 'flex-start',
-    mt: ['0px', '0px', '40px', '50px', '90px'],
-    ml: ['-250px', '-250px', '-180px', '-220px', '-420px'],
-    pointerEvents: 'none',
+    ml: '90px',
   },
   sectionSubTitle: {
     as: 'span',

@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 import Mail from 'common/src/assets/image/app/mail.svg';
 
-export const DiscountWrapper = styled.div`
-  text-align: left;
-`;
 export const ButtonWrapper = styled.div`
   position: relative;
   @media screen and (max-width: 991px) and (min-width: 767px) {
@@ -31,9 +28,43 @@ export const ButtonWrapper = styled.div`
     }
   }
 `;
+
+export const Sun = styled.div`
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  display: block;
+  top: -34%;
+  left: -11%;
+  z-index: -1;
+  background-color: #ffde00;
+  border-radius: 50%;
+  box-shadow: 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040, 0 0 0 60px #ffde0020,
+    0 0 0 80px #ffde0010, 0 0 0 100px #ffde0000, 0 0 40px 100px #ffde0010;
+  animation: sunrise 2s infinite linear forwards, rays 2s 2s infinite linear;
+
+  @keyframes sunrise {
+    0% {
+      box-shadow: none;
+    }
+  }
+
+  @keyframes rays {
+    0% {
+      box-shadow: 0 0 0 0 #ffde0080, 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040,
+        0 0 0 60px #ffde0020, 0 0 0 80px #ffde0010, 0 0 40px 100px #ffde0010;
+    }
+    100% {
+      box-shadow: 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040,
+        0 0 0 60px #ffde0020, 0 0 0 80px #ffde0010, 0 0 0 100px #ffde0000,
+        0 0 40px 100px #ffde0010;
+    }
+  }
+`;
+
 export const EmailInputWrapper = styled.div`
   position: relative;
-  width: 100%;
+  width: 85%;
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -49,18 +80,18 @@ export const EmailInputWrapper = styled.div`
   }
   input {
     border-radius: 5px;
-    background-color: #FFFFFF !important;
-    border: 2px solid #E6EBF0 !important;
+    background-color: #ffffff !important;
+    border: 2px solid #e6ebf0 !important;
     margin-bottom: 30px;
     height: 60px;
     padding-left: 60px !important;
-    color: #E26C65;
+    color: #091632;
     opacity: 1;
     font-weight: 500;
     @media (max-width: 768px) {
     }
     &:focus {
-      border: 2px solid #82E3E3 !important;
+      border: 2px solid #82e3e3 !important;
     }
 
     &:placeholder {
@@ -72,10 +103,10 @@ export const EmailInputWrapper = styled.div`
   .input-icon {
     left: 10px !important;
     right: auto;
-    top: 7px !important;
+    top: 10px !important;
     height: 40px !important;
     svg {
-      color: #E26C65;
+      color: #e26c65;
       width: 24px;
       height: 30px;
     }

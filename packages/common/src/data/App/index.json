@@ -4,19 +4,19 @@
       "id": 1,
       "icon": "flaticon-atom",
       "title": "Discover processes",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. "
+      "description": "Browse industry specific processes & tools that optimize your self-management workflow."
     },
     {
       "id": 2,
       "icon": "flaticon-trophy",
-      "title": "Vote on the best",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+      "title": "Reward the best",
+      "description": "Share your review and experience. Vote for your best processes to support the community."
     },
     {
       "id": 3,
       "icon": "flaticon-conversation",
       "title": "Created by the community",
-      "description": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. "
+      "description": "Be part of the future of work & collaboration. Create within a community of pioneers.."
     }
   ],
   "featuresSliderTwo": [
@@ -57,69 +57,89 @@
   
   "menuItems": [
     {
-      "label": "Section 1",
+      "label": "About",
       "path": "#services",
       "offset": "100"
     },
     {
-      "label": "Section 2",
+      "label": "Learn",
       "path": "#control",
       "offset": "100"
     },
     {
-      "label": "Section 3",
+      "label": "Features",
       "path": "#keyfeature",
       "offset": "0"
     },
     {
-      "label": "Section 4",
+      "label": "Tools",
       "path": "#partners",
       "offset": "-100"
     },
     {
-      "label": "Section 5",
+      "label": "Processes",
       "path": "#payments",
       "offset": "100"
     },
     {
-      "label": "Section 6",
+      "label": "Community",
       "path": "#testimonialSection",
       "offset": "100"
+    }
+  ],
+  "supporter": [
+    {
+      "id": 1,
+      "logo": "../../assets/image/app/supporter/1.png",
+      "name": "European Union",
+      "link": "#1"
+    },
+    {
+      "id": 2,
+      "logo": "../../assets/image/app/supporter/2.png",
+      "name": "Atom Leap",
+      "link": "#2"
+    },
+    {
+      "id": 3,
+      "logo": "../../assets/image/app/supporter/3.png",
+      "name": "City of Berlin",
+      "link": "#3"
     }
   ],
   "testimonials": [
     {
       "id": 1,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "name": "Some One",
-      "designation": "A big organisation"
+      "description": "Our team wants to setup our own crowdfunding campaign, without a 3rd party involved.",
+      "name": "Lea",
+      "designation": "member of a local health organization"
     },
     {
       "id": 2,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "name": "Cool person",
-      "designation": "Crypto Organisation"
+      "description": "We had too many calls in too many different meeting rooms. Now we found a way to structure our meetings better!",
+      "name": "Chris",
+      "designation": "project manager during corona lockdown"
     },
 
     {
       "id": 3,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "name": "CEO",
-      "designation": "EVIL CORPS"
+      "description": "We are working on many different projects and want to set a better focus on important tasks, so we switched to bounties.",
+      "name": "Simon",
+      "designation": "member of a freelancer cooperative"
     },
 
     {
       "id": 4,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "name": "Hacker",
-      "designation": "F-Society"
+      "description": "Our team is distributed and we want to measure the involvement of all contributors & reward them accordingly. Is there a way to automate that?",
+      "name": "Max",
+      "designation": "member of LeapDAO"
     },
 
     {
       "id": 5,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "name": "Donald Trump",
-      "designation": "CEO Illuminati & USA"
+      "description": "We finally found a way to automate the tracking of rewards & expenses and can build a real balance-sheet.",
+      "name": "Johann",
+      "designation": "DAO Member"
     }
   ]
 }

@@ -1,32 +1,32 @@
 const data = {
   menuItems: [
     {
-      label: 'Our Services',
+      label: 'About',
       path: '#services',
       offset: '100',
     },
     {
-      label: 'Control Remotely',
+      label: 'Learn',
       path: '#control',
       offset: '100',
     },
     {
-      label: 'Key Features',
+      label: 'Features',
       path: '#keyfeature',
       offset: '0',
     },
     {
-      label: 'Partners',
+      label: 'Tools',
       path: '#partners',
       offset: '-100',
     },
     {
-      label: 'Payments',
+      label: 'Processes',
       path: '#payments',
       offset: '100',
     },
     {
-      label: 'Testimonial',
+      label: 'Community',
       path: '#testimonialSection',
       offset: '100',
     },

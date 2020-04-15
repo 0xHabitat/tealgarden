@@ -10,13 +10,9 @@ import Input from 'common/src/components/Input';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import ParticlesComponent from '../particles';
 import Container from 'common/src/components/UI/Container';
-import { Icon } from 'react-icons-kit';
-import { ic_arrow_forward } from 'react-icons-kit/md/ic_arrow_forward';
-import { BannerSquareShape, BannerCircleShape, SunCircleShape } from '../app.style';
-import {
-  ButtonWrapper,
-  EmailInputWrapper,
-} from './banner.style';
+import { BannerSquareShape } from '../app.style';
+import { ButtonWrapper, EmailInputWrapper, Sun } from './banner.style';
+import { ExternalLink } from 'react-external-link';
 
 const DomainSection = ({
   SectionWrapper,
@@ -26,12 +22,12 @@ const DomainSection = ({
   description,
   image,
   imageArea,
-  btnStyleTwo,
-  btnStyle,
 }) => {
   const Data = useStaticQuery(graphql`
     query {
-      appScreenshot: file(relativePath: { eq: "image/app/HeroScreenshot.png" }) {
+      appScreenshot: file(
+        relativePath: { eq: "image/app/HeroScreenshot.png" }
+      ) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid
@@ -44,9 +40,8 @@ const DomainSection = ({
   return (
     <Box {...SectionWrapper}>
       <ParticlesComponent />
-      <SunCircleShape />
+      <Sun />
       <BannerSquareShape />
-      {/* <BannerCircleShape /> */}
       <Container>
         <Box {...row}>
           <Box {...col}>
@@ -62,16 +57,7 @@ const DomainSection = ({
                 aria-label="email"
               />
             </EmailInputWrapper>
-            <ButtonWrapper>
-              <Button title="SIGN UP" {...btnStyle} />
-              <Button
-                {...btnStyle}
-                {...btnStyleTwo}
-                icon={<Icon icon={ic_arrow_forward} />}
-                title="SUBMIT PROCESS"
-                className="withoutBg"
-              />
-            </ButtonWrapper>
+            <ButtonWrapper></ButtonWrapper>
           </Box>
           <Box {...col} {...imageArea}>
             <Box {...image}>
@@ -107,7 +93,7 @@ DomainSection.propTypes = {
 DomainSection.defaultProps = {
   SectionWrapper: {
     as: 'section',
-    pt: '80px',
+    pt: '70px',
     pb: '80px',
     overflow: 'hidden',
   },
@@ -132,18 +118,18 @@ DomainSection.defaultProps = {
     ml: 'auto',
   },
   title: {
-    content: 'Prozesses and tools for selfmanaged and distributed teams',
+    content: 'Processes and tools for self-managed and distributed teams',
     fontSize: ['18px', '24px', '24px', '30px', '34px'],
     fontWeight: '700',
     color: '#091632',
     letterSpacing: '1.2px',
     lineHeight: '42px',
     mb: '10px',
-    mt: '15px',
+    mt: '160px',
   },
   description: {
     content:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+      'Become part of the future of digital collaboration. Join our community of teal organisation architects.',
     fontSize: '16px',
     color: '#343d48',
     lineHeight: '28px',

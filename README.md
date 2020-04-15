@@ -1,4 +1,6 @@
-# SolarPunch :muscle: :sunny:
+# TealGarden :muscle: :sunny:
+
+###### (a.k.a. SolarPunch)
 
 A collection of self-management processes and tools used by communities, DAOs and collaboratives around the globe.
 
