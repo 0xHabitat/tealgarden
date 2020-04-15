@@ -6,55 +6,57 @@ const FeatureSliderWrapper = styled.div`
   @media (max-width: 1440px) {
     padding-top: 140px;
   }
-
-  .sun {
-	width: 550px;
-	height: 550px;
-  position: absolute;
-  display: block;
-  top: 37%;
-  left: 31%;
-	background-color: #FFDE00;
-	border-radius: 50%;
-	box-shadow:
-		0 0 0 20px #FFDE0080,
-		0 0 0 40px #FFDE0040,
-		0 0 0 60px #FFDE0020,
-		0 0 0 80px #FFDE0010,
-		0 0 0 100px #FFDE0000,
-		0 0 40px 100px #FFDE0010;
-	animation:
-		sunrise 2s infinite linear forwards,
-		rays 2s 2s infinite linear;
-  }
-
-  @keyframes sunrise {
-    0% {
-      box-shadow: none;
+  .FeatureSliderInner {
+    span:nth-child(1) {
+      position: absolute;
+      display: block;
+      width: 5%;
+      padding-bottom: 5%;
+      border-radius: 50%;
+      top: 60%;
+      left: 50%;
+      opacity: 0;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      animation: pulsei 4.2s ease-out infinite;
+      backface-visibility: hidden;
+      pointer-events: none;
+    }
+    span:nth-child(2) {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 5%;
+      padding-bottom: 5%;
+      border-radius: 50%;
+      top: 60%;
+      left: 50%;
+      opacity: 0;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      animation: pulsei 4.2s ease-out infinite;
+      backface-visibility: hidden;
+      pointer-events: none;
+      animation-delay: 1s;
+    }
+    span:nth-child(3) {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 5%;
+      padding-bottom: 5%;
+      border-radius: 50%;
+      top: 60%;
+      left: 50%;
+      opacity: 0;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      animation: pulsei 4.2s ease-out infinite;
+      backface-visibility: hidden;
+      pointer-events: none;
+      animation-delay: 2s;
     }
   }
-
-  @keyframes rays {
-    0% {
-      box-shadow: 
-      0 0 0 0 #FFDE0080,
-      0 0 0 20px #FFDE0080,
-      0 0 0 40px #FFDE0040,
-      0 0 0 60px #FFDE0020,
-      0 0 0 80px #FFDE0010,
-      0 0 40px 100px #FFDE0010;
-    }
-    100% {
-      box-shadow: 
-      0 0 0 20px #FFDE0080,
-      0 0 0 40px #FFDE0040,
-      0 0 0 60px #FFDE0020,
-      0 0 0 80px #FFDE0010,
-      0 0 0 100px #FFDE0000,
-      0 0 40px 100px #FFDE0010;
-    }
-  }
-
   .FeatureSlider {
     padding-top: 200px;
     padding-bottom: 100px;
@@ -64,11 +66,26 @@ const FeatureSliderWrapper = styled.div`
       position: relative;
       z-index: 2;
     }
-    
-  }
+    @keyframes pulsei {
+      0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        opacity: 1;
+        width: 5%;
+        padding-bottom: 5%;
+      }
+
+      100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 0;
+        width: 67%;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        padding-bottom: 67%;
+      }
+    }
 
     .image-gallery-slide-wrapper {
-      width: 675px;
+      width: 775px;
       margin-left: auto;
       margin-right: auto;
       position: relative;

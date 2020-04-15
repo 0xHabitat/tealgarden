@@ -17,6 +17,7 @@ const ControllSection = ({
   col,
   title,
   description,
+  button,
   textArea,
   imageArea,
   textAreaRow,
@@ -25,6 +26,7 @@ const ControllSection = ({
   imageWrapperOne,
   imageWrapperTwo,
   sectionSubTitle,
+  btnStyle,
 }) => {
   return (
     <Box {...sectionWrapper} id="control">
@@ -47,17 +49,17 @@ const ControllSection = ({
       <Container>
         <Box {...row} {...textAreaRow}>
           <Box {...col} {...textArea}>
-            <Text content="BUILDING A HEALTHY COMMUNITY" {...sectionSubTitle} />
+            <Text content="LOREM IPSUM" {...sectionSubTitle} />
             <FeatureBlock
               title={
                 <Heading
-                  content="EDUCATING, SHARING, LEARNING."
+                  content="Lorem ipsum dolor sit amet."
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="Teal.Garden incentives sharing, learning and exchanging of new experiences in the teal community. Together we document & visualize the processes within self-managed organizations. This makes it easier for everyone to adapt new concepts and ideas."
+                  content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                   {...description}
                 />
               }
@@ -81,13 +83,13 @@ ControllSection.propTypes = {
 ControllSection.defaultProps = {
   sectionWrapper: {
     as: 'section',
-    pt: ['40px', '120px'],
+    pt: ['40px', '140px'],
     pb: ['40px', '180px'],
   },
   row: {
     flexBox: true,
     flexWrap: 'wrap',
-    ml: '-25px',
+    ml: '-15px',
     mr: '-15px',
   },
   textAreaRow: {
@@ -99,11 +101,10 @@ ControllSection.defaultProps = {
   },
   textArea: {
     width: ['100%', '100%', '50%', '50%', '50%'],
-    pt: '80px',
     pl: '75px',
   },
   imageArea: {
-    width: ['0px', '0px', '53%', '50%', '48%'],
+    width: ['0px', '0px', '53%', '50%', '50%'],
     flexBox: true,
   },
   imageWrapper: {
@@ -114,8 +115,8 @@ ControllSection.defaultProps = {
   },
   imageWrapperTwo: {
     alignSelf: 'flex-end',
-    mb: '-100px',
-    ml: ['0px', '0px', '-200px', '-250px', '-450px'],
+    mb: '-60px',
+    ml: ['0px', '0px', '-200px', '-250px', '-400px'],
     pointerEvents: 'none',
   },
   sectionSubTitle: {

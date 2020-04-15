@@ -22,12 +22,12 @@ const Container = styled.div`
   .menuIcons {
     .reusecore__button {
       .btn-icon {
-        color: #f4f4f1;
+        color: #fff;
         font-size: 18px;
         width: auto;
         margin: 0;
         @media (max-width: 1100px) {
-          color: #091632 !important;
+          color: rgb(26, 115, 232) !important;
         }
       }
     }
@@ -35,9 +35,9 @@ const Container = styled.div`
   .hamburgMenu__bar {
     margin-left: 10px;
     span {
-      background-color: #f4f4f1;
+      background-color: #fff;
       @media (max-width: 1100px) {
-        background-color: #091632 !important;
+        background-color: rgb(26, 115, 232) !important;
       }
     }
   }

@@ -10,7 +10,7 @@ const ButtonStyle = styled.button`
   align-items: center;
   justify-content: center;
   color: ${themeGet('colors.black', '#091632')};
-  background-color: ${themeGet('colors.primary', '#FFDE00')};
+  background-color: ${themeGet('colors.primary', '#FFF85A')};
   min-height: ${themeGet('heights.3', '48')}px;
   min-width: ${themeGet('widths.3', '48')}px;
   border: 2px solid #091632;

@@ -12,14 +12,12 @@ import PartnerHistoryWrapper, { CounterUpArea } from './partnerHistory.style';
 import ColonyImg from 'common/src/assets/image/app/Colony.png';
 import SlackImg from 'common/src/assets/image/app/Slack.png';
 import GnosisImg from 'common/src/assets/image/app/Gnosis.svg';
-import TealgardenImg from 'common/src/assets/image/app/tealgarden.svg';
-import { ExternalLink } from 'react-external-link';
+import MailchimpImg from 'common/src/assets/image/app/mailchimp.svg';
 
 const PartnerHistory = ({
   row,
   col,
   cardStyle,
-  cardStyleDotted,
   title,
   description,
   btnStyle,
@@ -31,47 +29,40 @@ const PartnerHistory = ({
       <Container>
         <Box className="row" {...row}>
           <Box className="col" {...col} style={{ flexDirection: 'column' }}>
-            <Text content="SEARCH AND GET FOUND" {...sectionSubTitle} />
+            <Text content="LOREM IPSUM" {...sectionSubTitle} />
             <FeatureBlock
-              title={<Heading content="WE LOVE OPEN SOURCE" {...title} />}
+              title={
+                <Heading
+                  content="LOREM IPSUM DOLOR SIT AMET CONSECTETUR."
+                  {...title}
+                />
+              }
               description={
                 <Text
-                  content="We encourage Open Source projects to contribute, share tools and achievements among the Teal.Garden Community."
+                  content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                   {...description}
                 />
               }
-              button={
-                <ExternalLink href="https://calendly.com/deora-earth/teal-garden">
-                  <Button title="SUBMIT A TOOL" {...btnStyle} />
-                </ExternalLink>
-              }
+              button={<Button title="SUBMIT A TOOL" {...btnStyle} />}
             />
           </Box>
           <Box className="col" {...col} {...cardArea}>
             <CounterUpArea>
               <Card className="card" {...cardStyle}>
-                <ExternalLink href="https://colony.io/">
-                  <Image src={ColonyImg} alt="Colony" />
-                  <Text content="Colony" />
-                </ExternalLink>
+                <Image src={ColonyImg} alt="Colony" />
+                <Text content="Colony" />
               </Card>
               <Card className="card" {...cardStyle}>
-                <ExternalLink href="https://mattermost.com/">
-                  <Image src={SlackImg} alt="Mattermost" />
-                  <Text content="Mattermost" />
-                </ExternalLink>
+                <Image src={SlackImg} alt="Slack" />
+                <Text content="Slack" />
               </Card>
               <Card className="card" {...cardStyle}>
-                <ExternalLink href="https://gnosis-safe.io/">
-                  <Image src={GnosisImg} alt="Gnosis Safe" />
-                  <Text content="Gnosis Safe" />
-                </ExternalLink>
+                <Image src={GnosisImg} alt="Gnosis Safe" />
+                <Text content="Gnosis Safe" />
               </Card>
-              <Card className="card" {...cardStyleDotted}>
-                <ExternalLink href="https://calendly.com/deora-earth/teal-garden">
-                  <Image src={TealgardenImg} alt="your tool" />
-                  <Text content="submit a tool" />
-                </ExternalLink>
+              <Card className="card" {...cardStyle}>
+                <Image src={MailchimpImg} alt="MailChimp" />
+                <Text content="MailChimp" />
               </Card>
             </CounterUpArea>
           </Box>
@@ -109,13 +100,6 @@ PartnerHistory.defaultProps = {
     borderRadius: '10px',
     border: '2px solid #091632',
     boxShadow: '2px 2px 0px #091632',
-  },
-  cardStyleDotted: {
-    p: '53px 40px 35px',
-    borderRadius: '10px',
-    border: '2px dashed #E1E4E8',
-    backgroundColor: 'transparent !important',
-    boxShadow: 'none',
   },
   title: {
     fontSize: ['20px', '24px', '24px', '24px', '30px'],

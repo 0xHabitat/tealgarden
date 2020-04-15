@@ -4,12 +4,9 @@ import { themeGet } from 'styled-system';
 import Substract from 'common/src/assets/image/app/substract.png';
 import SubstractHover from 'common/src/assets/image/app/substract-hover.png';
 import BannerPattern from 'common/src/assets/image/app/pattern.png';
-import bgTexture from 'common/src/assets/image/app/deoratexture.png';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: #f4f4f1;
-    background-image: url(${bgTexture});
     font-family: 'Poppins', sans-serif;
   }
 
@@ -134,7 +131,7 @@ const GlobalStyle = createGlobalStyle`
 
       &.search-modal,
       &.video-modal {
-        background-color: #F4F4F1 !important;
+        background-color: #FAF4F3 !important;
         overflow-y: auto !important;
 
         .innerRndComponent {
@@ -212,10 +209,10 @@ const AppWrapper = styled.div`
 
     .reusecore__button {
       .btn-icon {
-        color: ${themeGet('colors.white', '#F4F4F1')};
+        color: ${themeGet('colors.white', '#FAF4F3')};
         font-size: 18px;
         @media only screen and (max-width: 1100px) {
-          color: ${themeGet('colors.white', '#F4F4F1')};
+          color: ${themeGet('colors.primary', '#1a73e8')};
         }
         @media only screen and (max-width: 420px) {
           font-size: 14px;
@@ -237,16 +234,16 @@ const AppWrapper = styled.div`
         width: 40px;
       }
       > span {
-        background-color: ${themeGet('colors.black', '#091632')};
+        background-color: ${themeGet('colors.white', '#FAF4F3')};
         @media only screen and (max-width: 990px) {
-          background-color: ${themeGet('colors.black', '#091632')};
+          background-color: ${themeGet('colors.primary', '#1a73e8')};
         }
       }
     }
   }
   .sticky-nav-active {
     .reusecore__navbar {
-      background-color: ${themeGet('colors.white', '#F4F4F1')};
+      background-color: ${themeGet('colors.white', '#FAF4F3')};
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       padding: 5px 15px;
       transition: all 0.2s ease;
@@ -265,52 +262,12 @@ const AppWrapper = styled.div`
 
       .reusecore__button {
         .btn-icon {
-          color: ${themeGet('colors.black', '#091632')};
+          color: ${themeGet('colors.primary', '#1a73e8')};
         }
       }
       .hamburgMenu__bar > span {
-        background-color: ${themeGet('colors.black', '#091632')};
+        background-color: ${themeGet('colors.primary', '#1a73e8')};
       }
-    }
-  }
-
-  .subscribeButton {
-    max-width: 156px !important;
-    max-height: 50px !important;
-    font-size: 16px;
-    font-family: poppins, sans-serif !important;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: ${themeGet('colors.black', '#091632')};
-    border: 2px solid #091632 !important;
-    position: relative;
-    left: -20px !important;
-    box-shadow: 2px 2px 0px #091632 !important;
-    border-radius: 4px;
-    padding-left: 22px !important;
-    padding-right: 22px !important;
-    background-color: ${themeGet('colors.primary', '#FFDE00')} !important;
-  }
-
-  .listmonk-form {
-    margin-top: -2px;
-
-    .lable {
-      font-family: poppins, sans-serif !important;
-      font-weight: 500;
-      font-size: 14px;
-      display: block !important;
-      padding-left: 30px !important;
-      margin-top: -3px !important;
-    }
-    .checkbox {
-      width: 13px;
-      height: 13px;
-      float: left !important;
-      vertical-align: bottom !important;
-      position: relative !important;
-      top: -1px !important;
-      *overflow: hidden;
     }
   }
 
@@ -340,7 +297,7 @@ const AppWrapper = styled.div`
     }
     &:hover {
       color: ${themeGet('colors.black', '#E26C65')};
-      background-color: ${themeGet('colors.secondary', '#82E3E3')} !important;
+      background-color: ${themeGet('colors.secondary', '#82E3E3')}  !important;
       border: 2px solid #091632;
       box-shadow: none !important;
       cursor: pointer;
@@ -357,7 +314,7 @@ const AppWrapper = styled.div`
       }
       &:hover {
         color: ${themeGet('colors.black', '#E26C65')};
-        background-color: ${themeGet('colors.secondary', '#82E3E3')} !important;
+        background-color: ${themeGet('colors.secondary', '#82E3E3')}  !important;
         border: 2px solid #091632;
         box-shadow: none !important;
         cursor: pointer;
@@ -449,11 +406,11 @@ const AppWrapper = styled.div`
               .testimonialDes {
                 box-sizing: border-box;
                 margin-top: -10px;
-                max-width: 450px;
-                font-size: 16px;
+                max-width: 550px;
+                font-size: 24px;
                 font-family: 'poppins' sans-serif;
-                line-height: 28px;
-                color: #505565;
+                line-height: 34px;
+                color: #091632;
                 font-weight: 300;
                 -webkit-letter-spacing: -0.01em;
                 -moz-letter-spacing: -0.01em;
@@ -473,12 +430,12 @@ const AppWrapper = styled.div`
                   text-align: center;
                 }
                 &::before {
-                  content: 'WHAT PEOPLE SAY:';
+                  content: 'INTERVIEWED ORGANISATIONS';
                   box-sizing: border-box;
                   margin-bottom: 10px;
                   margin-top: 0px;
                   font-size: 14px;
-                  color: #82e3e3;
+                  color: #82E3E3;
                   display: block;
                   font-weight: 700;
                   text-align: left;
@@ -530,10 +487,10 @@ const AppWrapper = styled.div`
             width: 35px;
             background-image: url(${SubstractHover});
             &::before {
-              background-color: #82e3e3;
+              background-color: #82E3E3;
             }
             &::after {
-              background-color: #82e3e3;
+              background-color: #82E3E3;
             }
           }
 
@@ -577,10 +534,10 @@ const AppWrapper = styled.div`
           background-size: contain;
           &:hover {
             &::before {
-              background-color: #82e3e3;
+              background-color: #82E3E3;
             }
             &::after {
-              background-color: #82e3e3;
+              background-color: #82E3E3;
             }
           }
 
@@ -589,7 +546,7 @@ const AppWrapper = styled.div`
             content: '';
             width: 10px;
             height: 2px;
-            background-color: #82e3e3;
+            background-color: #82E3E3;
             display: block;
             position: absolute;
             transform: rotate(36deg);
@@ -600,7 +557,7 @@ const AppWrapper = styled.div`
             content: '';
             width: 10px;
             height: 2px;
-            background-color: #82e3e3;
+            background-color: #82E3E3;
             display: block;
             position: absolute;
             bottom: 11px;
@@ -908,7 +865,7 @@ const AppWrapper = styled.div`
 const BannerSquareShape = styled.div`
   width: 980px;
   height: 1110px;
-  background: #82e3e3;
+  background: #82E3E3;
   border-radius: 50px;
   -webkit-transform: rotate(105deg);
   -ms-transform: rotate(105deg);
@@ -933,7 +890,7 @@ const BannerSquareShape = styled.div`
 const BannerCircleShape = styled.div`
   width: 600px;
   height: 600px;
-  background: #82e3e3;
+  background: #82E3E3;
   border-radius: 50%;
   position: absolute;
   left: 53%;
@@ -964,11 +921,11 @@ const BannerCircleShape = styled.div`
 const SunCircleShape = styled.div`
   width: 450px;
   height: 450px;
-  background: #fff85a;
+  background: #FFF85A;
   border-radius: 50%;
   position: absolute;
-  left: -12%;
-  top: -12%;
+  left: -2%;
+  top: -8%;
   z-index: -1;
   transform: translateY(-50%);
   pointer-events: none;
@@ -995,11 +952,11 @@ const SunCircleShape = styled.div`
 const PaymentCircleShape = styled.div`
   width: 700px;
   height: 700px;
-  background: #ffde00;
+  background: #ffc845;
   border-radius: 50%;
   position: absolute;
-  left: -23%;
-  top: 45%;
+  left: 5%;
+  top: 47%;
   z-index: -1;
   transform: translateY(-50%);
   pointer-events: none;

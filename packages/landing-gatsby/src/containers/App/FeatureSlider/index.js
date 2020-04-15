@@ -24,42 +24,42 @@ const images = [
   {
     original: `${Image1}`,
     thumbnail: `${Thumb1}`,
-    thumbnailLabel: 'Crypto',
+    thumbnailLabel: 'Bonuty rewards',
     originalAlt: 'slide one',
     thumbnailAlt: 'thumb one',
   },
   {
     original: `${Image2}`,
     thumbnail: `${Thumb2}`,
-    thumbnailLabel: 'Meetings',
+    thumbnailLabel: 'Reputation',
     originalAlt: 'slide two',
     thumbnailAlt: 'thumb two',
   },
   {
     original: `${Image3}`,
     thumbnail: `${Thumb3}`,
-    thumbnailLabel: 'Governance',
+    thumbnailLabel: 'Task Management',
     originalAlt: 'slide three',
     thumbnailAlt: 'thumb three',
   },
   {
     original: `${Image2}`,
     thumbnail: `${Thumb4}`,
-    thumbnailLabel: 'Finance',
+    thumbnailLabel: 'Governance',
     originalAlt: 'slide four',
     thumbnailAlt: 'thumb four',
   },
   {
     original: `${Image4}`,
     thumbnail: `${Thumb5}`,
-    thumbnailLabel: 'Know-how',
+    thumbnailLabel: 'Fund Management',
     originalAlt: 'slide five',
     thumbnailAlt: 'thumb five',
   },
   {
     original: `${Image5}`,
     thumbnail: `${Thumb6}`,
-    thumbnailLabel: 'Automation',
+    thumbnailLabel: 'Communication',
     originalAlt: 'slide six',
     thumbnailAlt: 'thumb six',
   },
@@ -68,7 +68,11 @@ const images = [
 const FeatureSlider = ({ sectionSubTitle, sectionTitle, sectionHeader }) => {
   return (
     <FeatureSliderWrapper>
-      <div className="sun" />
+      <div className="FeatureSliderInner">
+        <span> </span>
+        <span> </span>
+        <span> </span>
+      </div>
       <Container>
         <Box {...sectionHeader}>
           <Text {...sectionSubTitle} />
@@ -101,7 +105,7 @@ FeatureSlider.propTypes = {
 FeatureSlider.defaultProps = {
   sectionHeader: {},
   sectionSubTitle: {
-    content: 'DEORA EMPOWERS',
+    content: 'LOREM IPSUM',
     as: 'span',
     display: 'block',
     textAlign: 'center',
@@ -113,7 +117,7 @@ FeatureSlider.defaultProps = {
   },
   // section title default style
   sectionTitle: {
-    content: 'DISTRIBUTED ORGANISATION ARCHITECTURES',
+    content: 'Lorem ipsum dolor sit',
     textAlign: 'center',
     fontSize: ['18px', '24px', '24px', '30px', '34px'],
     fontWeight: '700',

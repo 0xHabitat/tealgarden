@@ -52,7 +52,7 @@ export const ResetCSS = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background-color: #F4F4F1 !important;
+    background-color: #FAF4F3 !important;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
   }

@@ -41,14 +41,14 @@ const FeatureSectionWrapper = styled.section`
       &:nth-child(1) {
         .feature__block {
           .icon__wrapper {
-            color: #FFDE00;
+            color: #091632;
             transition: all 0.6s ease;
           }
         }
         &:hover {
           .feature__block {
             .icon__wrapper {
-              background: #FFDE00;
+              background: #FFF85A;
               color: #091632;
               border: 2px solid #091632;
               box-shadow: 2px 2px 0px #091632;

@@ -5,6 +5,7 @@ import Fade from 'react-reveal/Fade';
 import Box from 'common/src/components/Box';
 import Text from 'common/src/components/Text';
 import Heading from 'common/src/components/Heading';
+import Image from 'common/src/components/Image';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import Container from 'common/src/components/UI/Container';
 import FeatureSectionTwoWrapper from './featureSliderTwo.style';
