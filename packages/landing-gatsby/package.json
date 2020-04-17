@@ -40,7 +40,8 @@
     "react-scrollspy": "^3.4.2",
     "react-stickynode": "^2.1.1",
     "styled-components": "^5.0.0",
-    "styled-system": "4.1.0"
+    "styled-system": "4.1.0",
+    "common": "../common"
   },
   "scripts": {
     "build": "gatsby build",

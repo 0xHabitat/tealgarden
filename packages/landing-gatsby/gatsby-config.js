@@ -33,6 +33,18 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-eslint-v2',
+      options: {
+        test: /\.js$|\.jsx$/,
+        exclude: /(node_modules|.cache|public)/,
+        stages: ['develop'],
+        options: {
+          emitWarning: true,
+          failOnError: false,
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         minify: false, // Breaks styles if not set to false
