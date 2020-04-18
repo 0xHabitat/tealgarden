@@ -15,6 +15,7 @@ const ButtonStyle = styled.button`
   min-width: ${themeGet('widths.3', '48')}px;
   border: 2px solid #091632;
   border-radius: 5px;
+  box-shadow: 2px 2px 0px #091632 !important;
   font-size: ${themeGet('fontSizes.2', '14')}px;
   font-weight: ${themeGet('fontWeights.4', '500')};
   text-transform: capitalize;

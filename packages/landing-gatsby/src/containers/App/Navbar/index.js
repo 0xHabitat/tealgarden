@@ -1,23 +1,53 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import NavbarWrapper from 'common/src/components/Navbar';
-import Drawer from 'common/src/components/Drawer';
+import Button from 'common/src/components/Button';
+import LoginModal from '../LoginModal';
 import Logo from 'common/src/components/UIElements/Logo';
-import HamburgMenu from 'common/src/components/HamburgMenu';
-import ScrollSpyMenu from 'common/src/components/ScrollSpyMenu';
-import { Container } from './navbar.style';
-
+import { openModal, closeModal } from '@redq/reuse-modal';
+import { Container, Divider } from './navbar.style';
 import LogoImage from 'common/src/assets/image/app/logo.png';
-import { DrawerContext } from 'common/src/contexts/DrawerContext';
 
-const Navbar = ({ navbarStyle, logoStyle, buttonStyle }) => {
-  const { state, dispatch } = useContext(DrawerContext);
+// Default close button for modal
+const CloseModalButton = () => (
+  <Button
+    className="modalCloseBtn"
+    variant="fab"
+    onClick={() => closeModal()}
+    icon={<i className="flaticon-plus-symbol" />}
+  />
+);
+const CloseModalButtonAlt = () => (
+  <Button
+    className="modalCloseBtn alt"
+    variant="fab"
+    onClick={() => closeModal()}
+    icon={<i className="flaticon-plus-symbol" />}
+  />
+);
 
-  // Toggle drawer
-  const toggleHandler = () => {
-    dispatch({
-      type: 'TOGGLE',
+const Navbar = ({ navbarStyle, logoStyle, navElement }) => {
+  // Authentication modal handler
+  const handleLoginModal = () => {
+    openModal({
+      config: {
+        className: 'login-modal',
+        disableDragging: true,
+        width: '100%',
+        height: '100%',
+        animationFrom: { transform: 'translateY(100px)' }, // react-spring <Spring from={}> props value
+        animationTo: { transform: 'translateY(0)' }, //  react-spring <Spring to={}> props value
+        transition: {
+          mass: 1,
+          tension: 180,
+          friction: 26,
+        },
+      },
+      component: LoginModal,
+      componentProps: {},
+      closeComponent: CloseModalButton,
+      closeOnClickOutside: false,
     });
   };
 
@@ -35,6 +65,28 @@ const Navbar = ({ navbarStyle, logoStyle, buttonStyle }) => {
 
   return (
     <NavbarWrapper {...navbarStyle}>
+      <Divider>
+        <svg
+          width="2500"
+          height="30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 28.5H93.5L141.5 2H1439.5"
+            stroke="#091632"
+            stroke-width="2"
+          />
+          <line
+            x1="141"
+            y1="2"
+            x2="2500"
+            y2="2"
+            stroke="#091632"
+            stroke-width="2"
+          />
+        </svg>
+      </Divider>
       <Container>
         <Logo
           href="#"
@@ -43,20 +95,24 @@ const Navbar = ({ navbarStyle, logoStyle, buttonStyle }) => {
           logoStyle={logoStyle}
         />
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          {/* <Drawer
-            width="420px"
-            placement="right"
-            drawerHandler={<HamburgMenu />}
-            open={state.isOpen}
-            toggleHandler={toggleHandler}
-          >
-            <ScrollSpyMenu
-              menuItems={Data.appJson.menuItems}
-              drawerClose={true}
-              offset={-100}
-            />
-          </Drawer>
-           */}
+          <a href="#!" style={{ color: '#091632', fontWeight: '600' }}>
+            {' '}
+            Home
+          </a>
+          <a href="#!" style={{ color: '#091632', fontWeight: '600' }}>
+            {' '}
+            About
+          </a>
+          <a href="#!" style={{ color: '#091632', fontWeight: '600' }}>
+            {' '}
+            Blog
+          </a>
+          <Button
+            className="icon"
+            onClick={handleLoginModal}
+            icon={<i className="flaticon-user" />}
+            aria-label="login"
+          />
         </div>
       </Container>
     </NavbarWrapper>
@@ -67,8 +123,8 @@ const Navbar = ({ navbarStyle, logoStyle, buttonStyle }) => {
 Navbar.propTypes = {
   navbarStyle: PropTypes.object,
   logoStyle: PropTypes.object,
-  buttonStyle: PropTypes.object,
   wrapperStyle2: PropTypes.object,
+  navElement: PropTypes.object,
 };
 
 Navbar.defaultProps = {
@@ -79,9 +135,10 @@ Navbar.defaultProps = {
     pt: '3px',
     width: ['200px', '240px'],
   },
-  buttonStyle: {
-    minHeight: '70px',
-    color: '#fff',
+  navElement: {
+    color: '#091632',
+    fontWeight: '600',
+    pl: '5px',
   },
 };
 

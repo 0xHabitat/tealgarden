@@ -7,36 +7,26 @@ import 'rc-tabs/assets/index.css';
 import Image from 'common/src/components/Image';
 import Container from 'common/src/components/UI/Container';
 
-import SectionWrapper from './updateScreen.style';
+import SectionWrapper from './processList.style';
 import { SCREENSHOTS } from 'common/src/data/SaasClassic';
 
-const UpdateScreen = ({ secTitleWrapper, secText, secHeading }) => {
+const ProcessList = ({ secTitleWrapper, secText, secHeading }) => {
   return (
     <SectionWrapper id="screenshot_section">
       <Container>
-        <Tabs
-          renderTabBar={() => <ScrollableInkTabBar />}
-          renderTabContent={() => <TabContent animated={false} />}
-          className="update-screen-tab"
-        >
-          {SCREENSHOTS.map((item, index) => (
-            <TabPane tab={<>{item.title}</>} key={index + 1}>
-              <Image src={item.image} alt={`screenshot-${index + 1}`} />
-            </TabPane>
-          ))}
-        </Tabs>
+        <h1>content</h1>
       </Container>
     </SectionWrapper>
   );
 };
 
-UpdateScreen.propTypes = {
+ProcessList.propTypes = {
   secTitleWrapper: PropTypes.object,
   secText: PropTypes.object,
   secHeading: PropTypes.object,
 };
 
-UpdateScreen.defaultProps = {
+ProcessList.defaultProps = {
   secTitleWrapper: {
     mb: ['60px', '80px'],
   },
@@ -65,4 +55,4 @@ UpdateScreen.defaultProps = {
   },
 };
 
-export default UpdateScreen;
+export default ProcessList;
