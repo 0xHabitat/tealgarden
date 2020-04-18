@@ -141,5 +141,114 @@
       "name": "Johann",
       "designation": "DAO Member"
     }
+  ],
+  "processes": [
+    {
+      "id": "bla123",
+      "title": "Bounty Rewards",
+      "categories": [
+        "Payment & Incentives",
+        "To-dos",
+        "Commitment: Working Hours and Flexibility",
+        "Crypto"
+      ],
+      "summary": {
+        "abstract": "Bounties are an alternative to a monthly or weekly payout schedule to organisation members. They are payed out the moment after a set task has been done successfully. Bounties combine task management and incentives. They promote the autonomy of members and their respective roles by allowing them to create new bounties or fulfill existing ones. \r\n\r\nBounties allow an agile process of **\"sense & respond\"** within self-managed teams. Once a tension or opportunity is sensed and alligned with the purpose + current strategies of the organisation bounties can be created and tackled immediately. They are announced via the official communication channels for objections, clarification or support. \r\n\r\nThey incentivize creative bounty creators (bounty gardener) and motivated bounty hunters (bounty worker) alike.\r\n\r\nThe given process gives an exemplary insight about the structure, rules and parameters that are used in proven in our organisation. See **\"Bounty Policy\"** under **\"Adoption Requirements\"** for more info.",
+        "benefits": [
+          "instant incentivation via bounty payouts after finished task",
+          "fast sense & respond practice",
+          "transparent to-do management alligned with purpose & strategies",
+          "extra work -> extra money & recognitation"
+        ]
+      },
+      "addoptionRequirements": [
+        {
+          "name": "Holacracy Constitution",
+          "description": "the organization needs to have adopted the constitution V4.1 or higher",
+          "link": "https://www.holacracy.org/constitution",
+          "type": "structure"
+        }
+      ],
+      "components": [
+        {
+          "title": "Keybearer",
+          "purpose": "hold a key in the multisig and sign according to policies.",
+          "domains": [
+            "Multisig Funds"
+          ],
+          "accountabilities": [
+            "holding only one key and not loosing/revealing it.",
+            "reporting on lost or revealed key asap.",
+            "signing on proposals within short timeframe (hours and days, not weeks)."
+          ]
+        },
+        {
+          "name": "Bounty Policy",
+          "description": "Bounty is a reward for completing a properly defined Action or Project within a Circle. For simplicity, we will may call such Actions or Projects themselves a Bounties from now on.\r\n\r\nProperly defined bounty must specify the following attributes\r\n\r\n##### Title\r\n\r\nSuccinct name for the bounty.\r\n\r\nExample:\r\n> Implement Basic Token Governance UI\r\n\r\n##### Scope\r\n\r\nA list of specific things which should be done to deliver the bounty. These could be seen as requirements to verify/review the bounty against.\r\n\r\n##### Deliverables\r\n\r\nArtifacts produced as the result of this bounty. Something that could be verified/reviewed. Some examples: updated code, deployment made, blog post published, public event conducted etc\r\n\r\n##### Funding Circle\r\n\r\nThe Circle to fund this bounty\r\n\r\n##### Bounty owner/gardener\r\n\r\nThe Role who is responsible for the bounty. The Role should belong to Funding Circle.\r\n\r\n##### Gain for the Role\r\n\r\nHow the completion of this bounty helps to pursue the Role's purpose.\r\n\r\n##### Size\r\n\r\nSize of the bounty.\r\n\r\nWe use t-shirt sizes:\r\n\r\n* size-XS: 200 DAI\r\n* size-S: 350 DAI\r\n* size-M: 550 DAI\r\n* size-L: 900 DAI\r\n* size-XL: 1400 DAI\r\n\r\n#### Who can create a new bounty\r\n\r\nAny Role within the Organization. People without Roles may also propose a bounty on behalf of some Role.",
+          "type": "policy"
+        }
+      ],
+      "instructions": [
+        {
+          "name": "Create a Bounty on Github",
+          "steps": [
+            {
+              "name": "Upload Bounty Template on Github",
+              "description": "Open your github repository and save the template file inside the folder: /.github. You can alter the text and instructions to your desire.\r\n\r\nDownload File: [ISSUE_TEMPLATE.md]()",
+              "type": "step"
+            },
+            {
+              "name": "Create Bounty Labels in GitHub",
+              "description": "To easily size your bounty you can add new labels as seen here. They are defined according to the “Bounty Policy”.\r\n\r\n![label gif](https://s6.gifyu.com/images/Create-github-labels.gif)",
+              "type": "step"
+            },
+            {
+              "name": "Create an Issue in Your Repository",
+              "description": "![image alt](https://s6.gifyu.com/images/Create-BountyIssue.gif)\r\n\r\nOnce the issue is created you can find under “Labels” your created bounty sizes of Step 2.",
+              "type": "step"
+            }
+          ],
+          "tool": {
+            "name": "github",
+            "description": "",
+            "link": "https://github.githubassets.com/favicons/favicon-dark.svg",
+            "type": "tool"
+          }
+        },
+        {
+          "name": "Submit Bounty via Google Forms",
+          "steps": [
+            {
+              "name": "Create a Bounty Proposal",
+              "description": "To keep track of every new bounty proposed form needs to be filled out. Later in Step C the form auto announces the newly created bounty on the official communication channel of the organisation.\r\n\r\n![](https://i.imgur.com/wyXeNGw.png)",
+              "type": "step"
+            }
+          ],
+          "tool": {
+            "name": "Google Forms",
+            "description": "",
+            "link": "https://www.google.com/forms/about/",
+            "type": "tool"
+          }
+        },
+        {
+          "name": "Auto Announce on Slack",
+          "steps": [
+            {
+              "name": "Create a Bounty Proposal",
+              "description": "https://gifyu.com/",
+              "type": "step"
+            }
+          ],
+          "tool": {
+            "name": "Slack",
+            "description": "",
+            "link": "https://www.slack.com",
+            "type": "tool"
+          }
+        }
+      ],
+      "examples": "no examples given"
+    }
   ]
 }
