@@ -23,10 +23,18 @@
       "title": "Role",
       "type": "object",
       "properties": {
-        "title": "string",
-        "purpose": "string",
-        "domains": "array",
-        "accountabilities": "array"
+        "title": {
+          "type": "string"
+        },
+        "purpose": {
+          "type": "string"
+        },
+        "domains": {
+          "type": "array"
+        },
+        "accountabilities": {
+          "type": "array"
+        }
       },
       "required": [
         "title",
@@ -36,23 +44,27 @@
     },
     "element": {
       "$id": "#root/element",
+      "title": "Element",
       "type": "object",
       "properties": {
-        "name": "string",
-        "description": "string",
-        "url": "array",
+        "description": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "array"
+        },
         "type": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "enum": [
-              "value",
-              "policy",
-              "tool",
-              "structure",
-              "step"
-            ]
-          }
+          "type": "string",
+          "enum": [
+            "value",
+            "policy",
+            "tool",
+            "structure",
+            "step"
+          ]
         }
       },
       "required": [
@@ -69,7 +81,9 @@
     "summary",
     "addoptionRequirements",
     "components",
-    "instructions"
+    "instructions",
+    "author",
+    "authorWallet"
   ],
   "properties": {
     "id": {
@@ -113,10 +127,14 @@
       "type": "array",
       "items": [
         {
-          "$ref": "#/definitions/element"
-        },
-        {
-          "$ref": "#/definitions/role"
+          "anyOf": [
+            {
+              "$ref": "#/definitions/element"
+            },
+            {
+              "$ref": "#/definitions/role"
+            }
+          ]
         }
       ]
     },
@@ -151,6 +169,13 @@
     },
     "examples": {
       "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "authorWallet": {
+      "type": "string",
+      "pattern": "^0x[a-fA-F0-9]{40}$"
     }
   }
 }

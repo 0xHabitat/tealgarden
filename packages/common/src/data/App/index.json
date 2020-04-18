@@ -144,7 +144,7 @@
   ],
   "processes": [
     {
-      "id": "bla123",
+      "id": "max1587221241",
       "title": "Bounty Rewards",
       "categories": [
         "Payment & Incentives",
@@ -248,7 +248,9 @@
           }
         }
       ],
-      "examples": "no examples given"
+      "examples": "no examples given",
+      "author": "max@deora.earth",
+      "authorWallet": "0x5B4dF17CA5A3339D722028a585582693742E5B5a"
     }
   ]
 }
