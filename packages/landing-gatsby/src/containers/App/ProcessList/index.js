@@ -1,19 +1,112 @@
 import React from 'react';
 import 'rc-tabs/assets/index.css';
 import Container from 'common/src/components/UI/Container';
-import { SectionWrapper, CardBG } from './processList.style';
-import ProcessListItem from '../ProcessListItem';
+import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from 'gatsby';
+import Text from 'common/src/components/Text';
+import Heading from 'common/src/components/Heading';
+import Box from 'common/src/components/Box';
+import ListItemWrapper, {
+  SectionWrapper,
+  CardBg,
+  Icon,
+  IconWrapper,
+  ContentWrapper,
+} from './processList.style';
 
-const ProcessList = () => {
+const ProcessList = ({
+  title,
+  description,
+  icon1,
+  icon2,
+  ListElementWrapper,
+}) => {
+  const Data = useStaticQuery(graphql`
+    query {
+      appJson {
+        processes {
+          id
+          title
+          summary {
+            abstract
+          }
+        }
+      }
+    }
+  `);
   return (
     <SectionWrapper>
       <Container>
-        <CardBG>
-          <ProcessListItem />
-        </CardBG>
+        <CardBg>
+          <Box>
+            {Data.appJson.processes.map((processes, index) => (
+              <ListItemWrapper {...ListElementWrapper} key={index}>
+                <IconWrapper className="icon__wrapper">
+                  <Icon src="#" {...icon1}>
+                    {' '}
+                    img{' '}
+                  </Icon>
+                  <p>>>></p>
+                  <Icon src="#" {...icon2}>
+                    {' '}
+                    img{' '}
+                  </Icon>
+                </IconWrapper>
+                <ContentWrapper className="content__wrapper">
+                  <Heading
+                    {...title}
+                    content={Data.appJson.processes[index].title}
+                  />
+                  <Text
+                    {...description}
+                    content={
+                      Data.appJson.processes[index].summary.abstract.substr(
+                        0,
+                        100
+                      ) + '...'
+                    }
+                  />
+                </ContentWrapper>
+              </ListItemWrapper>
+            ))}
+          </Box>
+        </CardBg>
       </Container>
     </SectionWrapper>
   );
+};
+
+ProcessList.propTypes = {
+  icon1: PropTypes.object,
+  icon2: PropTypes.object,
+  description: PropTypes.object,
+  title: PropTypes.object,
+  ListElementWrapper: PropTypes.object,
+};
+
+ProcessList.defaultProps = {
+  icon1: {
+    width: '74px',
+    height: '74px',
+    pr: '15px',
+  },
+  icon2: {
+    width: '74px',
+    height: '74px',
+    pl: '15px',
+  },
+  description: {
+    mt: '0px',
+    width: '70%',
+    textOverflow: 'ellipsis',
+  },
+  title: {
+    mb: '0px',
+  },
+  ListElementWrapper: {
+    borderbottom: '1px solid',
+    borderColor: 'rgba(0,0,0,0.102)',
+  },
 };
 
 export default ProcessList;
