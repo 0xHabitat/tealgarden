@@ -65,7 +65,7 @@ Newsletter.defaultProps = {
   sectionWrapper: {},
   textArea: {
     mb: ['40px', '40px', '40px', '0', '0'],
-    pr: ['0', '0', '0', '80px', '10px'],
+    pr: ['0', '0', '80', '80px', '10px'],
   },
   title: {
     fontSize: ['18px', '20px', '22px', '24px', '26px'],
@@ -81,7 +81,7 @@ Newsletter.defaultProps = {
     fontWeight: '400',
     color: '#091632',
     lineHeight: '1.7',
-    maxWidth: '70%',
+    maxWidth: '70%'[('100%', '70%')],
     mb: 0,
     textAlign: ['center', 'center', 'center', 'left', 'left'],
   },

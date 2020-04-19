@@ -3,10 +3,10 @@ import styled from 'styled-components';
 const SectionWrapper = styled.section`
   padding: 180px 0 0px 0;
   @media (max-width: 990px) {
-    padding: 80px 0 40px 0;
+    padding: 50px 0 50px 0;
   }
   @media (max-width: 575px) {
-    padding: 60px 0 20px 0;
+    padding: 30px 0 40px 0;
   }
 
   @keyframes ScaleInUp {
@@ -31,7 +31,7 @@ const SectionWrapper = styled.section`
     }
     .rc-tabs-nav-container {
       @media (max-width: 767px) {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
       }
       &:after {
         position: absolute;
@@ -98,17 +98,16 @@ const SectionWrapper = styled.section`
         }
         @media (max-width: 1199px) {
           font-size: 16px;
-          padding: 0 0 20px 0;
           min-width: 170px;
         }
         @media (max-width: 990px) {
           min-width: auto;
-          padding: 0 20px 15px 20px;
+          padding: 0 10px 0px 10px;
         }
         @media (max-width: 767px) {
           font-size: 14px;
           svg {
-            width: 20px;
+            width: 40px;
           }
         }
       }
@@ -117,7 +116,7 @@ const SectionWrapper = styled.section`
       .rc-tabs-tabpane {
         overflow: hidden;
         &.rc-tabs-tabpane-active {
-          animation: 0.7s ScaleInUp;
+          animation: 0.4s;
         }
         > img {
           max-width: 100%;

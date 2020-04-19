@@ -118,7 +118,7 @@ PaymentSection.defaultProps = {
     zIndex: '1',
   },
   imageArea: {
-    width: [0, 0, '52%', '45%', '30%'],
+    width: [1, 1, '52%', '45%', '30%'],
     flexBox: true,
   },
   imageWrapper: {
