@@ -144,7 +144,7 @@
   ],
   "processes": [
     {
-      "id": "victor1587228364",
+      "id": 1,
       "title": "Regular Video Meetings",
       "categories": [
         "Meetings"
@@ -245,7 +245,7 @@
       "author": "victor@deora.earth",
       "authorWallet": "0xD2FA59811af055e0e94D570EA7F9800c0E5C0428"
     },{
-      "id": "max1587221241",
+      "id": 2,
       "title": "Bounty Rewards",
       "categories": [
         "Payment & Incentives",

@@ -16,19 +16,16 @@ const ProcessListItem = ({
   icon2,
   SectionWrapper,
 }) => {
-  {
-    /* const Data = useStaticQuery(graphql`
+  const Data = useStaticQuery(graphql`
     query {
       appJson {
         processes {
           id
           title
-          categories
         }
       }
     }
-  `); */
-  }
+  `);
 
   return (
     <ListItemWrapper {...SectionWrapper}>
