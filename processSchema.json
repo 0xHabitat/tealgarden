@@ -95,6 +95,23 @@
     "categories": {
       "$ref": "#/definitions/category"
     },
+    "icons": {
+      "type": "object",
+      "required": [
+        "startIconUrl",
+        "endIconUrl"
+      ],
+      "properties": {
+        "startIconUrl": {
+          "type": "string",
+          "pattern": "^(https?:\\\/\\\/)?([\\w\\-])+\\.{1}([a-zA-Z]{2,63})([\\\/\\w-]*)*\\\/?\\??([^#\\n\\r]*)?#?([^\\n\\r]*)$"
+        },
+        "endIconUrl": {
+          "type": "string",
+          "pattern": "^(https?:\\\/\\\/)?([\\w\\-])+\\.{1}([a-zA-Z]{2,63})([\\\/\\w-]*)*\\\/?\\??([^#\\n\\r]*)?#?([^\\n\\r]*)$"
+        }
+      }
+    },
     "summary": {
       "type": "object",
       "required": [

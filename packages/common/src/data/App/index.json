@@ -149,6 +149,10 @@
       "categories": [
         "Meetings"
       ],
+      "icons": {
+        "startIconUrl": "https://335wvf48o1332cksy23mw1pj-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/Jitsi-favicon-196-50x50.png",
+        "endIconUrl": "https://www.gstatic.com/calendar/images/dynamiclogo/2x/cal_19.png"
+      },
       "summary": {
         "abstract": "Regular & inclusive meetings enable a closer communication of team members and allows governance processes to happen. The governance process of a team is essential and enables further actions to be initiated. Defining, amending, electing & removing roles, circles or policies are all done during a governance meeting. Additional tactical meetings, help circle members to share metrics, progress in projects or handle tensions & ask for help from peers.\r\n\r\nWith a working meeting architecture, teams avoid intransparent structures & destructive habits. No more meetings behind closed doors. Where hierarchical organizations fail, this process ensures a open & inclusive environment to document progress, achievements & mediate tensions.\r\n\r\nThe Secretary of the group is responsible to schedule meetings & invite other members to enact the governance & tactical processes. A Facilitator is guiding through the meeting & ensures all participants stick to the policies.\r\n\r\nAll other team members are invited via a calendar tool of choice. By using a video-conferencing tool, partners working from home or remote locations can easily join & interact.",
         "benefits": [
@@ -253,6 +257,10 @@
         "Commitment: Working Hours and Flexibility",
         "Crypto"
       ],
+      "icons": {
+        "startIconUrl": "https://github.githubassets.com/favicons/favicon-dark.png",
+        "endIconUrl": "https://a.slack-edge.com/80588/marketing/img/meta/favicon-32.png"
+      },
       "summary": {
         "abstract": "Bounties are an alternative to a monthly or weekly payout schedule to organisation members. They are payed out the moment after a set task has been done successfully. Bounties combine task management and incentives. They promote the autonomy of members and their respective roles by allowing them to create new bounties or fulfill existing ones. \r\n\r\nBounties allow an agile process of **\"sense & respond\"** within self-managed teams. Once a tension or opportunity is sensed and alligned with the purpose + current strategies of the organisation bounties can be created and tackled immediately. They are announced via the official communication channels for objections, clarification or support. \r\n\r\nThey incentivize creative bounty creators (bounty gardener) and motivated bounty hunters (bounty worker) alike.\r\n\r\nThe given process gives an exemplary insight about the structure, rules and parameters that are used in proven in our organisation. See **\"Bounty Policy\"** under **\"Adoption Requirements\"** for more info.",
         "benefits": [
