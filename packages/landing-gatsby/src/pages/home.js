@@ -3,11 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 import { Modal } from '@redq/reuse-modal';
 import { appTheme } from 'common/src/theme/app';
-import {
-  GlobalStyle,
-  AppWrapper,
-  ConditionWrapper,
-} from '../containers/App/app.style';
+import { GlobalStyle, AppWrapper } from '../containers/App/app.style';
 import { ResetCSS } from 'common/src/assets/css/style';
 import Navbar from '../containers/App/Navbar';
 import Newsletter from '../containers/App/Newsletter';
@@ -56,7 +52,7 @@ export default () => {
         <AppWrapper>
           <Navbar />
           <Content />
-          <Newsletter />
+          {/* <Newsletter /> */}
           <SupportBlock />
           <Footer />
         </AppWrapper>

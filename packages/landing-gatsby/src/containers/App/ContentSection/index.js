@@ -69,11 +69,10 @@ Content.defaultProps = {
   col: {
     pr: '15px',
     pl: '15px',
-    width: ['100%', '100%', '50%', '44%', '44%'],
-    mt: '-90px',
+    width: ['100%', '100%', '100%', '100%', '80%'],
   },
   Sidebar: {
-    width: ['0%', '0%', '43%', '35%', '52%'],
+    width: ['0%', '0%', '0%', '0%', '20%'],
     ml: 'auto',
   },
   title: {
@@ -81,10 +80,10 @@ Content.defaultProps = {
       'Discover Processes and tools for self-managed and distributed teams',
     fontSize: ['18px', '18px', '18px', '24px', '26px'],
     fontWeight: '700',
+    width: ['100%', '100%', '100%', '80%', '60%'],
     color: '#091632',
     letterSpacing: '1.2px',
     lineHeight: '32px',
-    mb: '10px',
     mt: '10px',
   },
   sidebarComponent: {
