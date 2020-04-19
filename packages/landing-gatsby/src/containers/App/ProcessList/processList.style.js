@@ -110,7 +110,7 @@ const ContentWrapper = styled.div`
 `;
 
 // Tool Icons
-const Icon = styled.image`
+const Icon = styled.img`
   ${width}
   ${space}
   ${display}
