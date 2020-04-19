@@ -23,12 +23,18 @@ const ProcessList = ({
 }) => {
   const Data = useStaticQuery(graphql`
     query {
-      appJson {
-        processes {
-          id
-          title
-          summary {
-            abstract
+      allProcessesJson(limit: 10) {
+        edges {
+          node {
+            id
+            summary {
+              abstract
+            }
+            icons {
+              endIconUrl
+              startIconUrl
+            }
+            title
           }
         }
       }
@@ -39,7 +45,7 @@ const ProcessList = ({
       <Container>
         <CardBg>
           <Box>
-            {Data.appJson.processes.map((processes, index) => (
+            {Data.allProcessesJson.edges.map((process, index) => (
               <ListItemWrapper {...ListElementWrapper} key={index}>
                 <IconWrapper className="icon__wrapper">
                   <Icon src="#" {...icon1}>
@@ -53,17 +59,11 @@ const ProcessList = ({
                   </Icon>
                 </IconWrapper>
                 <ContentWrapper className="content__wrapper">
-                  <Heading
-                    {...title}
-                    content={Data.appJson.processes[index].title}
-                  />
+                  <Heading {...title} content={process.node.title} />
                   <Text
                     {...description}
                     content={
-                      Data.appJson.processes[index].summary.abstract.substr(
-                        0,
-                        100
-                      ) + '...'
+                      process.node.summary.abstract.substr(0, 100) + '...'
                     }
                   />
                 </ContentWrapper>
