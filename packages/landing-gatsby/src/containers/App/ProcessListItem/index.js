@@ -22,11 +22,17 @@ const ProcessListItem = ({
         processes {
           id
           title
+          summary {
+            abstract
+          }
         }
       }
     }
   `);
-  console.log('data: ', Data);
+  console.log(
+    'data: ',
+    Data.appJson.processes[1].summary.abstract.replace(/(.{100})..+/, '$1…')
+  );
   return (
     <ListItemWrapper {...SectionWrapper}>
       <IconWrapper className="icon__wrapper">
@@ -39,10 +45,11 @@ const ProcessListItem = ({
         </Icon>
       </IconWrapper>
       <ContentWrapper className="content__wrapper">
-        <ProcessTitle {...title}>Data.appJson.processes.title</ProcessTitle>
+        <ProcessTitle {...title}>
+          {Data.appJson.processes[0].title}
+        </ProcessTitle>
         <ProcessDescription {...description}>
-          This is the longer process descirption which descripes the Process in
-          a short way.
+          {Data.appJson.processes[0].summary.abstract.substr(0, 100) + '...'}
         </ProcessDescription>
       </ContentWrapper>
     </ListItemWrapper>
@@ -71,6 +78,7 @@ ProcessListItem.defaultProps = {
   description: {
     mt: '0px',
     width: '75%',
+    textOverflow: 'ellipsis',
   },
   title: {
     mb: '0px',
