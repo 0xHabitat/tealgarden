@@ -26,7 +26,7 @@ const ProcessListItem = ({
       }
     }
   `);
-
+  console.log('data: ', Data);
   return (
     <ListItemWrapper {...SectionWrapper}>
       <IconWrapper className="icon__wrapper">
@@ -39,7 +39,7 @@ const ProcessListItem = ({
         </Icon>
       </IconWrapper>
       <ContentWrapper className="content__wrapper">
-        <ProcessTitle {...title}>This is the Process Title</ProcessTitle>
+        <ProcessTitle {...title}>Data.appJson.processes.title</ProcessTitle>
         <ProcessDescription {...description}>
           This is the longer process descirption which descripes the Process in
           a short way.

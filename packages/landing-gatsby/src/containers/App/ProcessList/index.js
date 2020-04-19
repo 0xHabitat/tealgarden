@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import 'rc-tabs/assets/index.css';
 import Container from 'common/src/components/UI/Container';
 import { SectionWrapper, CardBG } from './processList.style';
-import ProcessListItem from 'common/src/components/ProcessListItem';
+import ProcessListItem from '../ProcessListItem';
 
 const ProcessList = () => {
   return (
