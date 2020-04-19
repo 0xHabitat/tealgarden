@@ -1,5 +1,4 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import NavbarWrapper from 'common/src/components/Navbar';
 import Button from 'common/src/components/Button';
@@ -18,16 +17,8 @@ const CloseModalButton = () => (
     icon={<i className="flaticon-plus-symbol" />}
   />
 );
-const CloseModalButtonAlt = () => (
-  <Button
-    className="modalCloseBtn alt"
-    variant="fab"
-    onClick={() => closeModal()}
-    icon={<i className="flaticon-plus-symbol" />}
-  />
-);
 
-const Navbar = ({ navbarStyle, logoStyle, navElement }) => {
+const Navbar = ({ navbarStyle, logoStyle }) => {
   // Authentication modal handler
   const handleLoginModal = () => {
     openModal({
@@ -51,21 +42,37 @@ const Navbar = ({ navbarStyle, logoStyle, navElement }) => {
     });
   };
 
-  const Data = useStaticQuery(graphql`
-    query {
-      appJson {
-        menuItems {
-          label
-          path
-          offset
-        }
-      }
-    }
-  `);
-
   return (
     <NavbarWrapper {...navbarStyle}>
       <Divider>
+        <Container>
+          <Logo
+            href="#"
+            logoSrc={LogoImage}
+            title="Teal.Garden by Deora"
+            logoStyle={logoStyle}
+          />
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <a href="#!" style={{ color: '#091632', fontWeight: '600' }}>
+              {' '}
+              Home
+            </a>
+            <a href="#!" style={{ color: '#091632', fontWeight: '600' }}>
+              {' '}
+              About
+            </a>
+            <a href="#!" style={{ color: '#091632', fontWeight: '600' }}>
+              {' '}
+              Blog
+            </a>
+            <Button
+              className="icon"
+              onClick={handleLoginModal}
+              icon={<i className="flaticon-user" />}
+              aria-label="login"
+            />
+          </div>
+        </Container>
         <svg
           width="2500"
           height="30"
@@ -87,34 +94,6 @@ const Navbar = ({ navbarStyle, logoStyle, navElement }) => {
           />
         </svg>
       </Divider>
-      <Container>
-        <Logo
-          href="#"
-          logoSrc={LogoImage}
-          title="Teal.Garden by Deora"
-          logoStyle={logoStyle}
-        />
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <a href="#!" style={{ color: '#091632', fontWeight: '600' }}>
-            {' '}
-            Home
-          </a>
-          <a href="#!" style={{ color: '#091632', fontWeight: '600' }}>
-            {' '}
-            About
-          </a>
-          <a href="#!" style={{ color: '#091632', fontWeight: '600' }}>
-            {' '}
-            Blog
-          </a>
-          <Button
-            className="icon"
-            onClick={handleLoginModal}
-            icon={<i className="flaticon-user" />}
-            aria-label="login"
-          />
-        </div>
-      </Container>
     </NavbarWrapper>
   );
 };
@@ -133,7 +112,7 @@ Navbar.defaultProps = {
   },
   logoStyle: {
     pt: '3px',
-    width: ['200px', '240px'],
+    width: ['200px', '180px'],
   },
   navElement: {
     color: '#091632',

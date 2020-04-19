@@ -3,10 +3,10 @@ import styled from 'styled-components';
 export const Sun = styled.div`
   width: 350px;
   height: 350px;
-  position: absolute;
+  position: fixed;
   display: block;
-  top: -50%;
-  left: -8%;
+  top: -15%;
+  left: -5%;
   z-index: -2;
   background-color: #ffde00;
   border-radius: 50%;

@@ -21,6 +21,8 @@ import {
 
 // FeatureBlock wrapper style
 const ListItemWrapper = styled.div`
+    margin-top: 5px;
+    margin-bottom: 5px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -99,39 +101,5 @@ const Icon = styled.image`
   ${space}
 `;
 
-// Process title
-const ProcessTitle = styled.h1`
-  ${width}
-  ${space}
-  ${textAlign}
-  ${display}
-  ${width}
-  ${height}
-  ${alignItems}
-  ${justifyContent}
-  ${position}
-  ${color}
-  ${space}
-  ${overflow}
-  ${fontSize}
-`;
-
-//Process description
-const ProcessDescription = styled.p`
-  ${width}
-  ${space}
-  ${textAlign}
-  ${display}
-  ${width}
-  ${height}
-  ${alignItems}
-  ${justifyContent}
-  ${position}
-  ${color}
-  ${space}
-  ${overflow}
-  ${fontSize}
-`;
-
-export { IconWrapper, ContentWrapper, Icon, ProcessTitle, ProcessDescription };
+export { IconWrapper, ContentWrapper, Icon };
 export default ListItemWrapper;

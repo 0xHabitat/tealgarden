@@ -141,5 +141,225 @@
       "name": "Johann",
       "designation": "DAO Member"
     }
+  ],
+  "processes": [
+    {
+      "id": "victor1587228364",
+      "title": "Regular Video Meetings",
+      "categories": [
+        "Meetings"
+      ],
+      "icons": {
+        "startIconUrl": "https://335wvf48o1332cksy23mw1pj-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/Jitsi-favicon-196-50x50.png",
+        "endIconUrl": "https://www.gstatic.com/calendar/images/dynamiclogo/2x/cal_19.png"
+      },
+      "summary": {
+        "abstract": "Regular & inclusive meetings enable a closer communication of team members and allows governance processes to happen. The governance process of a team is essential and enables further actions to be initiated. Defining, amending, electing & removing roles, circles or policies are all done during a governance meeting. Additional tactical meetings, help circle members to share metrics, progress in projects or handle tensions & ask for help from peers.\r\n\r\nWith a working meeting architecture, teams avoid intransparent structures & destructive habits. No more meetings behind closed doors. Where hierarchical organizations fail, this process ensures a open & inclusive environment to document progress, achievements & mediate tensions.\r\n\r\nThe Secretary of the group is responsible to schedule meetings & invite other members to enact the governance & tactical processes. A Facilitator is guiding through the meeting & ensures all participants stick to the policies.\r\n\r\nAll other team members are invited via a calendar tool of choice. By using a video-conferencing tool, partners working from home or remote locations can easily join & interact.",
+        "benefits": [
+          "A transparent meeting system**; everyone is involved in the regular meetings, can contribute & join the discourse.",
+          "A consistent meeting system**; everyone can share progress & achievements, get's updates from partners.",
+          "A productive meeting system**; everyone can share views & reactions. Tensions get attention and integrated."
+        ]
+      },
+      "addoptionRequirements": [
+        {
+          "name": "Holacracy Constitution",
+          "description": "the organization needs to have adopted the constitution V4.1 or higher",
+          "link": "https://www.holacracy.org/constitution",
+          "type": "structure"
+        },
+        {
+          "name": "access to online calendars and video-conferencing software",
+          "description": "Members of the organization should have access to online calendars and video-conferencing software.",
+          "type": "structure"
+        }
+      ],
+      "components": [
+        {
+          "title": "Secretary",
+          "purpose": "Steward and stabilize the Circle’s formal records and record-keeping process.",
+          "domains": [
+            "Calendar",
+            "All constitutionally-required records of the Circle"
+          ],
+          "accountabilities": [
+            "Capturing and publishing the outputs of the Circle’s required meetings, and maintaining a compiled view of the Circle’s current Governance, checklist items, and metrics",
+            "Interpreting Governance and the Constitution upon request",
+            "Scheduling the Circle’s required meetings, and notifying all Core Circle Members of scheduled times and locations",
+            "sending out empty meeting agenda before the tactical calls, so people can fill in the blanks and be prepared",
+            "inviting all roles in the calendar events",
+            "sharing write access to the calendar with secretaries of sub-circles"
+          ]
+        },
+        {
+          "title": "Facilitator",
+          "purpose": "Circle governance and operational practices aligned with the Constitution.",
+          "domains": [],
+          "accountabilities": [
+            "Facilitating the Circle’s constitutionally-required meetings",
+            "Auditing the meetings and records of Sub-Circles as needed, and declaring a Process Breakdown upon discovering a pattern of behavior that conflicts with the rules of the Constitution"
+          ]
+        }
+      ],
+      "instructions": [
+        {
+          "name": "Video-Conferencing using Jitsi Meet",
+          "steps": [
+            {
+              "name": "Visit: `meet.jit.si`",
+              "description": "Add your desired meeting room name & press GO\r\n\r\n![create room](https://i.imgur.com/vad9puF.png =500x)",
+              "type": "step"
+            },
+            {
+              "name": "Copy URL",
+              "description": "You are immediately connected to the room and can start inviting others via the url:\r\n\r\n![url](https://i.imgur.com/ii5R7xX.png =400x)",
+              "type": "step"
+            }
+          ],
+          "tool": {
+            "name": "Jitsi Meet",
+            "description": "",
+            "link": "https://jitsi.org/jitsi-meet/",
+            "type": "tool"
+          }
+        },
+        {
+          "name": "Team-Calendar using Google Calendar",
+          "steps": [
+            {
+              "name": "Visit: `https://calendar.google.com/`",
+              "description": "Setup a team calendar and invite your partners to your regular meeting.\r\nAdd a new calendar, choose a name, short description and the desired timezone:\r\n![Setup](https://i.imgur.com/vPgAZmc.png =500x)",
+              "type": "step"
+            },
+            {
+              "name": "Invite via Mail",
+              "description": "Name the new meeting, set a time and add the video-conferencing link in the location field. Then, invite via mail**\r\n\r\n![](https://i.imgur.com/d15Gspm.png =500x)",
+              "type": "step"
+            }
+          ],
+          "tool": {
+            "name": "Google Calendar",
+            "description": "",
+            "link": "https://calendar.google.com/calendar/r",
+            "type": "tool"
+          }
+        }
+      ],
+      "examples": "* Possible Schedule:\r\n  ```\r\n  Tactical Meetings -- once a week\r\n  Governance Meetings -- bi-weekly\r\n  ```\r\n* Invite via Mail or via Public Chat:\r\n  ![](https://i.imgur.com/z4pkVDb.png)\r\n\r\n",
+      "author": "victor@deora.earth",
+      "authorWallet": "0xD2FA59811af055e0e94D570EA7F9800c0E5C0428"
+    },{
+      "id": "max1587221241",
+      "title": "Bounty Rewards",
+      "categories": [
+        "Payment & Incentives",
+        "To-dos",
+        "Commitment: Working Hours and Flexibility",
+        "Crypto"
+      ],
+      "icons": {
+        "startIconUrl": "https://github.githubassets.com/favicons/favicon-dark.png",
+        "endIconUrl": "https://a.slack-edge.com/80588/marketing/img/meta/favicon-32.png"
+      },
+      "summary": {
+        "abstract": "Bounties are an alternative to a monthly or weekly payout schedule to organisation members. They are payed out the moment after a set task has been done successfully. Bounties combine task management and incentives. They promote the autonomy of members and their respective roles by allowing them to create new bounties or fulfill existing ones. \r\n\r\nBounties allow an agile process of **\"sense & respond\"** within self-managed teams. Once a tension or opportunity is sensed and alligned with the purpose + current strategies of the organisation bounties can be created and tackled immediately. They are announced via the official communication channels for objections, clarification or support. \r\n\r\nThey incentivize creative bounty creators (bounty gardener) and motivated bounty hunters (bounty worker) alike.\r\n\r\nThe given process gives an exemplary insight about the structure, rules and parameters that are used in proven in our organisation. See **\"Bounty Policy\"** under **\"Adoption Requirements\"** for more info.",
+        "benefits": [
+          "instant incentivation via bounty payouts after finished task",
+          "fast sense & respond practice",
+          "transparent to-do management alligned with purpose & strategies",
+          "extra work -> extra money & recognitation"
+        ]
+      },
+      "addoptionRequirements": [
+        {
+          "name": "Holacracy Constitution",
+          "description": "the organization needs to have adopted the constitution V4.1 or higher",
+          "link": "https://www.holacracy.org/constitution",
+          "type": "structure"
+        }
+      ],
+      "components": [
+        {
+          "title": "Keybearer",
+          "purpose": "hold a key in the multisig and sign according to policies.",
+          "domains": [
+            "Multisig Funds"
+          ],
+          "accountabilities": [
+            "holding only one key and not loosing/revealing it.",
+            "reporting on lost or revealed key asap.",
+            "signing on proposals within short timeframe (hours and days, not weeks)."
+          ]
+        },
+        {
+          "name": "Bounty Policy",
+          "description": "Bounty is a reward for completing a properly defined Action or Project within a Circle. For simplicity, we will may call such Actions or Projects themselves a Bounties from now on.\r\n\r\nProperly defined bounty must specify the following attributes\r\n\r\n##### Title\r\n\r\nSuccinct name for the bounty.\r\n\r\nExample:\r\n> Implement Basic Token Governance UI\r\n\r\n##### Scope\r\n\r\nA list of specific things which should be done to deliver the bounty. These could be seen as requirements to verify/review the bounty against.\r\n\r\n##### Deliverables\r\n\r\nArtifacts produced as the result of this bounty. Something that could be verified/reviewed. Some examples: updated code, deployment made, blog post published, public event conducted etc\r\n\r\n##### Funding Circle\r\n\r\nThe Circle to fund this bounty\r\n\r\n##### Bounty owner/gardener\r\n\r\nThe Role who is responsible for the bounty. The Role should belong to Funding Circle.\r\n\r\n##### Gain for the Role\r\n\r\nHow the completion of this bounty helps to pursue the Role's purpose.\r\n\r\n##### Size\r\n\r\nSize of the bounty.\r\n\r\nWe use t-shirt sizes:\r\n\r\n* size-XS: 200 DAI\r\n* size-S: 350 DAI\r\n* size-M: 550 DAI\r\n* size-L: 900 DAI\r\n* size-XL: 1400 DAI\r\n\r\n#### Who can create a new bounty\r\n\r\nAny Role within the Organization. People without Roles may also propose a bounty on behalf of some Role.",
+          "type": "policy"
+        }
+      ],
+      "instructions": [
+        {
+          "name": "Create a Bounty on Github",
+          "steps": [
+            {
+              "name": "Upload Bounty Template on Github",
+              "description": "Open your github repository and save the template file inside the folder: /.github. You can alter the text and instructions to your desire.\r\n\r\nDownload File: [ISSUE_TEMPLATE.md]()",
+              "type": "step"
+            },
+            {
+              "name": "Create Bounty Labels in GitHub",
+              "description": "To easily size your bounty you can add new labels as seen here. They are defined according to the “Bounty Policy”.\r\n\r\n![label gif](https://s6.gifyu.com/images/Create-github-labels.gif)",
+              "type": "step"
+            },
+            {
+              "name": "Create an Issue in Your Repository",
+              "description": "![image alt](https://s6.gifyu.com/images/Create-BountyIssue.gif)\r\n\r\nOnce the issue is created you can find under “Labels” your created bounty sizes of Step 2.",
+              "type": "step"
+            }
+          ],
+          "tool": {
+            "name": "github",
+            "description": "",
+            "link": "https://github.githubassets.com/favicons/favicon-dark.svg",
+            "type": "tool"
+          }
+        },
+        {
+          "name": "Submit Bounty via Google Forms",
+          "steps": [
+            {
+              "name": "Create a Bounty Proposal",
+              "description": "To keep track of every new bounty proposed form needs to be filled out. Later in Step C the form auto announces the newly created bounty on the official communication channel of the organisation.\r\n\r\n![](https://i.imgur.com/wyXeNGw.png)",
+              "type": "step"
+            }
+          ],
+          "tool": {
+            "name": "Google Forms",
+            "description": "",
+            "link": "https://www.google.com/forms/about/",
+            "type": "tool"
+          }
+        },
+        {
+          "name": "Auto Announce on Slack",
+          "steps": [
+            {
+              "name": "Create a Bounty Proposal",
+              "description": "https://gifyu.com/",
+              "type": "step"
+            }
+          ],
+          "tool": {
+            "name": "Slack",
+            "description": "",
+            "link": "https://www.slack.com",
+            "type": "tool"
+          }
+        }
+      ],
+      "examples": "no examples given",
+      "author": "max@deora.earth",
+      "authorWallet": "0x5B4dF17CA5A3339D722028a585582693742E5B5a"
+    }
   ]
 }

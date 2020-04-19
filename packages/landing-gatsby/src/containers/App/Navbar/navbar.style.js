@@ -1,12 +1,9 @@
 import styled from 'styled-components';
 
 export const Divider = styled.div`
-  position: absolute;
-  display: block;
+  position: relative;
   width: 100%;
-  top: 7%;
-  left: 0%;
-  z-index: -1;
+  left: -16px;
 `;
 
 export const Container = styled.div`
@@ -14,6 +11,7 @@ export const Container = styled.div`
   margin-right: auto;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
   width: 100%;

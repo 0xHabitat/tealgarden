@@ -9,13 +9,12 @@ import { Icon } from 'react-icons-kit';
 import { ic_arrow_forward } from 'react-icons-kit/md/ic_arrow_forward';
 import { ExternalLink } from 'react-external-link';
 
-import NewsletterWrapper, { ContactFormWrapper } from './newsletter.style';
+import NewsletterWrapper from './newsletter.style';
 
 const Newsletter = ({
   sectionWrapper,
   textArea,
   buttonArea,
-  buttonStyle,
   title,
   description,
   btnStyleTwo,

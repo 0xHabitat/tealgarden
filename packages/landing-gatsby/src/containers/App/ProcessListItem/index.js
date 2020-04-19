@@ -1,10 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
+import Text from 'common/src/components/Text';
+import Heading from 'common/src/components/Heading';
+import Box from 'common/src/components/Box';
 import ListItemWrapper, {
   Icon,
-  ProcessTitle,
-  ProcessDescription,
   IconWrapper,
   ContentWrapper,
 } from './processListItem.style';
@@ -29,30 +30,32 @@ const ProcessListItem = ({
       }
     }
   `);
-  console.log(
-    'data: ',
-    Data.appJson.processes[1].summary.abstract.replace(/(.{100})..+/, '$1…')
-  );
   return (
-    <ListItemWrapper {...SectionWrapper}>
-      <IconWrapper className="icon__wrapper">
-        <Icon src="#" {...icon1}>
-          img
-        </Icon>
-        <p>>>></p>
-        <Icon src="#" {...icon2}>
-          img
-        </Icon>
-      </IconWrapper>
-      <ContentWrapper className="content__wrapper">
-        <ProcessTitle {...title}>
-          {Data.appJson.processes[0].title}
-        </ProcessTitle>
-        <ProcessDescription {...description}>
-          {Data.appJson.processes[0].summary.abstract.substr(0, 100) + '...'}
-        </ProcessDescription>
-      </ContentWrapper>
-    </ListItemWrapper>
+    <Box>
+      {Data.appJson.processes.map((processes, index) => (
+        <ListItemWrapper {...SectionWrapper} key={index}>
+          <IconWrapper className="icon__wrapper">
+            <Icon src="#" {...icon1}>
+              img
+            </Icon>
+            <p>>>></p>
+            <Icon src="#" {...icon2}>
+              img
+            </Icon>
+          </IconWrapper>
+          <ContentWrapper className="content__wrapper">
+            <Heading {...title} content={Data.appJson.processes[index].title} />
+            <Text
+              {...description}
+              content={
+                Data.appJson.processes[index].summary.abstract.substr(0, 100) +
+                '...'
+              }
+            />
+          </ContentWrapper>
+        </ListItemWrapper>
+      ))}
+    </Box>
   );
 };
 
@@ -77,7 +80,7 @@ ProcessListItem.defaultProps = {
   },
   description: {
     mt: '0px',
-    width: '75%',
+    width: '70%',
     textOverflow: 'ellipsis',
   },
   title: {

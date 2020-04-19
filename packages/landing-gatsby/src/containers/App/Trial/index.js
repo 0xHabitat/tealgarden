@@ -2,25 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Box from 'common/src/components/Box';
 import Text from 'common/src/components/Text';
-import Heading from 'common/src/components/Heading';
 import Button from 'common/src/components/Button';
 import Image from 'common/src/components/Image';
 import Container from 'common/src/components/UI/Container';
 
 import SectionWrapper from './trial.style';
 import VendorLogos from 'common/src/assets/image/app/vendor-logos.png';
-import { Link } from 'gatsby';
 import { ExternalLink } from 'react-external-link';
 
 const TrialSection = ({
   row,
-  title,
   description,
   textArea,
   imageArea,
   ImageOne,
   btnStyle,
-  outlineBtnStyle,
   buttonWrapper,
 }) => {
   return (

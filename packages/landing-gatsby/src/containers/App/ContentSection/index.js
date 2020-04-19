@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
 import Box from 'common/src/components/Box';
 import Heading from 'common/src/components/Heading';
 import FeatureBlock from 'common/src/components/FeatureBlock';
@@ -25,7 +24,7 @@ const Content = ({
             <FeatureBlock title={<Heading {...title} />} />
             <ProcessList />
           </Box>
-          <Box {...col} {...Sidebar}>
+          {/* <Box {...col} {...Sidebar}>
             <Box {...sidebarComponent}>
               <h5>Search in Categories</h5>
             </Box>
@@ -35,7 +34,7 @@ const Content = ({
             <Box {...sidebarComponent}>
               <h5>Story of the Week</h5>
             </Box>
-          </Box>
+          </Box> */}
         </Box>
       </Container>
     </Box>
@@ -52,7 +51,7 @@ Content.propTypes = {
 Content.defaultProps = {
   SectionWrapper: {
     as: 'section',
-    pt: '70px',
+    pt: '0px',
     pb: '80px',
     overflow: 'hidden',
   },
@@ -69,10 +68,10 @@ Content.defaultProps = {
   col: {
     pr: '15px',
     pl: '15px',
-    width: ['100%', '100%', '100%', '100%', '80%'],
+    width: ['100%', '100%', '100%', '100%', '100%'],
   },
   Sidebar: {
-    width: ['0%', '0%', '0%', '0%', '20%'],
+    width: ['0%', '0%', '0%', '0%', '0%'],
     ml: 'auto',
   },
   title: {
@@ -80,11 +79,10 @@ Content.defaultProps = {
       'Discover Processes and tools for self-managed and distributed teams',
     fontSize: ['18px', '18px', '18px', '24px', '26px'],
     fontWeight: '700',
-    width: ['100%', '100%', '100%', '80%', '60%'],
+    width: ['100%', '100%', '100%', '80%', '45%'],
     color: '#091632',
     letterSpacing: '1.2px',
     lineHeight: '32px',
-    mt: '10px',
   },
   sidebarComponent: {
     ml: 'auto',

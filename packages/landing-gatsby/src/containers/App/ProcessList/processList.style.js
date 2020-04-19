@@ -14,6 +14,7 @@ export const CardBG = styled.div`
   margin-left: -30px;
   padding: 10px;
   width: 100%;
+  min-height: 440px;
   background: #ffffff;
   border: 2px solid #091632;
   box-sizing: border-box;

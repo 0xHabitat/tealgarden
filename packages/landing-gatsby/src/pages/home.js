@@ -1,6 +1,5 @@
-import React, { useState, useEffect, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { ThemeProvider } from 'styled-components';
-import PropTypes from 'prop-types';
 import { Modal } from '@redq/reuse-modal';
 import { appTheme } from 'common/src/theme/app';
 import { GlobalStyle, AppWrapper } from '../containers/App/app.style';
@@ -13,35 +12,7 @@ import '@redq/reuse-modal/es/index.css';
 import SEO from '../components/seo';
 import Content from '../containers/App/ContentSection';
 
-function getSize() {
-  return {
-    innerHeight: window.innerHeight,
-    innerWidth: window.innerWidth,
-    outerHeight: window.outerHeight,
-    outerWidth: window.outerWidth,
-  };
-}
-
-function useWindowSize() {
-  let [windowSize, setWindowSize] = useState(getSize());
-
-  function handleResize() {
-    setWindowSize(getSize());
-  }
-
-  useEffect(() => {
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  return windowSize;
-}
-
 export default () => {
-  const size = process.browser && useWindowSize();
   return (
     <ThemeProvider theme={appTheme}>
       <Fragment>
@@ -52,7 +23,7 @@ export default () => {
         <AppWrapper>
           <Navbar />
           <Content />
-          {/* <Newsletter /> */}
+          <Newsletter />
           <SupportBlock />
           <Footer />
         </AppWrapper>
