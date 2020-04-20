@@ -56,7 +56,7 @@ const GlobalStyle = createGlobalStyle`
             margin: 35px 0;
             a {
               display: block;
-              color: #20201d;
+              color: #091632;
               font-size: 24px;
               font-weight: 400;
               transition: all 0.3s ease;
@@ -64,12 +64,12 @@ const GlobalStyle = createGlobalStyle`
                 font-size: 21px;
               }
               &:hover {
-                color: #1a73e8;
+                color: #82E3E3;
               }
             }
             &.is-current {
               a {
-                color: #1a73e8;
+                color: #091632;
                 position: relative;
                 &:before {
                   content: '';

@@ -53,6 +53,10 @@
 }
 .flaticon-user:before {
   content: '\f107';
+  color: #091632;
+}
+.flaticon-user:hover {
+  color: #82e3e3;
 }
 .flaticon-quotes:before {
   content: '\f108';

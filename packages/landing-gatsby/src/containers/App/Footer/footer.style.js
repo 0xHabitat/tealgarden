@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const FooterWrapper = styled.section`
+export const FooterWrapper = styled.section`
   padding: 50px 0 55px;
   @media (max-width: 480px) {
     padding: 60px 0 30px;
@@ -36,9 +36,18 @@ const FooterWrapper = styled.section`
   }
 `;
 
-const List = styled.ul``;
+export const Divider = styled.div`
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 35%;
+  left: 0%;
+  z-index: -1;
+`;
 
-const ListItem = styled.li`
+export const List = styled.ul``;
+
+export const ListItem = styled.li`
   a {
     color: rgba(52, 61, 72, 0.8);
     font-size: 14px;
@@ -52,7 +61,3 @@ const ListItem = styled.li`
     }
   }
 `;
-
-export { List, ListItem };
-
-export default FooterWrapper;

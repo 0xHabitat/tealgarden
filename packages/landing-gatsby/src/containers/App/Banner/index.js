@@ -5,14 +5,12 @@ import Image from 'gatsby-image';
 import Box from 'common/src/components/Box';
 import Text from 'common/src/components/Text';
 import Heading from 'common/src/components/Heading';
-import Button from 'common/src/components/Button';
 import Input from 'common/src/components/Input';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import ParticlesComponent from '../particles';
 import Container from 'common/src/components/UI/Container';
 import { BannerSquareShape } from '../app.style';
 import { ButtonWrapper, EmailInputWrapper, Sun } from './banner.style';
-import { ExternalLink } from 'react-external-link';
 
 const DomainSection = ({
   SectionWrapper,

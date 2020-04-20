@@ -4,7 +4,7 @@ import Box from 'common/src/components/Box';
 import Text from 'common/src/components/Text';
 import Logo from 'common/src/components/UIElements/Logo';
 import Container from 'common/src/components/UI/Container';
-import FooterWrapper from './footer.style';
+import { FooterWrapper, Divider } from './footer.style';
 import LogoImage from 'common/src/assets/image/app/deoraLogo.png';
 
 const Footer = ({
@@ -17,6 +17,28 @@ const Footer = ({
 }) => {
   return (
     <FooterWrapper>
+      <Divider>
+        <svg
+          width="2500"
+          height="30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 28.5H93.5L141.5 2H1439.5"
+            stroke="#091632"
+            stroke-width="2"
+          />
+          <line
+            x1="141"
+            y1="2"
+            x2="2500"
+            y2="2"
+            stroke="#091632"
+            stroke-width="2"
+          />
+        </svg>
+      </Divider>
       <Container>
         <Box {...colTwo} className="copyrightClass">
           <Logo
@@ -32,7 +54,7 @@ const Footer = ({
           </Box>
           <Box {...copyright} className="copyrightText">
             <Text
-              content="©2020 deora - created with &hearts; in Berlin"
+              content="developed with &hearts; in Berlin supported by a community arround the world."
               {...textStyle}
             />
           </Box>
@@ -70,8 +92,6 @@ Footer.defaultProps = {
     pl: ['15px', 0],
     pt: ['35px', '55px'],
     pr: ['15px', '15px', 0],
-    borderTop: '1px solid',
-    borderColor: 'rgba(0,0,0,0.102)',
     flexBox: true,
     flexWrap: 'wrap',
     width: ['100%'],

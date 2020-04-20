@@ -96,7 +96,8 @@ export const appTheme = {
   buttonStyles: {
     textButton: {
       border: 0,
-      color: colors.primary,
+      boxShadow: 'none',
+      color: colors.black,
       padding: 0,
       height: 'auto',
       backgroundColor: colors.transparent,

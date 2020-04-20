@@ -1,13 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Icon from 'react-icons-kit';
 import Tabs, { TabPane } from 'rc-tabs';
 import TabContent from 'rc-tabs/lib/TabContent';
 import ScrollableInkTabBar from 'rc-tabs/lib/ScrollableInkTabBar';
 import 'rc-tabs/assets/index.css';
-import Box from 'common/src/components/Box';
-import Text from 'common/src/components/Text';
-import Heading from 'common/src/components/Heading';
 import Image from 'common/src/components/Image';
 import Container from 'common/src/components/UI/Container';
 
