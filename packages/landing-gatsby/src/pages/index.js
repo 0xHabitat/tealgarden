@@ -20,6 +20,7 @@ import UpdateScreen from '../containers/App/UpdateScreen';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
 import Newsletter from '../containers/App/Newsletter';
 import TrialSection from '../containers/App/Trial';
+import CookieBanner from 'react-cookie-banner';
 import '@redq/reuse-modal/es/index.css';
 import SEO from '../components/seo';
 
@@ -58,6 +59,19 @@ export default () => {
     <ThemeProvider theme={appTheme}>
       <Fragment>
         <SEO title="The best processes for self-managed and distributed teams" />
+        <CookieBanner
+          styles={{
+            banner: { backgroundColor: '#FFDE00' },
+            message: {
+              fontWeight: 500,
+              fontFamily: 'poppins, sans-serif',
+              color: '#091632',
+            },
+          }}
+          message="Yes, we use cookies. To enhance the user experience."
+          onAccept={() => {}}
+          cookie="user-has-accepted-cookies"
+        />
         <Modal />
         <ResetCSS />
         <GlobalStyle />
