@@ -1,4 +1,4 @@
-# TealGarden :seedling: :sunny:
+# Teal.Garden :seedling: :sunny:
 
 ###### (a.k.a. SolarPunch)
 
