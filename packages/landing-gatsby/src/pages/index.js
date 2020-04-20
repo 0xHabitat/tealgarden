@@ -34,8 +34,7 @@ export default () => {
             },
           }}
           message="Yes, we use cookies. To enhance the user experience."
-          onAccept={() => {}}
-          cookie="user-has-accepted-cookies"
+          cookie="gatsby-gdpr-google-analytics"
         />
         <Modal />
         <ResetCSS />

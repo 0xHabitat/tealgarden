@@ -52,6 +52,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
             title="Teal.Garden by Deora"
             logoStyle={logoStyle}
           />
+          {/*
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <a href="#!" style={{ color: '#091632', fontWeight: '600' }}>
               {' '}
@@ -71,7 +72,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
               icon={<i className="flaticon-user" />}
               aria-label="login"
             />
-          </div>
+          </div> */}
         </Container>
         <svg
           width="2500"
