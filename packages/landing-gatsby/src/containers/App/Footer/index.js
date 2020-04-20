@@ -27,7 +27,7 @@ const Footer = ({
           <path
             d="M0 28.5H93.5L141.5 2H1439.5"
             stroke="#091632"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <line
             x1="141"
@@ -35,7 +35,7 @@ const Footer = ({
             x2="2500"
             y2="2"
             stroke="#091632"
-            stroke-width="2"
+            strokeWidth="2"
           />
         </svg>
       </Divider>
