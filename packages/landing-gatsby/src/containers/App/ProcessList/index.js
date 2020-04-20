@@ -51,13 +51,17 @@ const ProcessList = ({
                 <IconWrapper className="icon__wrapper">
                   <Icon
                     src={process.node.icons.startIconUrl}
-                    alt={process.node.title}
+                    alt={process.node.instructions[0].tool.name}
                     {...icon1}
                   />
                   <Text content=">>>" {...arrow} />
                   <Icon
                     src={process.node.icons.endIconUrl}
-                    alt={process.node.title}
+                    alt={
+                      process.node.instructions[
+                        process.node.instructions.length - 1
+                      ].tool.name
+                    }
                     {...icon2}
                   />
                 </IconWrapper>
