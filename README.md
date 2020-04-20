@@ -1,4 +1,4 @@
-# TealGarden :muscle: :sunny:
+# TealGarden :seedling: :sunny:
 
 ###### (a.k.a. SolarPunch)
 
