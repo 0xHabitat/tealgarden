@@ -31,7 +31,7 @@ const Input = ({
   };
 
   // add focus class
-  const handleOnFocus = event => {
+  const handleOnFocus = (event) => {
     setState({
       ...state,
       focus: true,
@@ -40,7 +40,7 @@ const Input = ({
   };
 
   // remove focus class
-  const handleOnBlur = event => {
+  const handleOnBlur = (event) => {
     setState({
       ...state,
       focus: false,
@@ -49,7 +49,7 @@ const Input = ({
   };
 
   // handle input value
-  const handleOnChange = event => {
+  const handleOnChange = (event) => {
     setState({
       ...state,
       value: event.target.value,
@@ -141,19 +141,25 @@ const Input = ({
 
     default:
       inputElement = (
-        <div className="field-wrapper">
+        <form
+          method="post"
+          action="https://lightmonk.deora.earth/subscription/form"
+          className="listmonk-form"
+        >
+          <input type="text" name="email" placeholder="E-mail" />
           <input
-            {...props}
-            id={htmlFor}
-            name={htmlFor}
-            type={inputType}
-            value={state.value}
-            onChange={handleOnChange}
-            onBlur={handleOnBlur}
-            onFocus={handleOnFocus}
+            type="checkbox"
+            name="l"
+            value="1b91ae57-2db7-4eda-973f-c32a0837a222"
+            id="1b91a"
+            className="checkbox"
           />
-          {icon && <span className="input-icon">{icon}</span>}
-        </div>
+          <label htmlFor="1b91a" className="lable">
+            {' '}
+            confirm newsletter subscription
+          </label>
+          <input type="submit" value="Subscribe" className="subscribeButton" />
+        </form>
       );
   }
 

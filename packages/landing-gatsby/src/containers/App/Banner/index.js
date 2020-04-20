@@ -5,19 +5,12 @@ import Image from 'gatsby-image';
 import Box from 'common/src/components/Box';
 import Text from 'common/src/components/Text';
 import Heading from 'common/src/components/Heading';
-import Button from 'common/src/components/Button';
 import Input from 'common/src/components/Input';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import ParticlesComponent from '../particles';
 import Container from 'common/src/components/UI/Container';
-import { Icon } from 'react-icons-kit';
-import { ic_arrow_forward } from 'react-icons-kit/md/ic_arrow_forward';
-import { BannerSquareShape, SunCircleShape } from '../app.style';
-import {
-  ButtonWrapper,
-  EmailInputWrapper,
-  Sun,
-} from './banner.style';
+import { BannerSquareShape } from '../app.style';
+import { ButtonWrapper, EmailInputWrapper, Sun } from './banner.style';
 
 const DomainSection = ({
   SectionWrapper,
@@ -26,13 +19,14 @@ const DomainSection = ({
   title,
   description,
   image,
-  imageArea,
-  btnStyleTwo,
-  btnStyle,
+  imageAreaMobile,
+  imageAreaDesktop,
 }) => {
   const Data = useStaticQuery(graphql`
     query {
-      appScreenshot: file(relativePath: { eq: "image/app/HeroScreenshot.png" }) {
+      appScreenshot: file(
+        relativePath: { eq: "image/app/HeroScreenshot.png" }
+      ) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid
@@ -49,6 +43,18 @@ const DomainSection = ({
       <BannerSquareShape />
       <Container>
         <Box {...row}>
+          <Box {...col} {...imageAreaMobile}>
+            <Box {...image}>
+              <Image
+                fluid={
+                  (Data.appScreenshot !== null) | undefined
+                    ? Data.appScreenshot.childImageSharp.fluid
+                    : {}
+                }
+                alt="Domain Image"
+              />
+            </Box>
+          </Box>
           <Box {...col}>
             <FeatureBlock
               title={<Heading {...title} />}
@@ -62,18 +68,9 @@ const DomainSection = ({
                 aria-label="email"
               />
             </EmailInputWrapper>
-            <ButtonWrapper>
-              <Button title="SIGN UP" {...btnStyle} />
-              <Button
-                {...btnStyle}
-                {...btnStyleTwo}
-                icon={<Icon icon={ic_arrow_forward} />}
-                title="SUBMIT PROCESS"
-                className="withoutBg"
-              />
-            </ButtonWrapper>
+            <ButtonWrapper></ButtonWrapper>
           </Box>
-          <Box {...col} {...imageArea}>
+          <Box {...col} {...imageAreaDesktop}>
             <Box {...image}>
               <Image
                 fluid={
@@ -127,8 +124,12 @@ DomainSection.defaultProps = {
     width: ['100%', '100%', '50%', '44%', '44%'],
     mt: '-90px',
   },
-  imageArea: {
-    width: ['0%', '0%', '43%', '35%', '52%'],
+  imageAreaMobile: {
+    width: ['100%', '100%', '0%', '0%', '0%'],
+    ml: 'auto',
+  },
+  imageAreaDesktop: {
+    width: ['0%', '0%', '48%', '50%', '52%'],
     ml: 'auto',
   },
   title: {
@@ -137,12 +138,13 @@ DomainSection.defaultProps = {
     fontWeight: '700',
     color: '#091632',
     letterSpacing: '1.2px',
-    lineHeight: '42px',
+    lineHeight: ['30px', '32px', '36x', '40px', '42px'],
     mb: '10px',
     mt: '160px',
   },
   description: {
-    content: 'Become part of the future of digital collaboration. Join our community of teal organisation architects.',
+    content:
+      'Become part of the future of digital collaboration. Join our community of teal organisation architects.',
     fontSize: '16px',
     color: '#343d48',
     lineHeight: '28px',

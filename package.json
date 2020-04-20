@@ -1,9 +1,9 @@
 {
-  "name": "react-next-landing",
-  "description": "Modern Multipurpose Landing Pages Template Using React, Next, Styled Components and so on. It also support Gatsby Static site generator ",
-  "version": "4.0.0",
+  "name": "teal.garden",
+  "description": "DISCOVER PROCESSES AND TOOLS FOR SELF-MANAGED AND DISTRIBUTED TEAMS ",
+  "version": "1.0.0",
   "private": true,
-  "author": "RedQ Team",
+  "author": "Deora",
   "license": "",
   "repository": {
     "type": "git",
@@ -64,6 +64,8 @@
     ]
   },
   "dependencies": {
-    "gatsby-plugin-google-analytics": "^2.2.2"
+    "gatsby-plugin-gdpr-cookies": "^1.0.7",
+    "react-cookie-banner": "^4.1.0",
+    "react-external-link": "^1.1.1"
   }
 }

@@ -11,7 +11,7 @@ const PartnerHistoryWrapper = styled.section`
     padding: 80px 0 60px;
   }
   @media (max-width: 990px) {
-    padding: 20px 0 120px;
+    padding: 80px 0 120px;
   }
   @media (max-width: 480px) {
     padding: 0px 0 60px;
@@ -22,7 +22,7 @@ const PartnerHistoryWrapper = styled.section`
       padding-right: 0px;
     }
     .reusecore__button {
-      transition: all 0.3s ease;
+      transition: all 0.9s ease-in;
       &:hover {
         opacity: 0.85;
       }
@@ -77,8 +77,8 @@ const CounterUpArea = styled.div`
     }
 
     &:hover {
-      border: 2px solid #82E3E3;
-      box-shadow: 2px 2px 0px #82E3E3;
+      border: 2px solid #82e3e3;
+      box-shadow: 2px 2px 0px #82e3e3;
     }
 
     img {
@@ -87,7 +87,7 @@ const CounterUpArea = styled.div`
         height: 80px;
       }
       @media (max-width: 990px) {
-        height: 50px;
+        height: 70px;
       }
     }
 

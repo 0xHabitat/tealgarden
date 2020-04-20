@@ -76,8 +76,8 @@ FeatureSection.propTypes = {
 FeatureSection.defaultProps = {
   // section header default style
   sectionHeader: {
-    mt: ['30px', '30px', '30px', '40px'],
-    mb: ['30px', '30px', '30px', '40px'],
+    mt: ['0px', '0px', '30px', '40px'],
+    mb: ['0px', '0px', '30px', '40px'],
   },
   // sub section default style
   sectionSubTitle: {
@@ -108,7 +108,7 @@ FeatureSection.defaultProps = {
   },
   // feature col default style
   col: {
-    width: [1, 1 / 2, 1 / 3, 1 / 3, 1 / 3],
+    width: [1, 1 / 1, 1 / 3, 1 / 3, 1 / 3],
   },
   // feature block wrapper default style
   blockWrapperStyle: {

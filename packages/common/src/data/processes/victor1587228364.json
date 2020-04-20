@@ -1,0 +1,106 @@
+{
+  "id": "victor1587228364",
+  "title": "Regular Video Meetings",
+  "categories": [
+    "Meetings"
+  ],
+  "icons": {
+    "startIconUrl": "https://335wvf48o1332cksy23mw1pj-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/Jitsi-favicon-196-50x50.png",
+    "endIconUrl": "https://www.gstatic.com/calendar/images/dynamiclogo/2x/cal_19.png"
+  },
+  "summary": {
+    "abstract": "Regular & inclusive meetings enable a closer communication of team members and allows governance processes to happen. The governance process of a team is essential and enables further actions to be initiated. Defining, amending, electing & removing roles, circles or policies are all done during a governance meeting. Additional tactical meetings, help circle members to share metrics, progress in projects or handle tensions & ask for help from peers.\r\n\r\nWith a working meeting architecture, teams avoid intransparent structures & destructive habits. No more meetings behind closed doors. Where hierarchical organizations fail, this process ensures a open & inclusive environment to document progress, achievements & mediate tensions.\r\n\r\nThe Secretary of the group is responsible to schedule meetings & invite other members to enact the governance & tactical processes. A Facilitator is guiding through the meeting & ensures all participants stick to the policies.\r\n\r\nAll other team members are invited via a calendar tool of choice. By using a video-conferencing tool, partners working from home or remote locations can easily join & interact.",
+    "benefits": [
+      "A transparent meeting system**; everyone is involved in the regular meetings, can contribute & join the discourse.",
+      "A consistent meeting system**; everyone can share progress & achievements, get's updates from partners.",
+      "A productive meeting system**; everyone can share views & reactions. Tensions get attention and integrated."
+    ]
+  },
+  "addoptionRequirements": [
+    {
+      "name": "Holacracy Constitution",
+      "description": "the organization needs to have adopted the constitution V4.1 or higher",
+      "link": "https://www.holacracy.org/constitution",
+      "type": "structure"
+    },
+    {
+      "name": "access to online calendars and video-conferencing software",
+      "description": "Members of the organization should have access to online calendars and video-conferencing software.",
+      "type": "structure"
+    }
+  ],
+  "components": [
+    {
+      "title": "Secretary",
+      "purpose": "Steward and stabilize the Circle’s formal records and record-keeping process.",
+      "domains": [
+        "Calendar",
+        "All constitutionally-required records of the Circle"
+      ],
+      "accountabilities": [
+        "Capturing and publishing the outputs of the Circle’s required meetings, and maintaining a compiled view of the Circle’s current Governance, checklist items, and metrics",
+        "Interpreting Governance and the Constitution upon request",
+        "Scheduling the Circle’s required meetings, and notifying all Core Circle Members of scheduled times and locations",
+        "sending out empty meeting agenda before the tactical calls, so people can fill in the blanks and be prepared",
+        "inviting all roles in the calendar events",
+        "sharing write access to the calendar with secretaries of sub-circles"
+      ]
+    },
+    {
+      "title": "Facilitator",
+      "purpose": "Circle governance and operational practices aligned with the Constitution.",
+      "domains": [],
+      "accountabilities": [
+        "Facilitating the Circle’s constitutionally-required meetings",
+        "Auditing the meetings and records of Sub-Circles as needed, and declaring a Process Breakdown upon discovering a pattern of behavior that conflicts with the rules of the Constitution"
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "name": "Video-Conferencing using Jitsi Meet",
+      "steps": [
+        {
+          "name": "Visit: `meet.jit.si`",
+          "description": "Add your desired meeting room name & press GO\r\n\r\n![create room](https://i.imgur.com/vad9puF.png =500x)",
+          "type": "step"
+        },
+        {
+          "name": "Copy URL",
+          "description": "You are immediately connected to the room and can start inviting others via the url:\r\n\r\n![url](https://i.imgur.com/ii5R7xX.png =400x)",
+          "type": "step"
+        }
+      ],
+      "tool": {
+        "name": "Jitsi Meet",
+        "description": "",
+        "link": "https://jitsi.org/jitsi-meet/",
+        "type": "tool"
+      }
+    },
+    {
+      "name": "Team-Calendar using Google Calendar",
+      "steps": [
+        {
+          "name": "Visit: `https://calendar.google.com/`",
+          "description": "Setup a team calendar and invite your partners to your regular meeting.\r\nAdd a new calendar, choose a name, short description and the desired timezone:\r\n![Setup](https://i.imgur.com/vPgAZmc.png =500x)",
+          "type": "step"
+        },
+        {
+          "name": "Invite via Mail",
+          "description": "Name the new meeting, set a time and add the video-conferencing link in the location field. Then, invite via mail**\r\n\r\n![](https://i.imgur.com/d15Gspm.png =500x)",
+          "type": "step"
+        }
+      ],
+      "tool": {
+        "name": "Google Calendar",
+        "description": "",
+        "link": "https://calendar.google.com/calendar/r",
+        "type": "tool"
+      }
+    }
+  ],
+  "examples": "* Possible Schedule:\r\n  ```\r\n  Tactical Meetings -- once a week\r\n  Governance Meetings -- bi-weekly\r\n  ```\r\n* Invite via Mail or via Public Chat:\r\n  ![](https://i.imgur.com/z4pkVDb.png)\r\n\r\n",
+  "author": "victor@deora.earth",
+  "authorWallet": "0xD2FA59811af055e0e94D570EA7F9800c0E5C0428"
+}

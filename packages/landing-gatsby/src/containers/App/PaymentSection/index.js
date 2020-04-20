@@ -10,6 +10,7 @@ import Image from 'common/src/components/Image';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import Container from 'common/src/components/UI/Container';
 import { PaymentCircleShape } from '../app.style';
+import { ExternalLink } from 'react-external-link';
 
 import ImageOne from 'common/src/assets/image/app/mockup.png';
 
@@ -46,8 +47,7 @@ const PaymentSection = ({
               {...imageWrapper}
               {...imageWrapperTwo}
               className="cardExtraImage"
-            >
-            </Card>
+            ></Card>
           </Box>
         </Box>
       </Container>
@@ -58,7 +58,7 @@ const PaymentSection = ({
             <FeatureBlock
               title={
                 <Heading
-                  content="GET ON BOARD, JOIN THE CREW"
+                  content="GET ON BOARD, JOIN THE COMMUNITY"
                   {...title}
                 />
               }
@@ -70,7 +70,11 @@ const PaymentSection = ({
                   {...description}
                 />
               }
-              button={<Button title="SUBMIT YOUR PROCESS" {...btnStyle} />}
+              button={
+                <ExternalLink href="https://calendly.com/deora-earth/teal-garden">
+                  <Button title="SUBMIT YOUR PROCESS" {...btnStyle} />
+                </ExternalLink>
+              }
             />
           </Box>
         </Box>
@@ -114,7 +118,7 @@ PaymentSection.defaultProps = {
     zIndex: '1',
   },
   imageArea: {
-    width: [0, 0, '52%', '45%', '30%'],
+    width: [1, 1, '52%', '45%', '30%'],
     flexBox: true,
   },
   imageWrapper: {

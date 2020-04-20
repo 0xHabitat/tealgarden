@@ -4,9 +4,12 @@ import { themeGet } from 'styled-system';
 import Substract from 'common/src/assets/image/app/substract.png';
 import SubstractHover from 'common/src/assets/image/app/substract-hover.png';
 import BannerPattern from 'common/src/assets/image/app/pattern.png';
+import bgTexture from 'common/src/assets/image/app/deoratexture.png';
 
 const GlobalStyle = createGlobalStyle`
   body {
+    background-color: #f4f4f1;
+    background-image: url(${bgTexture});
     font-family: 'Poppins', sans-serif;
   }
 
@@ -53,7 +56,7 @@ const GlobalStyle = createGlobalStyle`
             margin: 35px 0;
             a {
               display: block;
-              color: #20201d;
+              color: #091632;
               font-size: 24px;
               font-weight: 400;
               transition: all 0.3s ease;
@@ -61,12 +64,12 @@ const GlobalStyle = createGlobalStyle`
                 font-size: 21px;
               }
               &:hover {
-                color: #1a73e8;
+                color: #82E3E3;
               }
             }
             &.is-current {
               a {
-                color: #1a73e8;
+                color: #091632;
                 position: relative;
                 &:before {
                   content: '';
@@ -271,6 +274,46 @@ const AppWrapper = styled.div`
     }
   }
 
+  .subscribeButton {
+    max-width: 156px !important;
+    max-height: 50px !important;
+    font-size: 16px;
+    font-family: poppins, sans-serif !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: ${themeGet('colors.black', '#091632')};
+    border: 2px solid #091632 !important;
+    position: relative;
+    left: -20px !important;
+    box-shadow: 2px 2px 0px #091632 !important;
+    border-radius: 4px;
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+    background-color: ${themeGet('colors.primary', '#FFDE00')} !important;
+  }
+
+  .listmonk-form {
+    margin-top: -2px;
+
+    .lable {
+      font-family: poppins, sans-serif !important;
+      font-weight: 500;
+      font-size: 14px;
+      display: block !important;
+      padding-left: 30px !important;
+      margin-top: -3px !important;
+    }
+    .checkbox {
+      width: 13px;
+      height: 13px;
+      float: left !important;
+      vertical-align: bottom !important;
+      position: relative !important;
+      top: -1px !important;
+      *overflow: hidden;
+    }
+  }
+
   .particle {
     position: absolute;
     width: 100%;
@@ -297,7 +340,7 @@ const AppWrapper = styled.div`
     }
     &:hover {
       color: ${themeGet('colors.black', '#E26C65')};
-      background-color: ${themeGet('colors.secondary', '#82E3E3')}  !important;
+      background-color: ${themeGet('colors.secondary', '#82E3E3')} !important;
       border: 2px solid #091632;
       box-shadow: none !important;
       cursor: pointer;
@@ -314,7 +357,7 @@ const AppWrapper = styled.div`
       }
       &:hover {
         color: ${themeGet('colors.black', '#E26C65')};
-        background-color: ${themeGet('colors.secondary', '#82E3E3')}  !important;
+        background-color: ${themeGet('colors.secondary', '#82E3E3')} !important;
         border: 2px solid #091632;
         box-shadow: none !important;
         cursor: pointer;
@@ -330,10 +373,9 @@ const AppWrapper = styled.div`
 
     @media (max-width: 767px) {
       position: relative;
-      top: 0%;
-      left: 0%;
+      top: -50px;
+      left: 0px;
       transform: none;
-      display: none;
     }
     .particle {
       position: absolute;
@@ -406,11 +448,11 @@ const AppWrapper = styled.div`
               .testimonialDes {
                 box-sizing: border-box;
                 margin-top: -10px;
-                max-width: 550px;
-                font-size: 24px;
+                max-width: 450px;
+                font-size: 16px;
                 font-family: 'poppins' sans-serif;
-                line-height: 34px;
-                color: #091632;
+                line-height: 28px;
+                color: #505565;
                 font-weight: 300;
                 -webkit-letter-spacing: -0.01em;
                 -moz-letter-spacing: -0.01em;
@@ -430,12 +472,12 @@ const AppWrapper = styled.div`
                   text-align: center;
                 }
                 &::before {
-                  content: 'INTERVIEWED ORGANISATIONS';
+                  content: 'WHAT PEOPLE SAY:';
                   box-sizing: border-box;
                   margin-bottom: 10px;
                   margin-top: 0px;
                   font-size: 14px;
-                  color: #82E3E3;
+                  color: #82e3e3;
                   display: block;
                   font-weight: 700;
                   text-align: left;
@@ -487,10 +529,10 @@ const AppWrapper = styled.div`
             width: 35px;
             background-image: url(${SubstractHover});
             &::before {
-              background-color: #82E3E3;
+              background-color: #82e3e3;
             }
             &::after {
-              background-color: #82E3E3;
+              background-color: #82e3e3;
             }
           }
 
@@ -534,10 +576,10 @@ const AppWrapper = styled.div`
           background-size: contain;
           &:hover {
             &::before {
-              background-color: #82E3E3;
+              background-color: #82e3e3;
             }
             &::after {
-              background-color: #82E3E3;
+              background-color: #82e3e3;
             }
           }
 
@@ -546,7 +588,7 @@ const AppWrapper = styled.div`
             content: '';
             width: 10px;
             height: 2px;
-            background-color: #82E3E3;
+            background-color: #82e3e3;
             display: block;
             position: absolute;
             transform: rotate(36deg);
@@ -557,7 +599,7 @@ const AppWrapper = styled.div`
             content: '';
             width: 10px;
             height: 2px;
-            background-color: #82E3E3;
+            background-color: #82e3e3;
             display: block;
             position: absolute;
             bottom: 11px;
@@ -865,7 +907,7 @@ const AppWrapper = styled.div`
 const BannerSquareShape = styled.div`
   width: 980px;
   height: 1110px;
-  background: #82E3E3;
+  background: #82e3e3;
   border-radius: 50px;
   -webkit-transform: rotate(105deg);
   -ms-transform: rotate(105deg);
@@ -890,7 +932,7 @@ const BannerSquareShape = styled.div`
 const BannerCircleShape = styled.div`
   width: 600px;
   height: 600px;
-  background: #82E3E3;
+  background: #82e3e3;
   border-radius: 50%;
   position: absolute;
   left: 53%;
@@ -921,7 +963,7 @@ const BannerCircleShape = styled.div`
 const SunCircleShape = styled.div`
   width: 450px;
   height: 450px;
-  background: #FFF85A;
+  background: #fff85a;
   border-radius: 50%;
   position: absolute;
   left: -12%;
@@ -952,7 +994,7 @@ const SunCircleShape = styled.div`
 const PaymentCircleShape = styled.div`
   width: 700px;
   height: 700px;
-  background: #FFDE00;
+  background: #ffde00;
   border-radius: 50%;
   position: absolute;
   left: -23%;
@@ -973,7 +1015,10 @@ const PaymentCircleShape = styled.div`
     height: 350px;
   }
   @media (max-width: 767px) {
-    display: none;
+    left: -25%;
+    top: 20%;
+    width: 300px;
+    height: 300px;
   }
 `;
 const ConditionWrapper = styled.div`
