@@ -58,19 +58,19 @@ const PartnerHistory = ({
               <Card className="card" {...cardStyle}>
                 <ExternalLink href="https://mattermost.com/">
                   <Image src={SlackImg} alt="Mattermost" />
-                  <Text content="Mattermost" />
+                  <Text content="MattMo" />
                 </ExternalLink>
               </Card>
               <Card className="card" {...cardStyle}>
                 <ExternalLink href="https://gnosis-safe.io/">
-                  <Image src={GnosisImg} alt="Gnosis Safe" />
-                  <Text content="Gnosis Safe" />
+                  <Image src={GnosisImg} alt="Gnosis" />
+                  <Text content="Gnosis" />
                 </ExternalLink>
               </Card>
               <Card className="card" {...cardStyleDotted}>
                 <ExternalLink href="https://calendly.com/deora-earth/teal-garden">
                   <Image src={TealgardenImg} alt="your tool" />
-                  <Text content="submit a tool" />
+                  <Text content="Your tool" />
                 </ExternalLink>
               </Card>
             </CounterUpArea>

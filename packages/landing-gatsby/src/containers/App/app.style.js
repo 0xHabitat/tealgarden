@@ -373,10 +373,9 @@ const AppWrapper = styled.div`
 
     @media (max-width: 767px) {
       position: relative;
-      top: 0%;
-      left: 0%;
+      top: -50px;
+      left: 0px;
       transform: none;
-      display: none;
     }
     .particle {
       position: absolute;
@@ -1016,7 +1015,10 @@ const PaymentCircleShape = styled.div`
     height: 350px;
   }
   @media (max-width: 767px) {
-    display: none;
+    left: -25%;
+    top: 20%;
+    width: 300px;
+    height: 300px;
   }
 `;
 const ConditionWrapper = styled.div`

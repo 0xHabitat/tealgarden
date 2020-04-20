@@ -50,10 +50,7 @@ const ControllSection = ({
             <Text content="BUILDING A HEALTHY COMMUNITY" {...sectionSubTitle} />
             <FeatureBlock
               title={
-                <Heading
-                  content="EDUCATING, SHARING, LEARNING."
-                  {...title}
-                />
+                <Heading content="EDUCATING, SHARING, LEARNING." {...title} />
               }
               description={
                 <Text
@@ -81,8 +78,8 @@ ControllSection.propTypes = {
 ControllSection.defaultProps = {
   sectionWrapper: {
     as: 'section',
-    pt: ['40px', '120px'],
-    pb: ['40px', '180px'],
+    pt: ['20px', '60px'],
+    pb: ['20px', '40px'],
   },
   row: {
     flexBox: true,
@@ -100,10 +97,10 @@ ControllSection.defaultProps = {
   textArea: {
     width: ['100%', '100%', '50%', '50%', '50%'],
     pt: '80px',
-    pl: '75px',
+    pl: ['20px', '20px', '75px', '75px', '75px'],
   },
   imageArea: {
-    width: ['0px', '0px', '53%', '50%', '48%'],
+    width: ['100%', '100%', '53%', '50%', '48%'],
     flexBox: true,
   },
   imageWrapper: {
@@ -115,7 +112,7 @@ ControllSection.defaultProps = {
   imageWrapperTwo: {
     alignSelf: 'flex-end',
     mb: '-100px',
-    ml: ['0px', '0px', '-200px', '-250px', '-450px'],
+    ml: ['-200px', '-280px', '-300px', '-350px', '-450px'],
     pointerEvents: 'none',
   },
   sectionSubTitle: {

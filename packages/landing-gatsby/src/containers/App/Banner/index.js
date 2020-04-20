@@ -19,7 +19,8 @@ const DomainSection = ({
   title,
   description,
   image,
-  imageArea,
+  imageAreaMobile,
+  imageAreaDesktop,
 }) => {
   const Data = useStaticQuery(graphql`
     query {
@@ -42,6 +43,18 @@ const DomainSection = ({
       <BannerSquareShape />
       <Container>
         <Box {...row}>
+          <Box {...col} {...imageAreaMobile}>
+            <Box {...image}>
+              <Image
+                fluid={
+                  (Data.appScreenshot !== null) | undefined
+                    ? Data.appScreenshot.childImageSharp.fluid
+                    : {}
+                }
+                alt="Domain Image"
+              />
+            </Box>
+          </Box>
           <Box {...col}>
             <FeatureBlock
               title={<Heading {...title} />}
@@ -57,7 +70,7 @@ const DomainSection = ({
             </EmailInputWrapper>
             <ButtonWrapper></ButtonWrapper>
           </Box>
-          <Box {...col} {...imageArea}>
+          <Box {...col} {...imageAreaDesktop}>
             <Box {...image}>
               <Image
                 fluid={
@@ -111,8 +124,12 @@ DomainSection.defaultProps = {
     width: ['100%', '100%', '50%', '44%', '44%'],
     mt: '-90px',
   },
-  imageArea: {
-    width: ['0%', '0%', '43%', '35%', '52%'],
+  imageAreaMobile: {
+    width: ['100%', '100%', '0%', '0%', '0%'],
+    ml: 'auto',
+  },
+  imageAreaDesktop: {
+    width: ['0%', '0%', '48%', '50%', '52%'],
     ml: 'auto',
   },
   title: {
@@ -121,7 +138,7 @@ DomainSection.defaultProps = {
     fontWeight: '700',
     color: '#091632',
     letterSpacing: '1.2px',
-    lineHeight: '42px',
+    lineHeight: ['30px', '32px', '36x', '40px', '42px'],
     mb: '10px',
     mt: '160px',
   },

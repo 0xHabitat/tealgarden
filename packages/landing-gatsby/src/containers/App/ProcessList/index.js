@@ -20,6 +20,7 @@ const ProcessList = ({
   icon1,
   icon2,
   ListElementWrapper,
+  arrow,
 }) => {
   const Data = useStaticQuery(graphql`
     query {
@@ -48,22 +49,24 @@ const ProcessList = ({
             {Data.allProcessesJson.edges.map((process, index) => (
               <ListItemWrapper {...ListElementWrapper} key={index}>
                 <IconWrapper className="icon__wrapper">
-                  <Icon src="#" {...icon1}>
-                    {' '}
-                    img{' '}
-                  </Icon>
-                  <p>>>></p>
-                  <Icon src="#" {...icon2}>
-                    {' '}
-                    img{' '}
-                  </Icon>
+                  <Icon
+                    src={process.node.icons.startIconUrl}
+                    alt={process.node.title}
+                    {...icon1}
+                  />
+                  <Text content=">>>" {...arrow} />
+                  <Icon
+                    src={process.node.icons.endIconUrl}
+                    alt={process.node.title}
+                    {...icon2}
+                  />
                 </IconWrapper>
                 <ContentWrapper className="content__wrapper">
                   <Heading {...title} content={process.node.title} />
                   <Text
                     {...description}
                     content={
-                      process.node.summary.abstract.substr(0, 100) + '...'
+                      process.node.summary.abstract.substr(0, 180) + '...'
                     }
                   />
                 </ContentWrapper>
@@ -82,30 +85,36 @@ ProcessList.propTypes = {
   description: PropTypes.object,
   title: PropTypes.object,
   ListElementWrapper: PropTypes.object,
+  arrow: PropTypes.object,
 };
 
 ProcessList.defaultProps = {
   icon1: {
-    width: '74px',
-    height: '74px',
-    pr: '15px',
+    height: '35px',
+
+    pr: '20px',
   },
   icon2: {
-    width: '74px',
-    height: '74px',
-    pl: '15px',
+    height: '35px',
+    pl: '20px',
   },
   description: {
-    mt: '0px',
-    width: '70%',
+    mb: '30px',
+    width: '90%',
+    fontSize: '14px',
     textOverflow: 'ellipsis',
+  },
+  arrow: {
+    pt: '5px',
   },
   title: {
     mb: '0px',
+    fontSize: '18px',
   },
   ListElementWrapper: {
-    borderbottom: '1px solid',
-    borderColor: 'rgba(0,0,0,0.102)',
+    borderBottom: '2px solid',
+    borderColor: '#E1E4E8',
+    m: '30px 30px 0px 30px',
   },
 };
 

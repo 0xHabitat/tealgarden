@@ -144,7 +144,7 @@ const Input = ({
         <form
           method="post"
           action="https://lightmonk.deora.earth/subscription/form"
-          class="listmonk-form"
+          className="listmonk-form"
         >
           <input type="text" name="email" placeholder="E-mail" />
           <input
@@ -152,13 +152,13 @@ const Input = ({
             name="l"
             value="1b91ae57-2db7-4eda-973f-c32a0837a222"
             id="1b91a"
-            class="checkbox"
+            className="checkbox"
           />
-          <label for="1b91a" class="lable">
+          <label htmlFor="1b91a" className="lable">
             {' '}
             confirm newsletter subscription
           </label>
-          <input type="submit" value="Subscribe" class="subscribeButton" />
+          <input type="submit" value="Subscribe" className="subscribeButton" />
         </form>
       );
   }
