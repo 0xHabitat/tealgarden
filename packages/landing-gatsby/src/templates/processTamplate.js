@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 const processTamplate = (props) => {
   const { pageContext } = props;
   const { pageContent, links } = pageContext;
+  console.log(pageContent);
   return (
     <div style={{ maxWidth: `960px`, margin: `1.45rem` }}>
       <ul>
