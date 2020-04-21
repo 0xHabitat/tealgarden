@@ -28,13 +28,12 @@ export default () => {
         <ResetCSS />
         <GlobalStyle />
         <AppWrapper>
+          <Navbar />
           <CookieBanner
             message="Yes, we use cookies. If you don't like it change website, we won't miss you!"
             onAccept={() => {}}
-            cookie="user-has-accepted-cookies"
+            cookie="gatsby-gdpr-google-analytics"
           />
-          ,
-          <Navbar />
           <DomainSection />
           <FeatureSection />
           <ControllSection />
