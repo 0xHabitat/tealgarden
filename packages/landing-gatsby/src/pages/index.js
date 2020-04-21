@@ -38,7 +38,7 @@ export default () => {
                 fontStyle: 'italic',
               },
             }}
-            message="Yes, we use cookies to enhance the user experiance!"
+            message="Yes, we use cookies to enhance the user experience!"
             cookie="gatsby-gdpr-google-analytics"
           />
           <Navbar />
