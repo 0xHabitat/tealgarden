@@ -18,23 +18,32 @@ import TrialSection from '../containers/App/Trial';
 import CookieBanner from 'react-cookie-banner';
 import '@redq/reuse-modal/es/index.css';
 import SEO from '../components/seo';
+import {
+  Cookies,
+  CookiesProvider,
+  CookieBannerUniversal,
+} from 'react-cookie-banner';
+
+const cookies = new Cookies(/* Your cookie header, on browsers defaults to document.cookie */);
 
 export default () => {
   return (
     <ThemeProvider theme={appTheme}>
-      <CookieBanner
-        disableStyle={true}
-        styles={{
-          banner: { backgroundColor: '#FFDE00' },
-          message: {
-            fontWeight: 500,
-            fontFamily: 'poppins, sans-serif',
-            color: '#091632',
-          },
-        }}
-        message="Yes, we use cookies. To enhance the user experience."
-        cookie="gatsby-gdpr-google-analytics"
-      />
+      <CookiesProvider cookies={cookies}>
+        <CookieBanner
+          disableStyle={true}
+          styles={{
+            banner: { backgroundColor: '#FFDE00' },
+            message: {
+              fontWeight: 500,
+              fontFamily: 'poppins, sans-serif',
+              color: '#091632',
+            },
+          }}
+          message="Yes, we use cookies. To enhance the user experience."
+          cookie="gatsby-gdpr-google-analytics"
+        />
+      </CookiesProvider>
       <Fragment>
         <SEO title="The best processes for self-managed and distributed teams" />
         <Modal />
