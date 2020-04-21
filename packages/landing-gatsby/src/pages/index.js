@@ -28,12 +28,20 @@ export default () => {
         <ResetCSS />
         <GlobalStyle />
         <AppWrapper>
-          <Navbar />
           <CookieBanner
-            message="Yes, we use cookies. If you don't like it change website, we won't miss you!"
-            onAccept={() => {}}
+            styles={{
+              banner: { backgroundColor: 'rgba(9, 22, 50, 0.1)' },
+              message: {
+                fontWeight: '600',
+                fontFaimly: 'poppins, sans-serife',
+                color: '#091632',
+                fontStyle: 'italic',
+              },
+            }}
+            message="Yes, we use cookies to enhance the user experiance!"
             cookie="gatsby-gdpr-google-analytics"
           />
+          <Navbar />
           <DomainSection />
           <FeatureSection />
           <ControllSection />

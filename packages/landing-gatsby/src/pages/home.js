@@ -11,6 +11,7 @@ import Footer from '../containers/App/Footer';
 import '@redq/reuse-modal/es/index.css';
 import SEO from '../components/seo';
 import Content from '../containers/App/ContentSection';
+import CookieBanner from 'react-cookie-banner';
 
 export default () => {
   return (
@@ -21,6 +22,19 @@ export default () => {
         <ResetCSS />
         <GlobalStyle />
         <AppWrapper>
+          <CookieBanner
+            styles={{
+              banner: { backgroundColor: 'rgba(9, 22, 50, 0.1)' },
+              message: {
+                fontWeight: '600',
+                fontFaimly: 'poppins, sans-serife',
+                color: '#091632',
+                fontStyle: 'italic',
+              },
+            }}
+            message="Yes, we use cookies to enhance the user experiance!"
+            cookie="gatsby-gdpr-google-analytics"
+          />
           <Navbar />
           <Content />
           <Newsletter />
