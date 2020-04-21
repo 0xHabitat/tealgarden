@@ -18,20 +18,17 @@ import TrialSection from '../containers/App/Trial';
 import CookieBanner from 'react-cookie-banner';
 import '@redq/reuse-modal/es/index.css';
 import SEO from '../components/seo';
-import {
-  Cookies,
-  CookiesProvider,
-  CookieBannerUniversal,
-} from 'react-cookie-banner';
-
-const cookies = new Cookies(/* Your cookie header, on browsers defaults to document.cookie */);
 
 export default () => {
   return (
     <ThemeProvider theme={appTheme}>
-      <CookiesProvider cookies={cookies}>
-        <CookieBannerUniversal />
-      </CookiesProvider>
+      <div className={this.props.className + ' react-cookie-banner'}>
+        <span className="cookie-message">
+          {this.props.message}
+          <a className="cookie-link">Learn more</a>
+        </span>
+        <button className="button-close">Got it</button>
+      </div>
       <Fragment>
         <SEO title="The best processes for self-managed and distributed teams" />
         <Modal />
