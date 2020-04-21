@@ -24,18 +24,16 @@ export default () => {
     <ThemeProvider theme={appTheme}>
       <Fragment>
         <SEO title="The best processes for self-managed and distributed teams" />
-        <div>
+        <Modal />
+        <ResetCSS />
+        <GlobalStyle />
+        <AppWrapper>
           <CookieBanner
             message="Yes, we use cookies. If you don't like it change website, we won't miss you!"
             onAccept={() => {}}
             cookie="user-has-accepted-cookies"
           />
-        </div>
-        ,
-        <Modal />
-        <ResetCSS />
-        <GlobalStyle />
-        <AppWrapper>
+          ,
           <Navbar />
           <DomainSection />
           <FeatureSection />
