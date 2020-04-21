@@ -15,22 +15,23 @@ import Footer from '../containers/App/Footer';
 import UpdateScreen from '../containers/App/UpdateScreen';
 import Newsletter from '../containers/App/Newsletter';
 import TrialSection from '../containers/App/Trial';
-import CookieBanner from 'react-cookie-banner';
 import '@redq/reuse-modal/es/index.css';
 import SEO from '../components/seo';
+import CookieBanner from 'react-cookie-banner';
 
 export default () => {
   return (
     <ThemeProvider theme={appTheme}>
-      <div className={this.props.className + ' react-cookie-banner'}>
-        <span className="cookie-message">
-          {this.props.message}
-          <a className="cookie-link">Learn more</a>
-        </span>
-        <button className="button-close">Got it</button>
-      </div>
       <Fragment>
         <SEO title="The best processes for self-managed and distributed teams" />
+        <div>
+          <CookieBanner
+            message="Yes, we use cookies. If you don't like it change website, we won't miss you!"
+            onAccept={() => {}}
+            cookie="user-has-accepted-cookies"
+          />
+        </div>
+        ,
         <Modal />
         <ResetCSS />
         <GlobalStyle />
