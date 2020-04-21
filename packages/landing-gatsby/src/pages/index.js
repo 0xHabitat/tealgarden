@@ -23,6 +23,7 @@ export default () => {
   return (
     <ThemeProvider theme={appTheme}>
       <CookieBanner
+        disableStyle={true}
         styles={{
           banner: { backgroundColor: '#FFDE00' },
           message: {
