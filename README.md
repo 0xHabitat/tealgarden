@@ -86,4 +86,4 @@ ___
 * Further information & announcements during ETH Turin :100:
 
 
-![solarpunk](img/solarpunk.png "solarpunk")
+![solarpunk](https://i.imgur.com/FaBDhgT.jpg)
