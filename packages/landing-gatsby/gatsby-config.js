@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Teal.Garden`,
-    description: `DISCOVER PROCESSES AND TOOLS FOR SELF-MANAGED AND DISTRIBUTED TEAMS`,
+    title: `Teal.Garden by Deora`,
+    description: `Discover processes and tools for self-managed and distributed Organisations. Become part of the future of digital collaboration and join our community of teal organisation architects!`,
     author: `@deora.earth`,
   },
   plugins: [
