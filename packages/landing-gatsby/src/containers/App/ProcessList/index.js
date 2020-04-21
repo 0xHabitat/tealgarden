@@ -51,17 +51,13 @@ const ProcessList = ({
                 <IconWrapper className="icon__wrapper">
                   <Icon
                     src={process.node.icons.startIconUrl}
-                    alt={process.node.instructions[0].tool.name}
+                    alt={process.node.title}
                     {...icon1}
                   />
                   <Text content=">>>" {...arrow} />
                   <Icon
                     src={process.node.icons.endIconUrl}
-                    alt={
-                      process.node.instructions[
-                        process.node.instructions.length - 1
-                      ].tool.name
-                    }
+                    alt={process.node.title}
                     {...icon2}
                   />
                 </IconWrapper>
@@ -70,7 +66,7 @@ const ProcessList = ({
                   <Text
                     {...description}
                     content={
-                      process.node.summary.abstract.substr(0, 180) + '...'
+                      process.node.summary.abstract.substr(0, 120) + '...'
                     }
                   />
                 </ContentWrapper>

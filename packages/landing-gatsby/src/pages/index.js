@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { Modal } from '@redq/reuse-modal';
 import { appTheme } from 'common/src/theme/app';
-import { GlobalStyle, AppWrapper } from '../containers/App/app.style';
+import { GlobalStyle, AppWrapper, Sun } from '../containers/App/app.style';
 import { ResetCSS } from 'common/src/assets/css/style';
 import Navbar from '../containers/App/Navbar';
 import DomainSection from '../containers/App/Banner';
@@ -41,6 +41,7 @@ export default () => {
         <ResetCSS />
         <GlobalStyle />
         <AppWrapper>
+          <Sun />
           <Navbar />
           <DomainSection />
           <FeatureSection />
