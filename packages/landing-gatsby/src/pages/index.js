@@ -30,19 +30,7 @@ export default () => {
   return (
     <ThemeProvider theme={appTheme}>
       <CookiesProvider cookies={cookies}>
-        <CookieBanner
-          disableStyle={true}
-          styles={{
-            banner: { backgroundColor: '#FFDE00' },
-            message: {
-              fontWeight: 500,
-              fontFamily: 'poppins, sans-serif',
-              color: '#091632',
-            },
-          }}
-          message="Yes, we use cookies. To enhance the user experience."
-          cookie="gatsby-gdpr-google-analytics"
-        />
+        <CookieBannerUniversal />
       </CookiesProvider>
       <Fragment>
         <SEO title="The best processes for self-managed and distributed teams" />
