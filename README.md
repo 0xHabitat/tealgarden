@@ -71,6 +71,11 @@ Deora Team will pick the best 3 submissions through a lense of a teal/ holacracy
 3rd - **200 DAI**
 
 **:star: In addition all high-quality proposals will be published on [teal.garden](https://tealgarden.deora.earth/) + hackers will receive 100 Teal tokens.:star:**
+___
+**Feeling ready to build? Great, keep rolling!**
+
+**Not sure where to start?
+Check our dedicated discord: [Deora Support](https://discord.gg/T5NU2q5)**
 
 ___
 **What are Teal Tokens ?!**
