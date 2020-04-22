@@ -26,7 +26,7 @@ A simple Wikipedia entry can help us understand what a process is:
 
 We created an evaluation page to make sure we & you know what a good process is all about:
 
-- [What is a valid submission to teal.garden?](https://hackmd.io/dMlEYrGOTIm8Yw4e50V8qA?view)
+- [What is a valid submission to teal.garden?](https://github.com/deora-earth/tealgarden/tree/develop/docs/submission-evaluation.md)
 
 ## What is a component ?
 
