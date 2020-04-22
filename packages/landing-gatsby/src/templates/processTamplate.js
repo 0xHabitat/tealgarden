@@ -52,7 +52,11 @@ const basicTemplate = (props) => {
             summaryText={pageContent.summary.abstract}
             benefitsText={pageContent.summary.benefits}
           />
-          <Requirements />
+          <Requirements
+            orgHeadline={pageContent.addoptionRequirements[0].name}
+            orgAbstract={pageContent.addoptionRequirements[0].description}
+            orgLink={pageContent.addoptionRequirements[0].link}
+          />
           <Newsletter />
           <SupportBlock />
           <Footer />

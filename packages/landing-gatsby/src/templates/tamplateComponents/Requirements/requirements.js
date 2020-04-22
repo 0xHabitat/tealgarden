@@ -1,65 +1,85 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import ScrollableInkTabBar from 'rc-tabs/lib/ScrollableInkTabBar';
-import Text from 'common/src/components/Text';
-import Heading from 'common/src/components/Heading';
-import Tabs, { TabPane } from 'rc-tabs';
-import TabContent from 'rc-tabs/lib/TabContent';
+import React, { useState, Fragment } from 'react';
+import { Tabs, Tab, ContentWrapper, Content } from './requirements.style.js';
 import Container from 'common/src/components/UI/Container';
-import 'rc-tabs/assets/index.css';
 import { SectionWrapper } from './requirements.style';
+import Heading from 'common/src/components/Heading';
+import Text from 'common/src/components/Text';
+import { ExternalLink } from 'react-external-link';
 
-const Requirements = ({ tabsStyle }) => {
+const Requirements = ({
+  orgHeadline,
+  orgAbstract,
+  orgLink,
+  policies,
+  roles,
+  tools,
+  values,
+}) => {
+  const [active, setActive] = useState(0);
+  const handleClick = (e) => {
+    const index = parseInt(e.target.id, 0);
+    if (index !== active) {
+      setActive(index);
+    }
+  };
   return (
-    <Container>
-      <SectionWrapper>
-        <Tabs
-          {...tabsStyle}
-          defaultActiveKey="loginForm"
-          renderTabBar={() => <ScrollableInkTabBar />}
-          renderTabContent={() => <TabContent />}
-        >
-          <TabPane tab="ORG STRUCTURE" key="orgStructure">
-            <Heading content="Tab 1" />
-            <Text content="Does it work ?" />
-          </TabPane>
+    <SectionWrapper>
+      <Container>
+        <dvi>
+          <Tabs>
+            <Tab onClick={handleClick} active={active === 0} id={0}>
+              <span>🌐</span> Org Structure
+            </Tab>
 
-          <TabPane tab="POLICIES" key="policies">
-            <Heading content="Tab 2" />
-            <Text content="Does it work ?" />
-          </TabPane>
-
-          <TabPane tab="Roles" key="roles">
-            <Heading content="Tab 3" />
-            <Text content="Does it work ?" />
-          </TabPane>
-
-          <TabPane tab="Tools" key="tools">
-            <Heading content="Tab 4" />
-            <Text content="Does it work ?" />
-          </TabPane>
-
-          <TabPane tab="Values" key="values">
-            <Heading content="Tab 5" />
-            <Text content="Does it work ?" />
-          </TabPane>
-        </Tabs>
-      </SectionWrapper>
-    </Container>
+            <Tab onClick={handleClick} active={active === 1} id={1}>
+              <span>📜</span> Policies
+            </Tab>
+            <Tab onClick={handleClick} active={active === 2} id={2}>
+              <span>🎭</span> Roles
+            </Tab>
+            <Tab onClick={handleClick} active={active === 3} id={3}>
+              <span>⚒️</span> Tools
+            </Tab>
+            <Tab onClick={handleClick} active={active === 4} id={4}>
+              <span>💖</span> Values
+            </Tab>
+          </Tabs>
+          <>
+            {orgHeadline ||
+            orgAbstract ||
+            orgLink ||
+            policies ||
+            roles ||
+            tools ||
+            values ? (
+              <Fragment>
+                <ContentWrapper active={active === 0}>
+                  <p>
+                    Organisational structures, formats and style of governance
+                    that is needed to adapt the process."
+                  </p>
+                  <ExternalLink href={orgLink}>
+                    <Content>
+                      <Heading content={orgHeadline} />
+                      <Text content={orgAbstract} />
+                    </Content>
+                  </ExternalLink>
+                </ContentWrapper>
+                <ContentWrapper active={active === 1}>
+                  {policies}
+                </ContentWrapper>
+                <ContentWrapper active={active === 2}>{roles}</ContentWrapper>
+                <ContentWrapper active={active === 3}>{tools}</ContentWrapper>
+                <ContentWrapper active={active === 4}>{values}</ContentWrapper>
+              </Fragment>
+            ) : (
+              'nothing here...'
+            )}
+          </>
+        </dvi>
+      </Container>
+    </SectionWrapper>
   );
-};
-
-Requirements.propTypes = {
-  tabsStyle: PropTypes.object,
-};
-
-Requirements.defaultProps = {
-  tabsStyle: {
-    background: '#FFF',
-    border: '2px solid #091632',
-    borderRadius: '5px',
-    boxShadow: '2px 2px 0px #091632',
-  },
 };
 
 export default Requirements;
