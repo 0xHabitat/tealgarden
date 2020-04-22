@@ -18,7 +18,7 @@ Characterized by **self-management, wholeness, and a deeper sense of purpose**, 
 
 Instead, they’re characterized by features like **self-managed teams**, intuitive reasoning and **decentralized decision-making**. Because these practices are so new, the conversation around what they are and how to implement them is **ongoing**.
 
-## What is a process ?
+## What is a process?
 
 A simple Wikipedia entry can help us understand what a process is:
 
