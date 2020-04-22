@@ -52,7 +52,7 @@ Now that you have a feeling for the matter, let's build:
 
 :point_right: **Final Steps:**
 
-1. Once you are finished, create a pull request in our repo.
+1. Once you are finished, create a pull request in our repo. The pull request should add a new `.json` file to the `/packages/common/src/data/processes` folder.
 
 2. We will check all submissions and merge the content to our [teal.garden](https://teal.garden) page.
 
