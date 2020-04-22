@@ -25,7 +25,7 @@ Instead of hierarchies that dictate our actions, or economic machineries that fo
 
 - Get comfortable with teal practices & holacracy, take some time and see our resources & explainers:
 
-  - [Basic Explainers](https://hackmd.io/R0EIa_W1QZ2xVa0tSJqk6Q?view)
+  - [Basic Explainers](https://github.com/deora-earth/tealgarden/tree/develop/docs/teal-basics.md)
 
 :point_right: **Second Step:**
 
