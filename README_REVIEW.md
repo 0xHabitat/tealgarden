@@ -7,7 +7,7 @@
 :house_with_garden: `SDG 11: Sustainable Cities and Communities`  
 :handshake: `SDG 17: Partnerships for the Goals`  
 
-The current health and economic crisis have created vast & sudden change. Now it is up to us to rebuild communities and organizations. Let's take the chance and create the future we want.
+The current health and economic crises have created vast & sudden change. Now it is up to us to rebuild communities and organizations. Let's take the chance and create the better world our hearts know is possible.
 
 Instead of hierarchies that dictate our actions, or economic machineries that force financial rationale over social and ecological wellbeing, we can create work environments where we can bring ourselves as a whole, and collaborate with peers to realize a purpose that we care for deeply.
 
