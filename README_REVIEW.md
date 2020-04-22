@@ -60,7 +60,7 @@ Now that you have a feeling for the matter, let's build:
 
 ## :trophy: Prize Structure
 
-Deora Team will pick the best 3 submissions through a lense of a teal/ holacracy practitioner and distribute rewards in the form of tokens.
+The Deora team will pick the best 3 submissions through a lens of a teal/holacracy practitioner and distribute rewards in the form of tokens.
 
 **Prizes - The top 3 submissions will receive payouts of:**
 
