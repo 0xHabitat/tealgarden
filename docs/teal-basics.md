@@ -54,7 +54,7 @@ or:
 
 - "Each team-member needs a web-3 enabled wallet."
 
-## What is a Role ?
+## What is a Role?
 
 ### without context of holacracy:
 
