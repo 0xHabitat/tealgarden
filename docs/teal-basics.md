@@ -1,6 +1,6 @@
 ###### tags: `tealgarden` `ethturin`
 
-# Basic Explainers Teal Garden Track :books:
+# Teal Garden Track - Basic Explainers :books:
 
 **Hackers**, welcome to our quick explainers, to give you a conception of what you need to consider building with us at **ETH Turin**.
 
