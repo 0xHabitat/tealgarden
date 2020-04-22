@@ -68,7 +68,7 @@ Roles are not limited to occupational status, of course, nor does the fact that 
 
 **-- Roles are the expectations of society placed on the individual.**
 
-### in context of holacracy:
+### in context of teal organizations:
 
 The building blocks of Holacracy's organizational structure are roles. Holacracy distinguishes between roles and the people who fill them, as one individual can hold multiple roles at any given time.
 
