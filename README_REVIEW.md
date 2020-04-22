@@ -23,7 +23,7 @@ Instead of hierarchies that dictate our actions, or economic machineries that fo
 
 :point_right: **First Step:**
 
-- Get comfortable with teal practices & holacracy, take some time and see our resources & explainers:
+- Get comfortable with teal practices & holacracy, take some time and check our resources & explainers:
 
   - [Basic Explainers](https://github.com/deora-earth/tealgarden/tree/develop/docs/teal-basics.md)
 
