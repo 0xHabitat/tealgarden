@@ -1,18 +1,21 @@
 {
   "id": "max1587221241",
-  "title": "Bounty Rewards",
+  "title": "Bounty Rewards Practice",
   "categories": [
     "Payment & Incentives",
     "To-dos",
     "Commitment: Working Hours and Flexibility",
-    "Crypto"
+    "Crypto",
+    "Crew",
+    "Organisation",
+    "Community"
   ],
   "icons": {
     "startIconUrl": "https://github.githubassets.com/favicons/favicon.png",
     "endIconUrl": "https://a.slack-edge.com/80588/marketing/img/meta/favicon-32.png"
   },
   "summary": {
-    "abstract": "Bounties are an alternative to a monthly or weekly payout schedule to organisation members. They are payed out the moment after a set task has been done successfully. Bounties combine task management and incentives. They promote the autonomy of members and their respective roles by allowing them to create new bounties or fulfill existing ones. \r\n\r\nBounties allow an agile process of **\"sense & respond\"** within self-managed teams. Once a tension or opportunity is sensed and alligned with the purpose + current strategies of the organisation bounties can be created and tackled immediately. They are announced via the official communication channels for objections, clarification or support. \r\n\r\nThey incentivize creative bounty creators (bounty gardener) and motivated bounty hunters (bounty worker) alike.\r\n\r\nThe given process gives an exemplary insight about the structure, rules and parameters that are used in proven in our organisation. See **\"Bounty Policy\"** under **\"Adoption Requirements\"** for more info.",
+    "abstract": "In our organisation bounties are an alternative to a monthly or weekly payout schedule to our members. They are payed out the moment after a set task has been accomplished. Bounties combine task management and incentives. They promote the autonomy of members and their respective roles by allowing them to create new bounties or fulfil existing ones. \r\n\r\nBounties allow an agile process of **\"sense & respond\"** within self-managed teams. Once a tension or opportunity is sensed and alligned with the purpose + current strategies of the organisation bounties can be created and tackled immediately. They are announced via the official communication channels for objections, clarification or support. \r\n\r\nThey incentivize creative bounty creators (bounty gardener) and motivated bounty hunters (bounty worker) alike.\r\n\r\nThe given process gives an exemplary insight about the structure, rules and parameters that are used in proven in our organisation. See **\"Bounty Policy\"** under **\"Adoption Requirements\"** for more info.",
     "benefits": [
       "instant incentivation via bounty payouts after finished task",
       "fast sense & respond practice",
@@ -23,7 +26,7 @@
   "addoptionRequirements": [
     {
       "name": "Holacracy Constitution",
-      "description": "the organization needs to have adopted the constitution V4.1 or higher",
+      "description": "The organization needs to have adopted the constitution V4.1 or higher",
       "link": "https://www.holacracy.org/constitution",
       "type": "structure"
     }
@@ -49,7 +52,7 @@
   ],
   "instructions": [
     {
-      "name": "1. Create a Bounty",
+      "name": "Create a Bounty",
       "steps": [
         {
           "name": "Upload Bounty Template on Github",
@@ -69,40 +72,50 @@
       ],
       "tool": {
         "name": "github",
-        "description": "",
-        "link": "https://github.githubassets.com/favicons/favicon.svg",
+        "description": "Software development platform used for us to keep track of bounties, description and their size.",
+        "link": "https://github.githubassets.com/favicons/favicon-dark.svg",
         "type": "tool"
       }
     },
     {
-      "name": "2. Submit via Forms",
+      "name": "Submit Bounty",
       "steps": [
         {
-          "name": "Create a Bounty Proposal",
-          "description": "To keep track of every new bounty proposed form needs to be filled out. Later in Step C the form auto announces the newly created bounty on the official communication channel of the organisation.\r\n\r\n![](https://i.imgur.com/wyXeNGw.png)",
+          "name": "Create a Bounty Proposal Form",
+          "description": "To keep track of every new bounty proposed a form needs to be created and filled out every time a bounty is proposed. Later in Step 3 the form auto announces the newly created bounty on the official communication channel of the organisation.\r\n\r\n![](https:\/\/i.imgur.com\/afxZCmq.png)  \r\n\r\nAn example can be found [here](https:\/\/docs.google.com\/forms\/d\/1m3n-DxPb2V7XaYo2U91yCMaNxWcRXimhrp2hxjEHwq0\/edit?usp=sharing)",
           "type": "step"
         }
       ],
       "tool": {
         "name": "Google Forms",
-        "description": "",
-        "link": "https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png",
+        "description": "Easy way of creating forms that help us funnel the bounties and auto announce them on our communication channel.",
+        "link": "https://www.google.com/forms/about/",
         "type": "tool"
       }
     },
     {
-      "name": "3. Auto Announce",
+      "name": "Auto Announce",
       "steps": [
         {
-          "name": "Create a Bounty Proposal",
-          "description": "https://gifyu.com/",
+          "name": "Enter your Slack webhookURL in script",
+          "description": "Find out your webhookURL of your Slack workspace. Read the following for more [info](https:\/\/api.slack.com\/messaging\/webhooks#create_a_webhook).\r\n\r\nCopy your Webhook URL (\u274C) in the following script and change the parameters of channel, text, icons etc.\r\n\r\nScript:\r\n```\r\n\/\/ This Google Sheets script will post to a slack channel when a user submits data to a Google Forms Spreadsheet\r\n\/\/ View the README for installation instructions. Don't forget to add the required slack information below.\r\n\/\/ Source: https:\/\/github.com\/markfguerra\/google-forms-to-slack\r\n\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\r\n\/\/ Begin customization \/\/\r\n\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\r\n\/\/ Alter this to match the incoming webhook url provided by Slack\r\nvar slackIncomingWebhookUrl = ' \u274C \uD83D\uDC49https:\/\/hooks.slack.com\/services\/T00000000\/B00000000\/XXXXXXXXXXXXXXXXXXXXXXXX\r\n';\r\n\/\/ Include # for public channels, omit it for private channels\r\nvar postChannel = \"#deora-bounty-board\";\r\nvar postIcon = \":deora-white:\";\r\nvar postUser = \"Bounty Payout\";\r\nvar postColor = \"#0000DD\";\r\nvar messageFallback = \"The attachment must be viewed as plain text.\";\r\nvar messagePretext = \"A bounty was deliverd:\";\r\n\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\r\n\/\/ End customization \/\/\r\n\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\r\n\/\/ In the Script Editor, run initialize() at least once to make your code execute on form submit\r\nfunction initialize() {\r\n  var triggers = ScriptApp.getProjectTriggers();\r\n  for (var i in triggers) {\r\n    ScriptApp.deleteTrigger(triggers[i]);\r\n  }\r\n  ScriptApp.newTrigger(\"submitValuesToSlack\")\r\n    .forSpreadsheet(SpreadsheetApp.getActiveSpreadsheet())\r\n    .onFormSubmit()\r\n    .create();\r\n}\r\n\/\/ Running the code in initialize() will cause this function to be triggered this on every Form Submit\r\nfunction submitValuesToSlack(e) {\r\n  \/\/ Test code. uncomment to debug in Google Script editor\r\n  \/\/ if (typeof e === \"undefined\") {\r\n  \/\/   e = {namedValues: {\"Question1\": [\"answer1\"], \"Question2\" : [\"answer2\"]}};\r\n  \/\/   messagePretext = \"Debugging our Sheets to Slack integration\";\r\n  \/\/ }\r\n  var attachments = constructAttachments(e.values);\r\n  \r\n  var columnNames = getColumnNames();\r\n  for (var i = 0; i < columnNames.length; i++) {\r\n    var colName = columnNames[i];\r\n    if (colName == \"Funding Circle\") {\r\n      if (e.values[i] == \"deora\") {\r\n        postChannel = \"#deora\";\r\n      }\r\n    }\r\n  }\r\n  var payload = {\r\n    \"channel\": postChannel,\r\n    \"username\": postUser,\r\n    \"icon_emoji\": postIcon,\r\n    \"link_names\": 1,\r\n    \"attachments\": attachments\r\n  };\r\n  var options = {\r\n    'method': 'post',\r\n    'payload': JSON.stringify(payload)\r\n  };\r\n  var response = UrlFetchApp.fetch(slackIncomingWebhookUrl, options);\r\n}\r\n\/\/ Creates Slack message attachments which contain the data from the Google Form\r\n\/\/ submission, which is passed in as a parameter\r\n\/\/ https:\/\/api.slack.com\/docs\/message-attachments\r\nvar constructAttachments = function(values) {\r\n  var fields = makeFields(values);\r\n  var attachments = [{\r\n    \"fallback\" : messageFallback,\r\n    \"pretext\" : messagePretext,\r\n    \"mrkdwn_in\" : [\"pretext\"],\r\n    \"color\" : postColor,\r\n    \"fields\" : fields\r\n  }]\r\n  return attachments;\r\n}\r\n\/\/ Creates an array of Slack fields containing the questions and answers\r\nvar makeFields = function(values) {\r\n  var fields = [];\r\n  var columnNames = getColumnNames();\r\n  for (var i = 0; i < columnNames.length; i++) {\r\n    var colName = columnNames[i];\r\n    var val = values[i];\r\n    if (colName != \"Timestamp\" && colName != \"Funding Circle\" && colName != \"How is the completion of this bounty aligned with the purpose?\") {\r\n      fields.push(makeField(colName, val));\r\n    }\r\n  }\r\n  return fields;\r\n}\r\n\/\/ Creates a Slack field for your message\r\n\/\/ https:\/\/api.slack.com\/docs\/message-attachments#fields\r\nvar makeField = function(question, answer) {\r\n  var field = {\r\n    \"title\" : question,\r\n    \"value\" : answer,\r\n    \"short\" : false\r\n  };\r\n  return field;\r\n}\r\n\/\/ Extracts the column names from the first row of the spreadsheet\r\nvar getColumnNames = function() {\r\n  var sheet = SpreadsheetApp.getActiveSheet();\r\n  \/\/ Get the header row using A1 notation\r\n  var headerRow = sheet.getRange(\"1:1\");\r\n  \/\/ Extract the values from it\r\n  var headerRowValues = headerRow.getValues()[0];\r\n  return headerRowValues;\r\n}\r\n```",
+          "type": "step"
+        },
+        {
+          "name": "Enter full script",
+          "description": "Find out your webhookURL of your Slack workspace. Read the following for more [info](https:\/\/api.slack.com\/messaging\/webhooks#create_a_webhook).\r\n\r\nCopy your Webhook URL (\u274C) in the following script and change the parameters of channel, text, icons etc.\r\n\r\nScript:\r\n```\r\n\/\/ This Google Sheets script will post to a slack channel when a user submits data to a Google Forms Spreadsheet\r\n\/\/ View the README for installation instructions. Don't forget to add the required slack information below.\r\n\/\/ Source: https:\/\/github.com\/markfguerra\/google-forms-to-slack\r\n\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\r\n\/\/ Begin customization \/\/\r\n\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\r\n\/\/ Alter this to match the incoming webhook url provided by Slack\r\nvar slackIncomingWebhookUrl = ' \u274C \uD83D\uDC49https:\/\/hooks.slack.com\/services\/T00000000\/B00000000\/XXXXXXXXXXXXXXXXXXXXXXXX\r\n';\r\n\/\/ Include # for public channels, omit it for private channels\r\nvar postChannel = \"#deora-bounty-board\";\r\nvar postIcon = \":deora-white:\";\r\nvar postUser = \"Bounty Payout\";\r\nvar postColor = \"#0000DD\";\r\nvar messageFallback = \"The attachment must be viewed as plain text.\";\r\nvar messagePretext = \"A bounty was deliverd:\";\r\n\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\r\n\/\/ End customization \/\/\r\n\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\r\n\/\/ In the Script Editor, run initialize() at least once to make your code execute on form submit\r\nfunction initialize() {\r\n  var triggers = ScriptApp.getProjectTriggers();\r\n  for (var i in triggers) {\r\n    ScriptApp.deleteTrigger(triggers[i]);\r\n  }\r\n  ScriptApp.newTrigger(\"submitValuesToSlack\")\r\n    .forSpreadsheet(SpreadsheetApp.getActiveSpreadsheet())\r\n    .onFormSubmit()\r\n    .create();\r\n}\r\n\/\/ Running the code in initialize() will cause this function to be triggered this on every Form Submit\r\nfunction submitValuesToSlack(e) {\r\n  \/\/ Test code. uncomment to debug in Google Script editor\r\n  \/\/ if (typeof e === \"undefined\") {\r\n  \/\/   e = {namedValues: {\"Question1\": [\"answer1\"], \"Question2\" : [\"answer2\"]}};\r\n  \/\/   messagePretext = \"Debugging our Sheets to Slack integration\";\r\n  \/\/ }\r\n  var attachments = constructAttachments(e.values);\r\n  \r\n  var columnNames = getColumnNames();\r\n  for (var i = 0; i < columnNames.length; i++) {\r\n    var colName = columnNames[i];\r\n    if (colName == \"Funding Circle\") {\r\n      if (e.values[i] == \"deora\") {\r\n        postChannel = \"#deora\";\r\n      }\r\n    }\r\n  }\r\n  var payload = {\r\n    \"channel\": postChannel,\r\n    \"username\": postUser,\r\n    \"icon_emoji\": postIcon,\r\n    \"link_names\": 1,\r\n    \"attachments\": attaCopy the completed script and go the \"Responses\" page of your form. Open it as a Google Sheet and copy the script under \"Tools\" --> \"Script\". As seen in the gif\r\n\r\n![](https:\/\/s4.gifyu.com\/images\/Copy--Paste---Auto-Announce-Script.gif)",
+          "type": "step"
+        },
+        {
+          "name": "Fill out the Bounty Proposal Form",
+          "description": "Once a new bounty\/task is defined on GitHub the member can fill out the form and the bounty will be auto-announced on Slack.\r\n\r\n![](https:\/\/i.imgur.com\/WmvJ5Kg.png)",
           "type": "step"
         }
       ],
       "tool": {
         "name": "Slack",
-        "description": "",
-        "link": "https://a.slack-edge.com/80588/marketing/img/meta/favicon-32.png",
+        "description": "Digital collaboration chat to announce and discuss bounties.",
+        "link": "https://www.slack.com",
         "type": "tool"
       }
     }
