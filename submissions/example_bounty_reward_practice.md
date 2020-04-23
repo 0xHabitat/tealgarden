@@ -132,7 +132,7 @@ Once the issue is created you can find under “Labels” your created bounty si
 To keep track of every new bounty proposed a form needs to be created and filled out every time a bounty is proposed. Later in Step 3 the form auto announces the newly created bounty on the official communication channel of the organisation.
 
 ![](https://i.imgur.com/afxZCmq.png)
-An example can be found [here](https://docs.google.com/forms/d/1m3n-DxPb2V7XaYo2U91yCMaNxWcRXimhrp2hxjEHwq0/edit?usp=sharing)
+An example can be found [here](https://docs.google.com/forms/d/e/1FAIpQLSfYDTzX5mPa52y3fdrUZ8MylwVRjEPAGP2QFSpTfE45YmopkQ/viewform)
 
 ### 6.3 "Title of Second Step"
 
