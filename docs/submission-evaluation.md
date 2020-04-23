@@ -1,25 +1,32 @@
-###### tags: `tealgarden`
-
 # Submission Proposal Evaluation
 
-Teal.Garden is our community platform for self-managed & distributed teams. When collecting content & insights, we want to avoid tool developers to use teal.garden as a simple marketing platform. Also, teal.garden is not a collection of installation guides.
+> **Teal.Garden is a community platform for self-managed & distributed organizations.**
 
-How do we clarify which practices & processes count as a valid submission to teal.garden?
+* We are interested to learn how digital tools can amplify the workflows & improve the outcomes for the organization. Teal.Garden is not a collection of installation guides or a marketing platform.
 
-**Wiki definition of process:**
+* We want to reach out to communities, organizations & initiatives to see what works on any scale. Experiences and take-aways of smaller teams are valuable as well and will have a place on Teal.Garden.
 
-> “A business process or business method is a collection of related, structured activities or tasks by people or equipment in which a specific sequence produces a service or product (serves a particular business goal) for a particular customer or customers.”
+* For each submission, every observer should be able to clearly answer the following questions with **yes**.
 
-For each submission one should be able to clearly answer the following questions with ==**yes**==.
 
-### Questions:
 
-- Is the submission proposal a process?
+### Essential Questions:
 
+* Does your submission fit our [template](https://hackmd.io/@5-YIdqM_TiWI7n-xRmaUqg/H1ywNR6_I) ?
+
+- Is your submission proposal a self-management process/practise? 
 - Do multiple roles or systems interact in the proposal?
-
 - Does the process deliver value to an organization or customer?
+- Can each tool in the process be replaced by a opensource alternative?
+- What are the interfaces between the process and the organization?
 
-- Can each tool in the process be replaced by another one?
 
-* What are the interfaces between the process and the organization?
+
+### 
+
+### Go the Extra Mile:
+
+* over-average creative and valuable submission
+* using mixed media to visualise the process
+* major part of process has open source tools integrated
+
