@@ -28,37 +28,6 @@ export const SectionWrapper = styled.section`
   }
 `;
 
-export const Tabs = styled.div`
-  overflow: hidden;
-  height: 3em;
-`;
-
-export const Tab = styled.button`
-  border: none;
-  outline: none;
-  cursor: pointer;
-  width: 20%;
-  position: relative;
-
-  font-size: 1em;
-  font-weight: ${(props) => (props.active ? '700' : '500')};
-  text-transform: ${(props) => (props.active ? 'uppercase' : '')};
-  color: ${(props) => (props.active ? '#091632' : '#767676')};
-  opacity: ${(props) => (props.active ? '100%' : '50%')};
-  border-radius: 5px 5px 0px 0px;
-  border: ${(props) =>
-    props.active ? '2px solid #091632' : '2px solid #E1E4E8'};
-  border-bottom: ${(props) => (props.active ? ' 1px solid #fff' : '')};
-  background-color: ${(props) => (props.active ? 'white' : 'white')};
-  height: ${(props) => (props.active ? '3em' : '3em;')};
-  transition: background-color 0.5s ease-in-out;
-
-  :hover {
-    background-color: white;
-    border-color: #82e3e3;
-  }
-`;
-
 export const ContentWrapper = styled.div`
   ${(props) => (props.active ? '' : 'display:none')};
   background-color: #fff;

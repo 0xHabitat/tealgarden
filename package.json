@@ -65,6 +65,7 @@
   },
   "dependencies": {
     "gatsby-plugin-gdpr-cookies": "^1.0.7",
+    "markdown-react-js": "^1.0.2",
     "react-cookie-banner": "^4.1.0",
     "react-external-link": "^1.1.1"
   }

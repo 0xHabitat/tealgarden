@@ -8,12 +8,16 @@ import Navbar from '../containers/App/Navbar';
 import Title from './tamplateComponents/Title/title';
 import Description from './tamplateComponents/Description/description';
 import Requirements from './tamplateComponents/Requirements/requirements';
+import Instructions from './tamplateComponents/Instructions/instructions';
 import Newsletter from '../containers/App/Newsletter';
 import SupportBlock from '../containers/App/SupportBlock';
 import Footer from '../containers/App/Footer';
 import '@redq/reuse-modal/es/index.css';
 import CookieBanner from 'react-cookie-banner';
 import SEO from '../components/seo';
+import ProcessList from '../containers/App/ProcessList';
+import Heading from 'common/src/components/Heading';
+import Container from 'common/src/components/UI/Container';
 
 const basicTemplate = (props) => {
   const { pageContext } = props;
@@ -53,11 +57,22 @@ const basicTemplate = (props) => {
             benefitsText={pageContent.summary.benefits}
           />
           <Requirements
-            orgHeadline={pageContent.addoptionRequirements[0].name}
+            orgHeading={pageContent.addoptionRequirements[0].name}
             orgAbstract={pageContent.addoptionRequirements[0].description}
             orgLink={pageContent.addoptionRequirements[0].link}
+            policiesHeading={pageContent.components[1].name}
+            policiesText={pageContent.components[1].description}
+            roleHeading={pageContent.components[0].title}
+            rolePurpose={pageContent.components[0].purpose}
+            roleDomain={pageContent.components[0].domains}
+            roleAccountabilities={pageContent.components[0].accountabilities}
           />
           <Newsletter />
+          <Instructions />
+          <Container>
+            <Heading content="More practices" />
+            <ProcessList />
+          </Container>
           <SupportBlock />
           <Footer />
         </AppWrapper>

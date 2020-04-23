@@ -91,7 +91,6 @@ ProcessList.propTypes = {
 ProcessList.defaultProps = {
   icon1: {
     height: '35px',
-
     pr: '20px',
   },
   icon2: {

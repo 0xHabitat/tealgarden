@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Container from 'common/src/components/UI/Container';
 import Text from 'common/src/components/Text';
 import Heading from 'common/src/components/Heading';
+import MDReactComponent from 'markdown-react-js';
 import {
   SectionWrapper,
   SummaryWrapper,
@@ -18,11 +19,11 @@ const Description = ({ summaryText, textStyle, benefitsText }) => {
           <Fragment>
             <SummaryWrapper>
               <Heading content="Summary" />
-              <Text content={summaryText} {...textStyle} />
+              <MDReactComponent text={summaryText} {...textStyle} />
             </SummaryWrapper>
             <BenefitsWrapper>
               <Heading content="Benefits" />
-              <Text {...textStyle} content={benefitsText} />
+              <Text content={benefitsText} {...textStyle} />
             </BenefitsWrapper>
           </Fragment>
         ) : (
@@ -34,7 +35,7 @@ const Description = ({ summaryText, textStyle, benefitsText }) => {
 };
 
 Description.propTypes = {
-  textStyle: PropTypes.object,
+  textStyle: PropTypes.string,
 };
 
 Description.defaultProps = {
