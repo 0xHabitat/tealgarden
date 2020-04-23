@@ -73,7 +73,7 @@
       "tool": {
         "name": "github",
         "description": "Software development platform used for us to keep track of bounties, description and their size.",
-        "link": "https://github.githubassets.com/favicons/favicon-dark.svg",
+        "link": "https://github.githubassets.com/favicons/favicon.svg",
         "type": "tool"
       }
     },
@@ -89,7 +89,7 @@
       "tool": {
         "name": "Google Forms",
         "description": "Easy way of creating forms that help us funnel the bounties and auto announce them on our communication channel.",
-        "link": "https://www.google.com/forms/about/",
+        "link": "https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png",
         "type": "tool"
       }
     },
@@ -115,7 +115,7 @@
       "tool": {
         "name": "Slack",
         "description": "Digital collaboration chat to announce and discuss bounties.",
-        "link": "https://www.slack.com",
+        "link": "https://slack.com/favicon.ico",
         "type": "tool"
       }
     }

@@ -8,18 +8,29 @@ import {
   Tab,
   Content,
   ContentWrapper,
+  ContentWrapperIntegration,
   FlexWrapper,
   ContentScroll,
   ContentHover,
   ContentHoverTools,
   ToolImg,
-  ToolDescription,
   SectionWrapper,
   StepNavigation,
   StepNavigationElement,
+  HorizontalDivider,
+  SetpsAccordion,
 } from './tamplateComponents/processTamplate.style';
-import { ExternalLink } from 'react-external-link';
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTitle,
+  AccordionBody,
+  IconWrapper,
+  OpenIcon,
+  CloseIcon,
+} from 'common/src/components/Accordion';
 import MDReactComponent from 'markdown-react-js';
+import { ExternalLink } from 'react-external-link';
 import { ResetCSS } from 'common/src/assets/css/style';
 import Navbar from '../containers/App/Navbar';
 import Title from './tamplateComponents/Title/title';
@@ -29,11 +40,15 @@ import SupportBlock from '../containers/App/SupportBlock';
 import Footer from '../containers/App/Footer';
 import '@redq/reuse-modal/es/index.css';
 import CookieBanner from 'react-cookie-banner';
+import Box from 'common/src/components/Box';
 import SEO from '../components/seo';
 import ProcessList from '../containers/App/ProcessList';
 import Heading from 'common/src/components/Heading';
 import Container from 'common/src/components/UI/Container';
 import Text from 'common/src/components/Text';
+import { Icon } from 'react-icons-kit';
+import { plus } from 'react-icons-kit/entypo/plus';
+import { minus } from 'react-icons-kit/entypo/minus';
 
 const BasicTemplate = (props) => {
   const { pageContext } = props;
@@ -85,20 +100,35 @@ const BasicTemplate = (props) => {
               <dvi>
                 <Tabs>
                   <Tab onClick={handleClick} active={active === 0} id={0}>
-                    <span>🌐</span> Org Structure
+                    <span role="img" aria-label="Organisation">
+                      🌐
+                    </span>{' '}
+                    Org Structure
                   </Tab>
 
                   <Tab onClick={handleClick} active={active === 1} id={1}>
-                    <span>📜</span> Policies
+                    <span role="img" aria-label="Policies">
+                      📜
+                    </span>{' '}
+                    Policies
                   </Tab>
                   <Tab onClick={handleClick} active={active === 2} id={2}>
-                    <span>🎭</span> Roles
+                    <span role="img" aria-label="Roles">
+                      🎭
+                    </span>{' '}
+                    Roles
                   </Tab>
                   <Tab onClick={handleClick} active={active === 3} id={3}>
-                    <span>⚒️</span> Tools
+                    <span role="img" aria-label="Tools">
+                      ⚒️
+                    </span>{' '}
+                    Tools
                   </Tab>
                   <Tab onClick={handleClick} active={active === 4} id={4}>
-                    <span>💖</span> Values
+                    <span role="img" aria-label="Values">
+                      💖
+                    </span>{' '}
+                    Values
                   </Tab>
                 </Tabs>
                 <>
@@ -179,16 +209,51 @@ const BasicTemplate = (props) => {
             </SectionWrapper>
             <SectionWrapper>
               <Heading content="Integration Steps" />
-              <ContentWrapper active={true}>
+              <ContentWrapperIntegration>
                 <StepNavigation>
-                  {pageContent.instructions.map((tool, name, index) => (
+                  {pageContent.instructions.map((tool, index) => (
                     <StepNavigationElement key={index}>
                       <ToolImg src={tool.tool.link} />
                       <Heading content={tool.name} />
                     </StepNavigationElement>
                   ))}
                 </StepNavigation>
-              </ContentWrapper>
+                <HorizontalDivider />
+                <SetpsAccordion>
+                  <Container>
+                    <Box className="row">
+                      <Accordion>
+                        <Fragment>
+                          {pageContent.instructions.map(
+                            (instructions, index) => (
+                              <AccordionItem key={`accordion_key-${index}`}>
+                                <Fragment>
+                                  <AccordionTitle>
+                                    <Fragment>
+                                      <Heading content={instructions.namee} />
+                                      <IconWrapper>
+                                        <OpenIcon>
+                                          <Icon icon={minus} size={18} />
+                                        </OpenIcon>
+                                        <CloseIcon>
+                                          <Icon icon={plus} size={18} />
+                                        </CloseIcon>
+                                      </IconWrapper>
+                                    </Fragment>
+                                  </AccordionTitle>
+                                  <AccordionBody>
+                                    <Text content={instructions.description} />
+                                  </AccordionBody>
+                                </Fragment>
+                              </AccordionItem>
+                            )
+                          )}
+                        </Fragment>
+                      </Accordion>
+                    </Box>
+                  </Container>
+                </SetpsAccordion>
+              </ContentWrapperIntegration>
             </SectionWrapper>
             <SectionWrapper>
               <Heading content="More practices" />

@@ -15,8 +15,6 @@ import {
   flexDirection,
   position,
   overflow,
-  fontSize,
-  textAlign,
 } from 'styled-system';
 
 export const SectionWrapper = styled.section`
