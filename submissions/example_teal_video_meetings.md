@@ -117,7 +117,7 @@ All other team members are invited via a **calendar tool** of choice. By using a
 
 * Add your desired meeting room name & press **GO**
 
-![create room](https://i.imgur.com/vad9puF.png =500x)
+![create room](https://i.imgur.com/vad9puF.png)
 
 
 
@@ -125,7 +125,7 @@ All other team members are invited via a **calendar tool** of choice. By using a
 
 * You are immediately connected to the room and can start inviting others via the url:
 
-![url](https://i.imgur.com/ii5R7xX.png =400x)
+![url](https://i.imgur.com/ii5R7xX.png)
 
 
 
@@ -135,7 +135,7 @@ All other team members are invited via a **calendar tool** of choice. By using a
 
 * Add a new calendar, choose a name, short description and the desired timezone:
 
-![Setup](https://i.imgur.com/vPgAZmc.png =500x)
+![Setup](https://i.imgur.com/vPgAZmc.png)
 
 
 
@@ -143,7 +143,7 @@ All other team members are invited via a **calendar tool** of choice. By using a
 
 * Name the new meeting, set a time and add the video-conferencing link in the location field. Then, invite via mail:
 
-![invite](https://i.imgur.com/d15Gspm.png =500x)
+![invite](https://i.imgur.com/d15Gspm.png)
 
 
 
