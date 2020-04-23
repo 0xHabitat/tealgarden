@@ -69,8 +69,8 @@
       ],
       "tool": {
         "name": "github",
-        "description": "this is a description",
-        "link": "https://github.githubassets.com/favicons/favicon-dark.svg",
+        "description": "",
+        "link": "https://github.githubassets.com/favicons/favicon.svg",
         "type": "tool"
       }
     },
@@ -85,7 +85,7 @@
       ],
       "tool": {
         "name": "Google Forms",
-        "description": "this is a description",
+        "description": "",
         "link": "https://www.google.com/forms/about/",
         "type": "tool"
       }
@@ -101,7 +101,7 @@
       ],
       "tool": {
         "name": "Slack",
-        "description": "this is a description",
+        "description": "",
         "link": "https://a.slack-edge.com/80588/marketing/img/meta/favicon-32.png",
         "type": "tool"
       }

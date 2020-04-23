@@ -59,6 +59,14 @@ export const Tab = styled.button`
   }
 `;
 
+export const FlexWrapper = styled.div`
+  ${(props) => (props.active ? '' : 'display:none')};
+  display: flex !important;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+`;
+
 export const ContentWrapper = styled.div`
   ${(props) => (props.active ? '' : 'display:none')};
   background-color: #fff;
@@ -68,6 +76,19 @@ export const ContentWrapper = styled.div`
   padding: 20px;
   padding-top: 10px;
   min-height: 150px !important;
+`;
+
+export const ToolImg = styled.img`
+  max-height: 35px !important;
+`;
+
+export const ToolDescription = styled.div`
+  color: #091632;
+  padding-left: 10px;
+  display: flex !important;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
 `;
 
 export const ContentHover = styled.div`
@@ -81,24 +102,36 @@ export const ContentHover = styled.div`
   :hover {
     border: 2px solid #82e3e3;
   }
+`;
 
-  /* styled system prop support */
-  ${display}
-  ${width}
-  ${height}
-  ${flexWrap}
-  ${flexDirection}
-  ${alignItems}
-  ${justifyContent}
-  ${position}
-  ${color}
-  ${space}
-  ${borders}
-  ${borderColor}
-  ${boxShadow}
-  ${borderRadius}
-  ${overflow}
-  ${fontSize}
+export const ContentHoverTools = styled.div`
+  text-align: left;
+  border: 2px solid #e6ebf0;
+  border-radius: 2px;
+  padding: 20px;
+  color: #091632;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  width: 250px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  :hover {
+    border: 2px solid #82e3e3;
+  }
+`;
+
+export const StepNavigation = styled.div`
+  margin-top: 50px;
+  margin-bottom: 50px;
+  min-height: 100px;
+  width: 30%;
+  text-align: center;
 `;
 
 export const Content = styled.div`
