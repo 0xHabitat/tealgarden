@@ -10,6 +10,10 @@ You'll find format requirements and important info about each step in the [submi
 
 ---
 
+Mail: name@mail.com  
+Address: `0x...` Required for TEAL airdrop
+
+
 ## 1. Practice / Process ID
 
 :writing_hand: :
