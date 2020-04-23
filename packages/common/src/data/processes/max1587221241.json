@@ -49,7 +49,7 @@
   ],
   "instructions": [
     {
-      "name": "Create a Bounty on Github",
+      "name": "1. Create a Bounty",
       "steps": [
         {
           "name": "Upload Bounty Template on Github",
@@ -75,7 +75,7 @@
       }
     },
     {
-      "name": "Submit Bounty via Google Forms",
+      "name": "2. Submit via Forms",
       "steps": [
         {
           "name": "Create a Bounty Proposal",
@@ -86,12 +86,12 @@
       "tool": {
         "name": "Google Forms",
         "description": "",
-        "link": "https://www.google.com/forms/about/",
+        "link": "https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png",
         "type": "tool"
       }
     },
     {
-      "name": "Auto Announce on Slack",
+      "name": "3. Auto Announce",
       "steps": [
         {
           "name": "Create a Bounty Proposal",

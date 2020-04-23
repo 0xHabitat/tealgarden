@@ -16,6 +16,7 @@ import {
   ToolDescription,
   SectionWrapper,
   StepNavigation,
+  StepNavigationElement,
 } from './tamplateComponents/processTamplate.style';
 import { ExternalLink } from 'react-external-link';
 import MDReactComponent from 'markdown-react-js';
@@ -156,10 +157,7 @@ const BasicTemplate = (props) => {
                           <ExternalLink href={tool.tool.link}>
                             <ContentHoverTools key={index}>
                               <ToolImg src={tool.tool.link} />
-                              <ToolDescription>
-                                <Heading content={tool.tool.name} />
-                                <Text content={tool.tool.description} />
-                              </ToolDescription>
+                              <Heading content={tool.tool.name} />
                             </ContentHoverTools>
                           </ExternalLink>
                         ))}
@@ -182,11 +180,14 @@ const BasicTemplate = (props) => {
             <SectionWrapper>
               <Heading content="Integration Steps" />
               <ContentWrapper active={true}>
-                {pageContent.instructions.map((tool, index) => (
-                  <StepNavigation key={index}>
-                    <Heading content={tool.tool.name} />
-                  </StepNavigation>
-                ))}
+                <StepNavigation>
+                  {pageContent.instructions.map((tool, name, index) => (
+                    <StepNavigationElement key={index}>
+                      <ToolImg src={tool.tool.link} />
+                      <Heading content={tool.name} />
+                    </StepNavigationElement>
+                  ))}
+                </StepNavigation>
               </ContentWrapper>
             </SectionWrapper>
             <SectionWrapper>

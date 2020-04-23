@@ -79,16 +79,8 @@ export const ContentWrapper = styled.div`
 `;
 
 export const ToolImg = styled.img`
-  max-height: 35px !important;
-`;
-
-export const ToolDescription = styled.div`
-  color: #091632;
-  padding-left: 10px;
-  display: flex !important;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: flex-start;
+  height: 35px;
+  padding-right: 15px;
 `;
 
 export const ContentHover = styled.div`
@@ -127,11 +119,24 @@ export const ContentHoverTools = styled.div`
 `;
 
 export const StepNavigation = styled.div`
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   min-height: 100px;
   width: 30%;
   text-align: center;
+`;
+
+export const StepNavigationElement = styled.button`
+  background-color: transparent;
+  border: none;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
 `;
 
 export const Content = styled.div`
