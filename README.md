@@ -7,17 +7,24 @@
 :house_with_garden: `SDG 11: Sustainable Cities and Communities`  
 :handshake: `SDG 17: Partnerships for the Goals`  
 
+
+
 The current health and economic crises have created vast & sudden change. Now it is up to us to rebuild communities and organizations. Let's take the chance and create the better world our hearts know is possible.
 
 Instead of hierarchies that dictate our actions, or economic machineries that force financial rationale over social and ecological wellbeing, we can create work environments where we can bring ourselves as a whole, and collaborate with peers to realize a purpose that we care for deeply.
 
+
+
 :thought_balloon: - **"The greatest danger in times of turbulence is not the turbulence, It is to act with yesterday's logic" -- Peter Drucker**
+
+
 
 ## :question: Questions:
 
 * Which processes and tools have enabled people in your community or workspace to coordinate without a central power of authority?
-
 * Which practices and processes can you imagine that will bring out the best of your collective organization in the future?
+
+
 
 ## :heavy_check_mark: Scope:
 
@@ -25,6 +32,8 @@ Instead of hierarchies that dictate our actions, or economic machineries that fo
 * Get comfortable with teal practices & holacracy, take some time and see our resources & explainers:
 
     * [Basic Explainers](https://github.com/deora-earth/tealgarden/blob/develop/docs/teal-basics.md)
+
+
 
 :point_right: **Second Step:**
 
@@ -40,13 +49,17 @@ Instead of hierarchies that dictate our actions, or economic machineries that fo
 
     * [Evaluation Criteria](https://github.com/deora-earth/tealgarden/blob/develop/docs/submission-evaluation.md)
 
+
+
 :point_right: **Third Step:**  
 
 Now that you have a feeling for the matter, let's build:
 
+
 **1.** Think about an organisational challenge in your community, your crew or even on an international scale. 
 
 * Maybe you already have experience in self-management and want to share your best practices that worked!
+  
 
 **2.** Connect several free, open-source or web3 tools. Define the different to-dos in each step and give some important insights within the practice of your choice.
 
@@ -65,6 +78,7 @@ Now that you have a feeling for the matter, let's build:
 
 The Deora team will pick the best 3 submissions through a lens of a teal/holacracy practitioner and distribute rewards in the form of tokens.
 
+
 **Prizes - The top 3 submissions will receive payouts of:**
 
 1st - **400 DAI**
@@ -77,14 +91,11 @@ The Deora team will pick the best 3 submissions through a lens of a teal/holacra
 
 ---
 
-**Feeling ready to build?** :hammer_and_wrench:
+**Feeling ready to build? :hammer_and_wrench: Great, keep rolling!** :biking_man:
 
-**Great, keep rolling!** :biking_man:
+:question:**Not sure where to start ? Check our dedicated discord channel:**:question:
 
-:question:**Not sure where to start**:question:
-
-**Check our dedicated discord channel:**
-:point_right: - ​**[Deora Support](https://discord.gg/T5NU2q5)** - :point_left:
+:point_right:**- ​[Deora Support](https://discord.gg/T5NU2q5) -** :point_left:
 
 ![solarpunk](https://i.imgur.com/FaBDhgT.jpg)
 

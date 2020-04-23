@@ -1,4 +1,4 @@
-# Practise: Teal Video Meetings :video_camera::calendar:
+# Practice: Teal Video Meetings :video_camera::calendar:
 
 
 ## 1. Practice / Process ID
@@ -6,13 +6,9 @@
 **Teal Video Meetings**
 
 
-
-
 ## 2. Category
 
 :date: Meetings
-
-
 
 ## 3. Summary
 
@@ -24,15 +20,11 @@ The **Secretary** of the group is responsible to schedule meetings & invite othe
 
 All other team members are invited via a **calendar tool** of choice. By using a **video-conferencing tool**, partners working from home or remote locations can easily join & interact.
 
-
-
 ## 4. Benefits
 
 * **A transparent meeting system**; everyone is involved in the regular meetings, can contribute & join the discourse.
 * **A consistent meeting system**; everyone can share progress & achievements, get's updates from partners.
 * **A productive meeting system**; everyone can share views & reactions. Tensions get attention and integrated.
-
-
 
 ## 5. Adoption Requirements:
 
@@ -41,16 +33,12 @@ All other team members are invited via a **calendar tool** of choice. By using a
 * As our process needs a Secretary and a Facilitator, the organization can adopt Holacracy v4.1.
 * The organization members can implement their own structure, but we essentially need these two roles.
 
-
-
 ### 5.2 :scroll: Policies
 
 * Within [Holacracy v4.1](https://www.holacracy.org/constitution):
     * Governance & Tactical meetings are planned by default.
 * The frequency of meetings is subject to approval.
 * A new Policy defining a different meeting architecture is possible, but needs to be processed as a proposal.
-
-
 
 ### 5.3 :performing_arts: Roles
 
@@ -83,8 +71,6 @@ All other team members are invited via a **calendar tool** of choice. By using a
 *Accountabilities*
 * scheduling the Circle’s required meetings, and notifying all Core Circle Members of scheduled times and locations.
 
-
-
 ### 5.4 :hammer_and_wrench: Tools 
 
 1.)
@@ -92,22 +78,16 @@ All other team members are invited via a **calendar tool** of choice. By using a
 * a open source video-conferencing tool
 * link: `https://meet.jit.si/`
 
-
-
 2.)
 * Google calendar
 * the centralised solution to keep your teams schedule visible.
 * link: `https://calendar.google.com/`
-
-
 
 ### 5.5 :heart: Values
 
 * Full Transparency
 * Open communication
 * Wholeness through inclusion
-
-
 
 ## 6. Integration Steps / Instructions
 
@@ -147,5 +127,5 @@ All other team members are invited via a **calendar tool** of choice. By using a
 
 
 
-### :tada:Success! :tada:
+### :tada: Success! :tada:
 
