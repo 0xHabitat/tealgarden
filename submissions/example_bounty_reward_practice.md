@@ -10,6 +10,9 @@ You'll find format requirements and important info about each step in the [submi
 
 ---
 
+Mail: max@deora.earth  
+Address: `0x5B4dF17CA5A3339D722028a585582693742E5B5a`
+
 ## 1. Practice / Process ID
 
 Bounty Reward Process
