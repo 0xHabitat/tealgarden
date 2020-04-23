@@ -67,7 +67,7 @@ Now that you have a feeling for the matter, let's build:
 
 **4.** Fill everything and maybe even give us important feedback.
 
-**5.** Upload your finished .md file via a GitHub pull request to our teal.garden repo and [submission folder](link.  Put the name of your **team** and the title of the **process** as a name for the file.
+**5.** Upload your finished .md file via a GitHub pull request to our teal.garden repo and [submission folder](https://github.com/deora-earth/tealgarden/tree/develop/submissions).  Put the name of your **team** and the title of the **process** as a name for the file.
 
 :point_right: -  :tada: **Congratulations**, you've just created your first own teal practice! :tada:
 
