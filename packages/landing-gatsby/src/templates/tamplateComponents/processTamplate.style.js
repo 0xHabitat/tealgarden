@@ -60,6 +60,12 @@ export const ContentWrapper = styled.div`
   min-height: 150px !important;
 `;
 
+export const ContentWrapperAccordion = styled.div`
+  ${(props) => (props.active ? '' : 'display:none')};
+  background-color: #fff;
+  min-height: 150px !important;
+`;
+
 export const ContentWrapperIntegration = styled.div`
   background-color: #fff;
   border: 2px solid #091632;
@@ -179,7 +185,8 @@ export const ContentScrollSmall = styled.div`
 `;
 
 export const HorizontalDivider = styled.hr`
-  color: #e1e4e8;
+  color: #e6ebf0;
+  opacity: 0.2;
 `;
 
 export const SetpsAccordion = styled.section`

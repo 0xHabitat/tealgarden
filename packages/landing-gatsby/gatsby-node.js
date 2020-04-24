@@ -64,7 +64,7 @@ exports.createPages = ({ actions, graphql }) => {
 
     result.data.allProcessesJson.edges.forEach(({ node }) => {
       createPage({
-        path: node.id,
+        path: 'process/' + node.id,
         context: {
           pageContent: node,
         },

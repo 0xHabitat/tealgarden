@@ -9,6 +9,7 @@ import {
   Content,
   ContentWrapper,
   ContentWrapperIntegration,
+  ContentWrapperAccordion,
   FlexWrapper,
   ContentScroll,
   ContentScrollSmall,
@@ -215,9 +216,13 @@ const BasicTemplate = (props) => {
             <SectionWrapper>
               <Heading content="Integration Steps" />
               <ContentWrapperIntegration>
-                <StepNavigation>
+                <StepNavigation onClick={handleClick}>
                   {pageContent.instructions.map((tool, index) => (
-                    <StepNavigationElement key={index}>
+                    <StepNavigationElement
+                      key={index}
+                      active={active === 0 + index}
+                      id={index}
+                    >
                       <ToolImg src={tool.tool.link} />
                       <Heading content={tool.name} />
                     </StepNavigationElement>
@@ -230,27 +235,38 @@ const BasicTemplate = (props) => {
                       <Accordion>
                         <Fragment>
                           {pageContent.instructions.map(
-                            (instructions, index) => (
-                              <AccordionItem key={`accordion_key-${index}`}>
-                                <Fragment>
-                                  <AccordionTitle>
+                            (instruction, index) => (
+                              <ContentWrapperAccordion
+                                active={active === index}
+                              >
+                                {instruction.steps.map((step, index) => (
+                                  <AccordionItem
+                                    key={`accordion_key-${index}`}
+                                    active={active === index}
+                                  >
                                     <Fragment>
-                                      <Heading content={instructions.name} />
-                                      <IconWrapper>
-                                        <OpenIcon>
-                                          <Icon icon={minus} size={18} />
-                                        </OpenIcon>
-                                        <CloseIcon>
-                                          <Icon icon={plus} size={18} />
-                                        </CloseIcon>
-                                      </IconWrapper>
+                                      <AccordionTitle>
+                                        <Fragment>
+                                          <Heading content={step.name} />
+                                          <IconWrapper>
+                                            <OpenIcon>
+                                              <Icon icon={minus} size={18} />
+                                            </OpenIcon>
+                                            <CloseIcon>
+                                              <Icon icon={plus} size={18} />
+                                            </CloseIcon>
+                                          </IconWrapper>
+                                        </Fragment>
+                                      </AccordionTitle>
+                                      <AccordionBody>
+                                        <MDReactComponent
+                                          text={step.description}
+                                        />
+                                      </AccordionBody>
                                     </Fragment>
-                                  </AccordionTitle>
-                                  <AccordionBody>
-                                    <Text content={instructions.description} />
-                                  </AccordionBody>
-                                </Fragment>
-                              </AccordionItem>
+                                  </AccordionItem>
+                                ))}
+                              </ContentWrapperAccordion>
                             )
                           )}
                         </Fragment>
