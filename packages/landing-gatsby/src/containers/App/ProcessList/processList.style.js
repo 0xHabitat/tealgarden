@@ -29,6 +29,11 @@ export const SectionWrapper = styled.section`
   }
 `;
 
+export const ButtonWrapper = styled.button`
+  background-color: none;
+  border: none;
+`;
+
 export const CardBg = styled.div`
   margin-left: -30px;
   padding: 10px;

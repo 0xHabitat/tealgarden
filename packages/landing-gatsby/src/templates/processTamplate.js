@@ -260,10 +260,6 @@ const BasicTemplate = (props) => {
                 </SetpsAccordion>
               </ContentWrapperIntegration>
             </SectionWrapper>
-            <SectionWrapper>
-              <Heading content="More practices" />
-              <ProcessList />
-            </SectionWrapper>
           </Container>
           <Newsletter />
           <SupportBlock />

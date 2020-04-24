@@ -53,7 +53,14 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
             logoStyle={logoStyle}
           />
           <div style={{ display: 'flex', alignItems: 'center' }}>
-            <a href="#!" style={{ color: '#091632', fontWeight: '600' }}>
+            <a
+              href="#!"
+              style={{
+                color: '#091632',
+                fontWeight: '600',
+                paddingRight: '20px',
+              }}
+            >
               {' '}
               Home
             </a>
@@ -61,16 +68,13 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
               {' '}
               About
             </a>
-            <a href="#!" style={{ color: '#091632', fontWeight: '600' }}>
-              {' '}
-              Blog
-            </a>
+            {/*
             <Button
               className="icon"
               onClick={handleLoginModal}
               icon={<i className="flaticon-user" />}
               aria-label="login"
-            />
+            /> */}
           </div>
         </Container>
         <svg
