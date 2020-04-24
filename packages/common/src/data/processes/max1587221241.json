@@ -52,7 +52,7 @@
   ],
   "instructions": [
     {
-      "name": "Create a Bounty",
+      "name": "1. Create a Bounty",
       "steps": [
         {
           "name": "Upload Bounty Template on Github",
@@ -78,7 +78,7 @@
       }
     },
     {
-      "name": "Submit Bounty",
+      "name": "2. Submit Bounty",
       "steps": [
         {
           "name": "Create a Bounty Proposal Form",
@@ -94,7 +94,7 @@
       }
     },
     {
-      "name": "Auto Announce",
+      "name": "3. Auto Announce",
       "steps": [
         {
           "name": "Enter your Slack webhookURL in script",

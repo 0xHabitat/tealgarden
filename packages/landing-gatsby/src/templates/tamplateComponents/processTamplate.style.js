@@ -44,7 +44,7 @@ export const Tab = styled.button`
 export const FlexWrapper = styled.div`
   ${(props) => (props.active ? '' : 'display:none')};
   display: flex !important;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
 `;
@@ -79,6 +79,10 @@ export const ToolImg = styled.img`
   padding-right: 15px;
 `;
 
+export const ToolContent = styled.div`
+  display: block;
+`;
+
 export const ContentHover = styled.div`
   text-align: left;
   border: 2px solid #e6ebf0;
@@ -103,10 +107,9 @@ export const ContentHoverTools = styled.div`
   margin-right: 15px;
   margin-bottom: 10px;
   font-size: 14px;
-  width: 250px;
+  width: 400px;
   display: flex;
   flex-wrap: nowrap;
-  flex-direction: row;
   justify-content: flex-start;
 
   :hover {
@@ -151,6 +154,22 @@ export const ContentScroll = styled.div`
   padding: 20px;
   color: #091632;
   font-size: 14px;
+  max-height: 350px;
+  overflow: scroll;
+
+  .frame::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+`;
+
+export const ContentScrollSmall = styled.div`
+  text-align: left;
+  border: 2px solid #e6ebf0;
+  border-radius: 2px;
+  padding: 20px;
+  color: #091632;
+  font-size: 14px;
+  width: 300px;
   max-height: 350px;
   overflow: scroll;
 

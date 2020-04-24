@@ -11,6 +11,7 @@ import {
   ContentWrapperIntegration,
   FlexWrapper,
   ContentScroll,
+  ContentScrollSmall,
   ContentHover,
   ContentHoverTools,
   ToolImg,
@@ -19,6 +20,7 @@ import {
   StepNavigationElement,
   HorizontalDivider,
   SetpsAccordion,
+  ToolContent,
 } from './tamplateComponents/processTamplate.style';
 import {
   Accordion,
@@ -171,14 +173,14 @@ const BasicTemplate = (props) => {
                         Mandatory roles that are affected or created for this
                         process to work properly.{' '}
                       </p>
-                      <ContentScroll>
+                      <ContentScrollSmall>
                         <Heading content={pageContent.components[0].title} />
                         <Text content={pageContent.components[0].purpose} />
                         <Text content={pageContent.components[0].domains} />
                         <Text
-                          content={pageContent.components[0].accountabilities}
+                          content={pageContent.components.accountabilities}
                         />
-                      </ContentScroll>
+                      </ContentScrollSmall>
                     </ContentWrapper>
                     <ContentWrapper active={active === 3}>
                       <p>Tools that are used in this process.</p>
@@ -187,7 +189,10 @@ const BasicTemplate = (props) => {
                           <ExternalLink href={tool.tool.link}>
                             <ContentHoverTools key={index}>
                               <ToolImg src={tool.tool.link} />
-                              <Heading content={tool.tool.name} />
+                              <ToolContent>
+                                <Heading content={tool.tool.name} />
+                                <Text content={tool.tool.description} />
+                              </ToolContent>
                             </ContentHoverTools>
                           </ExternalLink>
                         ))}
@@ -230,7 +235,7 @@ const BasicTemplate = (props) => {
                                 <Fragment>
                                   <AccordionTitle>
                                     <Fragment>
-                                      <Heading content={instructions.namee} />
+                                      <Heading content={instructions.name} />
                                       <IconWrapper>
                                         <OpenIcon>
                                           <Icon icon={minus} size={18} />
