@@ -1,5 +1,7 @@
 # Practice: Teal Video Meetings :video_camera::calendar:
 
+Mail: victor@deora.earth  
+Address: `0xD2FA59811af055e0e94D570EA7F9800c0E5C0428`
 
 ## 1. Practice / Process ID
 
