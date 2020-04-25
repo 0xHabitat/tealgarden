@@ -240,12 +240,12 @@ const BasicTemplate = (props) => {
                       id={index}
                       onClick={handleClick}
                     >
-                      <a onClick={handleClick}>
+                      <a href={handleClick}>
                         {' '}
                         <ToolImg src={tool.tool.link} />{' '}
                       </a>
                       <TealHighliter active={active === 0 + index}>
-                        <a onClick={handleClick}>
+                        <a href={handleClick}>
                           {' '}
                           <Heading content={tool.name} />{' '}
                         </a>

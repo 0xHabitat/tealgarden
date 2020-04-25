@@ -1,47 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import NavbarWrapper from 'common/src/components/Navbar';
-import Button from 'common/src/components/Button';
-import LoginModal from '../LoginModal';
 import Logo from 'common/src/components/UIElements/Logo';
-import { openModal, closeModal } from '@redq/reuse-modal';
 import { Container, Divider } from './navbar.style';
 import LogoImage from 'common/src/assets/image/app/logo.png';
 
-// Default close button for modal
-const CloseModalButton = () => (
-  <Button
-    className="modalCloseBtn"
-    variant="fab"
-    onClick={() => closeModal()}
-    icon={<i className="flaticon-plus-symbol" />}
-  />
-);
-
 const Navbar = ({ navbarStyle, logoStyle }) => {
-  // Authentication modal handler
-  const handleLoginModal = () => {
-    openModal({
-      config: {
-        className: 'login-modal',
-        disableDragging: true,
-        width: '100%',
-        height: '100%',
-        animationFrom: { transform: 'translateY(100px)' }, // react-spring <Spring from={}> props value
-        animationTo: { transform: 'translateY(0)' }, //  react-spring <Spring to={}> props value
-        transition: {
-          mass: 1,
-          tension: 180,
-          friction: 26,
-        },
-      },
-      component: LoginModal,
-      componentProps: {},
-      closeComponent: CloseModalButton,
-      closeOnClickOutside: false,
-    });
-  };
-
   return (
     <NavbarWrapper {...navbarStyle}>
       <Divider>
