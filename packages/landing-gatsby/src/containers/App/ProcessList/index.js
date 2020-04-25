@@ -12,6 +12,7 @@ import ListItemWrapper, {
   Icon,
   IconWrapper,
   ContentWrapper,
+  ProcessLink,
 } from './processList.style';
 
 const ProcessList = ({
@@ -48,28 +49,30 @@ const ProcessList = ({
           <Box>
             {Data.allProcessesJson.edges.map((process, index) => (
               <ListItemWrapper {...ListElementWrapper} key={index}>
-                <IconWrapper className="icon__wrapper">
-                  <Icon
-                    src={process.node.icons.startIconUrl}
-                    alt={process.node.title}
-                    {...icon1}
-                  />
-                  <Text content=">>>" {...arrow} />
-                  <Icon
-                    src={process.node.icons.endIconUrl}
-                    alt={process.node.title}
-                    {...icon2}
-                  />
-                </IconWrapper>
-                <ContentWrapper className="content__wrapper">
-                  <Heading {...title} content={process.node.title} />
-                  <Text
-                    {...description}
-                    content={
-                      process.node.summary.abstract.substr(0, 120) + '...'
-                    }
-                  />
-                </ContentWrapper>
+                <ProcessLink href={'/process/' + process.node.id}>
+                  <IconWrapper className="icon__wrapper">
+                    <Icon
+                      src={process.node.icons.startIconUrl}
+                      alt={process.node.title}
+                      {...icon1}
+                    />
+                    <Text content=">>>" {...arrow} />
+                    <Icon
+                      src={process.node.icons.endIconUrl}
+                      alt={process.node.title}
+                      {...icon2}
+                    />
+                  </IconWrapper>
+                  <ContentWrapper className="content__wrapper">
+                    <Heading {...title} content={process.node.title} />
+                    <Text
+                      {...description}
+                      content={
+                        process.node.summary.abstract.substr(0, 120) + '...'
+                      }
+                    />
+                  </ContentWrapper>
+                </ProcessLink>
               </ListItemWrapper>
             ))}
           </Box>

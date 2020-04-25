@@ -3,12 +3,14 @@ import '@redq/reuse-modal/es/index.css';
 import PropTypes from 'prop-types';
 import Container from 'common/src/components/UI/Container';
 import Text from 'common/src/components/Text';
+import List from 'common/src/components/List';
 import Heading from 'common/src/components/Heading';
 import MDReactComponent from 'markdown-react-js';
 import {
   SectionWrapper,
   SummaryWrapper,
   BenefitsWrapper,
+  YellowHighliter,
 } from './description.style';
 
 const Description = ({ summaryText, textStyle, benefitsText }) => {
@@ -18,12 +20,16 @@ const Description = ({ summaryText, textStyle, benefitsText }) => {
         {summaryText || benefitsText ? (
           <Fragment>
             <SummaryWrapper>
-              <Heading content="Summary" />
+              <YellowHighliter>
+                <Heading content="Summary" />
+              </YellowHighliter>
               <MDReactComponent text={summaryText} {...textStyle} />
             </SummaryWrapper>
             <BenefitsWrapper>
-              <Heading content="Benefits" />
-              <Text content={benefitsText} {...textStyle} />
+              <YellowHighliter>
+                <Heading content="Benefits" />
+              </YellowHighliter>
+              <List text={benefitsText} {...textStyle} />
             </BenefitsWrapper>
           </Fragment>
         ) : (

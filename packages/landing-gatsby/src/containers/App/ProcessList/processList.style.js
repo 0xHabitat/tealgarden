@@ -34,6 +34,15 @@ export const ButtonWrapper = styled.button`
   border: none;
 `;
 
+export const ProcessLink = styled.a`
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+`;
+
 export const CardBg = styled.div`
   margin-left: -30px;
   padding: 10px;

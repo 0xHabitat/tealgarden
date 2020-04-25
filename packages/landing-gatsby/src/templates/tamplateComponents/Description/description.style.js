@@ -37,6 +37,15 @@ export const SectionWrapper = styled.section`
   ${overflow}    
 `;
 
+export const YellowHighliter = styled.mark`
+  background-color: #ffde00;
+  display: inline-block;
+  line-height: 0em;
+  padding-bottom: 0.1em;
+  border-radius: 15px;
+  margin-bottom: 5px;
+`;
+
 export const SummaryWrapper = styled.section`
     padding: 20px 0px 0px 0;
     @media (max-width: 990px) {

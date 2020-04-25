@@ -1,22 +1,13 @@
 import React, { Fragment } from 'react';
-import Link from 'next/link';
 import { ListWrapper } from './list.style';
 
 const List = ({ className, icon, text, link, ...props }) => (
   <ListWrapper className={className}>
-    {link ? (
-      <Link href={link}>
-        <a>
-          {icon}
-          {text}
-        </a>
-      </Link>
-    ) : (
-      <Fragment>
-        {icon}
-        {text}
-      </Fragment>
-    )}
+    <Fragment>
+      <ul>
+        <li>{text}</li>
+      </ul>
+    </Fragment>
   </ListWrapper>
 );
 

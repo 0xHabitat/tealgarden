@@ -47,26 +47,34 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
       <Divider>
         <Container>
           <Logo
-            href="#"
+            href="/"
             logoSrc={LogoImage}
             title="Teal.Garden by Deora"
             logoStyle={logoStyle}
           />
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <a
-              href="#!"
+              href="/"
               style={{
                 color: '#091632',
-                fontWeight: '600',
+                fontWeight: '700',
                 paddingRight: '20px',
+                fontStyle: 'italic',
               }}
             >
               {' '}
-              Home
+              HOME
             </a>
-            <a href="#!" style={{ color: '#091632', fontWeight: '600' }}>
+            <a
+              href="/about"
+              style={{
+                color: '#091632',
+                fontWeight: '700',
+                fontStyle: 'italic',
+              }}
+            >
               {' '}
-              About
+              ABOUT
             </a>
             {/*
             <Button
@@ -120,8 +128,9 @@ Navbar.defaultProps = {
   },
   navElement: {
     color: '#091632',
-    fontWeight: '600',
+    fontWeight: '700',
     pl: '5px',
+    fontStyle: 'italic',
   },
 };
 

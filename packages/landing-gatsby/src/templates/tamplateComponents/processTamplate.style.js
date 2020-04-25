@@ -1,7 +1,17 @@
 import styled from 'styled-components';
 
 export const SectionWrapper = styled.section`
-  padding: 50px 0px 80px 0;
+  padding: 50px 0px 50px 0;
+  @media (max-width: 990px) {
+    padding: 80px 0 40px 0;
+  }
+  @media (max-width: 575px) {
+    padding: 60px 0 20px 0;
+  }
+`;
+
+export const SectionWrapperSmall = styled.section`
+  padding: 20px 0px 20px 0;
   @media (max-width: 990px) {
     padding: 80px 0 40px 0;
   }
@@ -13,6 +23,7 @@ export const SectionWrapper = styled.section`
 export const Tabs = styled.div`
   overflow: hidden;
   height: 3em;
+  margin-top: 30px;
 `;
 
 export const Tab = styled.button`
@@ -64,6 +75,7 @@ export const ContentWrapperAccordion = styled.div`
   ${(props) => (props.active ? '' : 'display:none')};
   background-color: #fff;
   min-height: 150px !important;
+  margin-top: 25px;
 `;
 
 export const ContentWrapperIntegration = styled.div`
@@ -73,6 +85,7 @@ export const ContentWrapperIntegration = styled.div`
   border-radius: 5px;
   padding: 20px;
   padding-top: 10px;
+  margin-top: 30px;
   min-height: 150px !important;
   display: flex !important;
   flex-wrap: nowrap;
@@ -123,25 +136,45 @@ export const ContentHoverTools = styled.div`
   }
 `;
 
+export const YellowHighliter = styled.mark`
+  background-color: #ffde00;
+  display: inline-block;
+  line-height: 0em;
+  padding-bottom: 0.1em;
+  border-radius: 15px;
+`;
+
+export const TealHighliter = styled.mark`
+  background-color: ${(props) => (props.active ? '#82E3E3' : 'transparent')};
+  display: ${(props) => (props.active ? 'inline-block' : 'display:none')};
+  line-height: ${(props) => (props.active ? '0em' : 'display:none')};
+  border-radius: ${(props) => (props.active ? '15px' : 'display:none')};
+  margin-top: ${(props) => (props.active ? '15px;' : 'display:none')};
+`;
+
 export const StepNavigation = styled.div`
   margin-top: 25px;
   margin-bottom: 25px;
   min-height: 100px;
-  width: 30%;
+  width: 25%;
   text-align: center;
+  z-index: 5;
 `;
 
 export const StepNavigationElement = styled.button`
-  background-color: transparent;
+  cursor: pointer;
   border: none;
+  background: none;
   padding-top: 30px;
   padding-left: 15px;
   padding-bottom: 10px;
   font-size: 12px;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: flex-start;
+  z-index: 5;
 `;
 
 export const Content = styled.div`
@@ -190,7 +223,7 @@ export const HorizontalDivider = styled.hr`
 `;
 
 export const SetpsAccordion = styled.section`
-  padding: 80px 0;
+  margin-top: 20px;
   overflow: hidden;
   @media (max-width: 990px) {
     padding: 40px 0 60px 0;
@@ -200,25 +233,32 @@ export const SetpsAccordion = styled.section`
   }
 
   .reusecore__accordion {
-    max-width: 820px;
     margin: 0 auto;
+    width: 700px;
 
     .accordion__item {
       border: 2px solid #e6ebf0;
       border-radius: 5px;
-      &:last-child {
-        border-bottom: 0;
-      }
+      margin-bottom: 20px;
 
       .accordion__header {
-        padding: 20px 30px;
+        padding: 0px 20px;
       }
 
       .accordion__body {
-        padding: 5px 30px 20px;
+        padding: 10px;
+        margin: 0px 10px 10px;
+        border: 2px solid #e1e4e8;
+        border-radius: 5px;
       }
     }
     .accordion__item:active {
+      border: 2px solid #82e3e3;
+    }
+    .accordion__item:hover {
+      border: 2px solid #82e3e3;
+    }
+    .accordion__item:before {
       border: 2px solid #82e3e3;
     }
   }

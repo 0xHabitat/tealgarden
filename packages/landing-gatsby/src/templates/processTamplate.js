@@ -17,11 +17,14 @@ import {
   ContentHoverTools,
   ToolImg,
   SectionWrapper,
+  SectionWrapperSmall,
   StepNavigation,
   StepNavigationElement,
   HorizontalDivider,
   SetpsAccordion,
   ToolContent,
+  YellowHighliter,
+  TealHighliter,
 } from './tamplateComponents/processTamplate.style';
 import {
   Accordion,
@@ -37,7 +40,6 @@ import { ExternalLink } from 'react-external-link';
 import { ResetCSS } from 'common/src/assets/css/style';
 import Navbar from '../containers/App/Navbar';
 import Title from './tamplateComponents/Title/title';
-import Description from './tamplateComponents/Description/description';
 import Newsletter from '../containers/App/Newsletter';
 import SupportBlock from '../containers/App/SupportBlock';
 import Footer from '../containers/App/Footer';
@@ -45,13 +47,13 @@ import '@redq/reuse-modal/es/index.css';
 import CookieBanner from 'react-cookie-banner';
 import Box from 'common/src/components/Box';
 import SEO from '../components/seo';
-import ProcessList from '../containers/App/ProcessList';
 import Heading from 'common/src/components/Heading';
 import Container from 'common/src/components/UI/Container';
 import Text from 'common/src/components/Text';
 import { Icon } from 'react-icons-kit';
 import { plus } from 'react-icons-kit/entypo/plus';
 import { minus } from 'react-icons-kit/entypo/minus';
+import List from 'common/src/components/List';
 
 const BasicTemplate = (props) => {
   const { pageContext } = props;
@@ -59,7 +61,8 @@ const BasicTemplate = (props) => {
   const [active, setActive] = useState(0);
 
   const handleClick = (e) => {
-    const index = parseInt(e.target.id, 0);
+    console.log(e);
+    const index = parseInt(e.currentTarget.id, 0);
     if (index !== active) {
       setActive(index);
     }
@@ -93,13 +96,25 @@ const BasicTemplate = (props) => {
             title={pageContent.title}
             description={pageContent.summary.abstract.substr(0, 180) + '...'}
           />
-          <Description
-            summaryText={pageContent.summary.abstract}
-            benefitsText={pageContent.summary.benefits}
-          />
           <Container>
+            <SectionWrapperSmall>
+              <YellowHighliter>
+                <Heading content="Summary" />
+              </YellowHighliter>
+              <MDReactComponent text={pageContent.summary.abstract} />
+            </SectionWrapperSmall>
+            <SectionWrapperSmall>
+              <YellowHighliter>
+                <Heading content="Benefits" />
+              </YellowHighliter>
+              {pageContent.summary.benefits.map((benefit) => (
+                <List text={benefit} />
+              ))}
+            </SectionWrapperSmall>
             <SectionWrapper>
-              <Heading content="Adoption Requirements" />
+              <YellowHighliter>
+                <Heading content="Adoption Requirements" />
+              </YellowHighliter>
               <dvi>
                 <Tabs>
                   <Tab onClick={handleClick} active={active === 0} id={0}>
@@ -214,17 +229,27 @@ const BasicTemplate = (props) => {
               </dvi>
             </SectionWrapper>
             <SectionWrapper>
-              <Heading content="Integration Steps" />
+              <YellowHighliter>
+                <Heading content="Integration Steps" />
+              </YellowHighliter>
               <ContentWrapperIntegration>
-                <StepNavigation onClick={handleClick}>
+                <StepNavigation>
                   {pageContent.instructions.map((tool, index) => (
                     <StepNavigationElement
-                      key={index}
                       active={active === 0 + index}
                       id={index}
+                      onClick={handleClick}
                     >
-                      <ToolImg src={tool.tool.link} />
-                      <Heading content={tool.name} />
+                      <a onClick={handleClick}>
+                        {' '}
+                        <ToolImg src={tool.tool.link} />{' '}
+                      </a>
+                      <TealHighliter active={active === 0 + index}>
+                        <a onClick={handleClick}>
+                          {' '}
+                          <Heading content={tool.name} />{' '}
+                        </a>
+                      </TealHighliter>
                     </StepNavigationElement>
                   ))}
                 </StepNavigation>
@@ -247,7 +272,11 @@ const BasicTemplate = (props) => {
                                     <Fragment>
                                       <AccordionTitle>
                                         <Fragment>
-                                          <Heading content={step.name} />
+                                          <Heading
+                                            mt={3}
+                                            content={step.name}
+                                            as="h4"
+                                          />
                                           <IconWrapper>
                                             <OpenIcon>
                                               <Icon icon={minus} size={18} />
@@ -277,7 +306,9 @@ const BasicTemplate = (props) => {
               </ContentWrapperIntegration>
             </SectionWrapper>
           </Container>
-          <Newsletter />
+          <SectionWrapper>
+            <Newsletter />
+          </SectionWrapper>
           <SupportBlock />
           <Footer />
         </AppWrapper>
