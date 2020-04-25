@@ -1,0 +1,55 @@
+{
+  "id": "johba1587221242",
+  "title": "Reputation-based Profit Distributions",
+  "categories": [
+    "Performance Management",
+    "Compensation and incentives"
+  ],
+  "icons": {
+    "startIconUrl": "https://colony.io/img/favicon.ico",
+    "endIconUrl": "https://ethereum.org/favicon.png"
+  },
+  "summary": {
+    "abstract": "In traditional companies with bosses, and even in some self-managed organizations salary negotiations and distributions of bonuses are an opaque and mysterious process. Simple money incentives or even team incentives created unwanted dynamics, and often a feeling of being devalued as a human.![img](https:\/\/lh3.googleusercontent.com\/4r-2qWr7qE_v7FZjjDG34t8jBo9s6btsZDouL9KPZCp7n0uNKObv3i6wJwo9CR1Ya0YW-YkGv7szTzihcRWBovSOv3fDIkG4_OzaNTQ-iCUEmsQRIM4s35Y8jEgO6JcK8JhActpb)\r\nThis process introduces a reputation metric to the organization that is open and transparent. An example is given how the metric can be used to distribute profits in the form of crypto currency to the partners.\r\n\r\nThe process consists of a task policy which determines how any organization member can propose a task to earn reputation for. Once a task is delivered the reputation is then recorded using the colony framework. Colony calculates a decaying reputation metric which can be read from it\u2019s smart contracts and used by a payment splitter contract to distribute a reward proportional to the reputation of all members.",
+    "benefits": [
+      "An **open task proposal platform**: an interface where partners can prose tasks and an amount of reputation they desire to receive when the task is completed. A challenge duration is introduced so that tasks that don’t align with the organization purpose can be filtered out.",
+      "A **transparent reputation metric**: The delivery of tasks is concluded by the recording of reputation in the Colony system. Colony has a reputation miner that can record reputation on a skill level. To avoid a disadvantage for newcomers in comparison with veterans, a decay system makes sure that all reputation is halved over the duration of 90 days.",
+      "A **profit/bonus distribution system**: We present a simple smart contract that can split an ERC20 or Ether payment into a list of addresses and amounts. This contract can be used to distribute profits or bonuses according to the reputation collected.",
+      "A **platform for merit-based voting**: Having a reputation metric visualizes the merit contributed by each partner of an organization. Once the task system is followed by a majority of the organization the resulting reputation data can be used as a weighted input to decision making in the organization."
+    ]
+  },
+  "addoptionRequirements": [
+    {
+      "name": "Task-based Work",
+      "description": "Members of the organization should have sufficient experience with task-based work. The ability to break down large portions of work into tasks that take a day or less is needed to avoid inaccuracies in reputation assignment.",
+      "link": "https://colony.io/dev/docs/colonyjs/topics-tasks-and-payments",
+      "type": "structure"
+    },{
+      "name": "Web-3 enabled Wallets",
+      "description": "Partners need a web-3 enabled wallet and must be proficient in off-boarding the received crypto-rewards into a medium that is useful for them.",
+      "link": "https://help.wetrust.io/article/38-what-is-a-web3-wallet-what-are-some-examples",
+      "type": "tool"
+    }
+  ],
+  "components": [
+    {
+      "name": "Reputation-earning Tasks",
+      "description": "Tasks are defined as any action or project that isare aligned with the purpose of the organization. All completed tasks can earn reputation, but tasks have to be broken down into activities that can be done in 12 hours or less, so that the risk of misestimation doesn\u2019t affect the process. \r\n\r\n*A task is defined as follows:*\r\n\r\n**Title** - succinct name for the task. Example: run a keyword experiment for the new product.\r\n\r\n**Scope** - A list of specific things which should be done to deliver the task. These could be seen as requirements to verify\/review the task against.\r\n\r\n**Deliverables** - Artifacts produced as the result of this task. Something that could be verified\/reviewed. Some examples: updated code, deployment made, blog post published, public event conducted etc.\r\n\r\n**Size** - estimated effort of task and size of payout. \r\n\r\n**Objecting Tasks** - Any task can be objected to by anyone in the colony workspace for 2 days after its creation. A valid objection should describe how the task is harming the organization. The objector must ensure that their objection is clearly communicated to the task proposer and admin and e.g. not misunderstood as a minor comment on the issue.If the tension was integrated successfully or if there weren\u2019t any public objections, the task is considered approved.\r\n\r\n**Task Payout** - It is the workers responsibility to request the payout of the task in the colony workspace after it has been delivered and reviewed.",
+      "type": "policy"
+    }, {
+      "name": "Colony",
+      "description": "Colony is a platform for community collaboration. Its current product accessible at https://colony.io/dashboard allows every organization to create a workspace where new tasks can be suggested, tasks can be accepted then by admins and later delivered and paid out.",
+      "link": "https://colony.io/",
+      "type": "tool"
+    }, {
+      "name": "Payment Splitter Contract",
+      "description": "The payment splitter contract is an Ethereum smart contract that can accept a single payment and slit it according to shares to many recipients. The contract can be initialized with the reputation queried from the Colony reputation miner and the addresses of Partners of the organization to achieve a profit or bonus distribution.",
+      "link": "https://github.com/leapdao/leap-contracts/blob/master/contracts/misc/PaymentSplitter.sol",
+      "type": "tool"
+    }
+  ],
+  "instructions": [],
+  "examples": "Task sizes can be modeled as GitHub issue labels. An example allocation of reputation points can be mapped to t-shirt sizes:\r\n\r\n* size-XS: < 3 hours - 200 reputation points\r\n* size-S: < 5 hours - 350 reputation points\r\n* size-M: < 8 hours - 550 reputation points\r\n* size-L: < 12 hours - 900 reputation points",
+  "author": "johann@leapdao.org",
+  "authorWallet": "0x8db6B632D743aef641146DC943acb64957155388"
+}
