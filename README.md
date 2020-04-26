@@ -1,120 +1,85 @@
-# TealGarden :muscle: :sunny:
+# Teal.Garden Track :seedling: :sunny: - Join the Future of Organizations
 
-###### (a.k.a. SolarPunch)
+##### Sustainable Development Goals:
 
-A collection of self-management processes and tools used by communities, DAOs and collaboratives around the globe.
+:chart_with_upwards_trend:`SDG 8: Decent Work & Economic Growth`  
+:milky_way: `SDG 9: Industry, Innovation and Infrastructure`  
+:house_with_garden: `SDG 11: Sustainable Cities and Communities`  
+:handshake: `SDG 17: Partnerships for the Goals`
 
-## The Community
+The current health and economic crises have created vast & sudden change. Now it is up to us to rebuild communities and organizations. Let's take the chance and create the better world our hearts know is possible.
 
-We host a community of curated internal organisational processes and the independent tools that are used. The SolarPunch members range from smaller teams over intermediate initiatives to bigger international movements.
+Instead of hierarchies that dictate our actions, or economic machineries that force financial rationale over social and ecological wellbeing, we can create work environments where we can bring ourselves as a whole, and collaborate with peers to realize a purpose that we care for deeply.
 
-**Learn**  
-Test and integrate new solutions from the community. Learn about new processes, decentralized mangement methods and open-source tools.   
+:thought_balloon: - **"The greatest danger in times of turbulence is not the turbulence, It is to act with yesterday's logic" -- Peter Drucker**
 
-**Experiment**  
-Become the owner of your data and documents by using decentralized or self-hosted tools. Inform yourself about sovereign tech and find the right organisational solution with the right tool.  
+## :question: Questions:
 
-**Share**  
-Become a organisation architect and share your individual experience of organising yourself or your initiative. 
+- Which processes and tools have enabled people in your community or workspace to coordinate without a central power of authority?
+- Which practices and processes can you imagine that will bring out the best of your collective organization in the future?
 
-We believe in open-source and decentralized software solutions that keeps privacy and the sovereignity of the user. As solarpunks we believe in open software for decentralized communities of the people. 
+## :heavy_check_mark: Scope:
 
-Become part of the solarpunch community - learn, experiment, share. 
+:point_right: **First Step:**
 
-## Join the Future of Organization
+- Get comfortable with teal practices & holacracy, take some time and see our resources & explainers:
 
-Non-hierachical organisations are the future for distributed self-managed people. Already today many organisations coordinate themselves decentralized and as a collaboration of members inside a community. 
+  - [Basic Explainers](https://github.com/deora-earth/tealgarden/blob/develop/docs/teal-basics.md)
 
-Transparency of processes (e.g. communication, decision making and task management) are the key for efficient organisation. Members are the drivers of change with responsive and influential actions. 
+:point_right: **Second Step:**
 
-# Installation
+- We have created a template to easily share your practices with the world. Please have a look before you continue:
 
-```
-yarn
-```
+  - [Submission Template](https://hackmd.io/@5-YIdqM_TiWI7n-xRmaUqg/H1ywNR6_I)
 
-```
-// For starting GatsbyJs Server run
-yarn gatsby-dev
-```
-GatsbyJs server will start in `localhost:8000`
+- We already pre-filled examples for a better understanding:
 
-# Folder Structure
+  - [Submission Folder](https://github.com/deora-earth/tealgarden/tree/develop/submissions)
 
-```
-/packages
-	/common [All common components and resource]
-		/Assets
-		/components
-		/contexts
-		/data
-		/theme
-	/functions
-	/landing-gatsby [all pages]
-```
+- To better give you an insight about what we are looking for have a look at our evaluation paper:
 
-# Stack used in this project
+  - [Evaluation Criteria](https://github.com/deora-earth/tealgarden/blob/develop/docs/submission-evaluation.md)
 
-1. Lerna (A tool for managing JavaScript projects with multiple packages. https://lernajs.io)
-2. Yarn Workspace
-3. React Js
-4. Gatsby Js
-5. Styled System and Styled Components
+:point_right: **Third Step:**
 
-# Deployment
+Now that you have a feeling for the matter, let's build:
 
-For deploying your final project you have to build your project first. To build the project you have to follow below procedure.
+**1.** Think about an organisational challenge in your community, your crew or even on an international scale.
 
-### GatsbyJs
+- Maybe you already have experience in self-management and want to share your best practices that worked!
 
-Run the below command on
+**2.** Connect several free, open-source or web3 tools. Define the different to-dos in each step and give some important insights within the practice of your choice.
 
-```
-yarn gatsby-build
+**3.** Copy this empty [template.md](https://github.com/deora-earth/tealgarden/blob/develop/docs/start_here_blank_template.md) file and hold onto our [template explainer](https://https://hackmd.io/@5-YIdqM_TiWI7n-xRmaUqg/H1ywNR6_I).
 
-// To check the build version locally run below command
-// Not necessary if you don't want to check on your local.
+**4.** Fill everything and maybe even give us important feedback.
 
-yarn gatsby-serve
-```
+**5.** Upload your finished .md file via a GitHub pull request to our teal.garden repo and [submission folder](https://github.com/deora-earth/tealgarden/tree/develop/submissions). Put the name of your **team** and the title of the **process** as a name for the file.
 
-If you run `yarn gatsby-serve` then the build version the the project will start in `localhost:9000` . Navigate to the url you will get your site up and running.
+:point_right: - :tada: **Congratulations**, you've just created your first own teal practice! :tada:
 
-# Deployment Support
+**Instead of submitting a single process/practise, feel free to submit multiple ones!**
 
-## now.sh
+## :trophy: Prize Structure
 
-### GatsbyJs
+The Deora team will pick the best 3 submissions through a lens of a teal/holacracy practitioner and distribute rewards in the form of tokens.
 
-We have given now.sh deployment by default. For hosting the project in now.sh first you have to rename `gatsby-landing.now.json` to `now.json`.
+**Prizes - The top 3 submissions will receive payouts of:**
 
-You can change the name according to your project in now.json file like:
+1st - **400 DAI**
 
-```
-{
-	"name": "your_project_name"
-}
-```
+2nd - **300 DAI**
 
-Now run below command after building the project.
+3rd - **200 DAI**
 
-```
-now
-```
+**:star: In addition all high-quality proposals will be published on [teal.garden](https://tealgarden.deora.earth/) + hackers will receive 100 Teal Tokens.:star:**
 
-## Netlify
+---
 
-At first, open an account on netlify and go to `sites` tab.
+**Feeling ready to build? :hammer_and_wrench: Great, keep rolling!** :biking_man:
 
-### GatsbyJs
+:question:**Not sure where to start ? Check our dedicated discord channel:**:question:
 
-If you want to host the `gatsbyjs` project, go to your command line and run this command on root directory.
+:point_right:**- ​[Deora Support](https://discord.gg/T5NU2q5) -** :point_left:
 
-```
-yarn gatsby-build
-```
-
-After running above command go to `landing-gatsby` folder. You will find a `public` folder
-there. Drag and drop this `public` folder on netlify `sites` tab.
-
-![solarpunk](img/solarpunk.png "solarpunk")
+![solarpunk](https://i.imgur.com/FaBDhgT.jpg)
