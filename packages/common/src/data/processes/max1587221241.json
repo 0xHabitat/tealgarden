@@ -29,6 +29,10 @@
       "description": "The organization needs to have adopted the constitution V4.1 or higher",
       "link": "https://www.holacracy.org/constitution",
       "type": "structure"
+    }, {
+      "name": "Transparency",
+      "description": "Partners are interested to publish and review workitems",
+      "type": "value"
     }
   ],
   "components": [
@@ -43,11 +47,20 @@
         "reporting on lost or revealed key asap.",
         "signing on proposals within short timeframe (hours and days, not weeks)."
       ]
-    },
-    {
+    }, {
       "name": "Bounty Policy",
       "description": "Bounty is a reward for completing a properly defined Action or Project within a Circle. For simplicity, we will may call such Actions or Projects themselves a Bounties from now on.\r\n\r\nProperly defined bounty must specify the following attributes\r\n\r\n##### Title\r\n\r\nSuccinct name for the bounty.\r\n\r\nExample:\r\n> Implement Basic Token Governance UI\r\n\r\n##### Scope\r\n\r\nA list of specific things which should be done to deliver the bounty. These could be seen as requirements to verify/review the bounty against.\r\n\r\n##### Deliverables\r\n\r\nArtifacts produced as the result of this bounty. Something that could be verified/reviewed. Some examples: updated code, deployment made, blog post published, public event conducted etc\r\n\r\n##### Funding Circle\r\n\r\nThe Circle to fund this bounty\r\n\r\n##### Bounty owner/gardener\r\n\r\nThe Role who is responsible for the bounty. The Role should belong to Funding Circle.\r\n\r\n##### Gain for the Role\r\n\r\nHow the completion of this bounty helps to pursue the Role's purpose.\r\n\r\n##### Size\r\n\r\nSize of the bounty.\r\n\r\nWe use t-shirt sizes:\r\n\r\n* size-XS: 200 DAI\r\n* size-S: 350 DAI\r\n* size-M: 550 DAI\r\n* size-L: 900 DAI\r\n* size-XL: 1400 DAI\r\n\r\n#### Who can create a new bounty\r\n\r\nAny Role within the Organization. People without Roles may also propose a bounty on behalf of some Role.",
       "type": "policy"
+    }, {
+      "name": "Slack",
+      "description": "Digital collaboration chat to announce and discuss bounties.",
+      "link": "https://slack.com/favicon.ico",
+      "type": "tool"
+    }, {
+      "name": "Google Forms",
+      "description": "Easy way of creating forms that help us funnel the bounties and auto announce them on our communication channel.",
+      "link": "https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png",
+      "type": "tool"
     }
   ],
   "instructions": [
@@ -72,7 +85,7 @@
       ],
       "tool": {
         "name": "github",
-        "description": "Software development platform used for us to keep track of bounties, description and their size.",
+        "description": "Software development platform used for us to keep track of files and issues.",
         "link": "https://github.githubassets.com/favicons/favicon.svg",
         "type": "tool"
       }

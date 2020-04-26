@@ -55,18 +55,44 @@ import { plus } from 'react-icons-kit/entypo/plus';
 import { minus } from 'react-icons-kit/entypo/minus';
 import List from 'common/src/components/List';
 
+// allows to group components and adoptionRequirements by type
+const byType = (componentType) => {
+  return function (elem) {
+    // filter roles, as they don't have a type field
+    if (
+      elem.accountabilities !== null &&
+      componentType.localeCompare('role') === 0
+    ) {
+      return true;
+    }
+    // filter values, tools, policies and structures
+    if (elem.type !== null && elem.type.localeCompare(componentType) === 0) {
+      return true;
+    }
+    return false;
+  };
+};
+
 const BasicTemplate = (props) => {
   const { pageContext } = props;
   const { pageContent } = pageContext;
   const [active, setActive] = useState(0);
 
   const handleClick = (e) => {
-    console.log(e);
     const index = parseInt(e.currentTarget.id, 0);
     if (index !== active) {
       setActive(index);
     }
   };
+  const structures = pageContent.components.filter(byType('structure'));
+  structures.push(
+    ...pageContent.addoptionRequirements.filter(byType('structure'))
+  );
+  const policies = pageContent.components.filter(byType('policy'));
+  const roles = pageContent.components.filter(byType('role'));
+  const tools = pageContent.components.filter(byType('tool'));
+  tools.push(...pageContent.addoptionRequirements.filter(byType('tool')));
+  const values = pageContent.addoptionRequirements.filter(byType('value'));
   return (
     <ThemeProvider theme={appTheme}>
       <Fragment>
@@ -156,20 +182,14 @@ const BasicTemplate = (props) => {
                         Organisational structures, formats and style of
                         governance that is needed to adapt the process."
                       </p>
-                      <ExternalLink
-                        href={pageContent.addoptionRequirements[0].link}
-                      >
-                        <ContentHover>
-                          <Heading
-                            content={pageContent.addoptionRequirements[0].name}
-                          />
-                          <MDReactComponent
-                            text={
-                              pageContent.addoptionRequirements[0].description
-                            }
-                          />
-                        </ContentHover>
-                      </ExternalLink>
+                      {structures.map((structure) => (
+                        <ExternalLink href={structure.link}>
+                          <ContentHover>
+                            <Heading content={structure.name} />
+                            <MDReactComponent text={structure.description} />
+                          </ContentHover>
+                        </ExternalLink>
+                      ))}
                     </ContentWrapper>
                     <ContentWrapper active={active === 1}>
                       <p>
@@ -177,37 +197,37 @@ const BasicTemplate = (props) => {
                         be individualized based on the organisation’s need and
                         background.
                       </p>
-                      <ContentScroll>
-                        <Heading content={pageContent.components[1].name} />
-                        <MDReactComponent
-                          text={pageContent.components[1].description}
-                        />
-                      </ContentScroll>
+                      {policies.map((policy) => (
+                        <ContentScroll>
+                          <Heading content={policy.name} />
+                          <MDReactComponent text={policy.description} />
+                        </ContentScroll>
+                      ))}
                     </ContentWrapper>
                     <ContentWrapper active={active === 2}>
                       <p>
                         Mandatory roles that are affected or created for this
                         process to work properly.{' '}
                       </p>
-                      <ContentScrollSmall>
-                        <Heading content={pageContent.components[0].title} />
-                        <Text content={pageContent.components[0].purpose} />
-                        <Text content={pageContent.components[0].domains} />
-                        <Text
-                          content={pageContent.components.accountabilities}
-                        />
-                      </ContentScrollSmall>
+                      {roles.map((role) => (
+                        <ContentScrollSmall>
+                          <Heading content={role.title} />
+                          <Text content={role.purpose} />
+                          <Text content={role.domains} />
+                          <Text content={role.accountabilities} />
+                        </ContentScrollSmall>
+                      ))}
                     </ContentWrapper>
                     <ContentWrapper active={active === 3}>
                       <p>Tools that are used in this process.</p>
                       <FlexWrapper>
-                        {pageContent.instructions.map((tool, index) => (
-                          <ExternalLink href={tool.tool.link}>
+                        {tools.map((tool, index) => (
+                          <ExternalLink href={tool.link}>
                             <ContentHoverTools key={index}>
-                              <ToolImg src={tool.tool.link} />
+                              <ToolImg src={tool.link} />
                               <ToolContent>
-                                <Heading content={tool.tool.name} />
-                                <Text content={tool.tool.description} />
+                                <Heading content={tool.name} />
+                                <Text content={tool.description} />
                               </ToolContent>
                             </ContentHoverTools>
                           </ExternalLink>
@@ -219,10 +239,12 @@ const BasicTemplate = (props) => {
                         Values drive the organisation and the following are
                         needed to fully adapt this process.
                       </p>
-                      <Content>
-                        <Heading content="Test" />
-                        <Text content="Test" />
-                      </Content>
+                      {values.map((value) => (
+                        <ContentScroll>
+                          <Heading content={value.name} />
+                          <MDReactComponent text={value.description} />
+                        </ContentScroll>
+                      ))}
                     </ContentWrapper>
                   </Fragment>
                 </>
@@ -234,7 +256,7 @@ const BasicTemplate = (props) => {
               </YellowHighliter>
               <ContentWrapperIntegration>
                 <StepNavigation>
-                  {pageContent.instructions.map((tool, index) => (
+                  {pageContent.instructions.map((instruction, index) => (
                     <StepNavigationElement
                       active={active === 0 + index}
                       id={index}
@@ -242,12 +264,12 @@ const BasicTemplate = (props) => {
                     >
                       <a href={handleClick}>
                         {' '}
-                        <ToolImg src={tool.tool.link} />{' '}
+                        <ToolImg src={instruction.tool.link} />{' '}
                       </a>
                       <TealHighliter active={active === 0 + index}>
                         <a href={handleClick}>
                           {' '}
-                          <Heading content={tool.name} />{' '}
+                          <Heading content={instruction.name} />{' '}
                         </a>
                       </TealHighliter>
                     </StepNavigationElement>
