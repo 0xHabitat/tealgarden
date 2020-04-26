@@ -9,7 +9,6 @@ import Newsletter from '../containers/App/Newsletter';
 import SupportBlock from '../containers/App/SupportBlock';
 import Footer from '../containers/App/Footer';
 import '@redq/reuse-modal/es/index.css';
-import CookieBanner from 'react-cookie-banner';
 import SEO from '../components/seo';
 import Content from '../containers/App/ContentSection';
 import CookieBanner from 'react-cookie-banner';
