@@ -132,15 +132,13 @@ const BasicTemplate = (props) => {
               <YellowHighliter>
                 <Heading content="Benefits" />
               </YellowHighliter>
-              {pageContent.summary.benefits.map((benefit) => (
-                <List text={benefit} />
-              ))}
+              <List text={pageContent.summary.benefits} />
             </SectionWrapperSmall>
             <SectionWrapper>
               <YellowHighliter>
                 <Heading content="Adoption Requirements" />
               </YellowHighliter>
-              <dvi>
+              <div>
                 <Tabs>
                   <Tab onClick={handleClick} active={active === 0} id={0}>
                     <span role="img" aria-label="Organisation">
@@ -183,10 +181,12 @@ const BasicTemplate = (props) => {
                       </p>
                       {structures.map((structure) => (
                         <ExternalLink href={structure.link}>
-                          <ContentHover>
-                            <Heading content={structure.name} />
-                            <MDReactComponent text={structure.description} />
-                          </ContentHover>
+                          <Fragment>
+                            <ContentHover>
+                              <Heading content={structure.name} />
+                              <MDReactComponent text={structure.description} />
+                            </ContentHover>
+                          </Fragment>
                         </ExternalLink>
                       ))}
                     </ContentWrapper>
@@ -208,14 +208,16 @@ const BasicTemplate = (props) => {
                         Mandatory roles that are affected or created for this
                         process to work properly.{' '}
                       </p>
-                      {roles.map((role) => (
-                        <ContentScrollSmall>
-                          <Heading content={role.title} />
-                          <Text content={role.purpose} />
-                          <Text content={role.domains} />
-                          <Text content={role.accountabilities} />
-                        </ContentScrollSmall>
-                      ))}
+                      <FlexWrapper>
+                        {roles.map((role) => (
+                          <ContentScrollSmall>
+                            <Heading content={role.title} />
+                            <Text content={role.purpose} />
+                            <Text content={role.domains} />
+                            <Text content={role.accountabilities} />
+                          </ContentScrollSmall>
+                        ))}
+                      </FlexWrapper>
                     </ContentWrapper>
                     <ContentWrapper active={active === 3}>
                       <p>Tools that are used in this process.</p>
@@ -247,7 +249,7 @@ const BasicTemplate = (props) => {
                     </ContentWrapper>
                   </Fragment>
                 </>
-              </dvi>
+              </div>
             </SectionWrapper>
             <SectionWrapper>
               <YellowHighliter>
@@ -261,15 +263,9 @@ const BasicTemplate = (props) => {
                       id={index}
                       onClick={handleClick}
                     >
-                      <a href={handleClick}>
-                        {' '}
-                        <ToolImg src={instruction.tool.link} />{' '}
-                      </a>
+                      <ToolImg src={instruction.tool.link} />
                       <TealHighliter active={active === 0 + index}>
-                        <a href={handleClick}>
-                          {' '}
-                          <Heading content={instruction.name} />{' '}
-                        </a>
+                        <Heading content={instruction.name} />
                       </TealHighliter>
                     </StepNavigationElement>
                   ))}

@@ -104,6 +104,8 @@ export const ToolContent = styled.div`
 
 export const ContentHover = styled.div`
   text-align: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
   border: 2px solid #e6ebf0;
   border-radius: 2px;
   padding: 20px;
@@ -206,6 +208,8 @@ export const ContentScrollSmall = styled.div`
   border: 2px solid #e6ebf0;
   border-radius: 2px;
   padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   color: #091632;
   font-size: 14px;
   width: 300px;

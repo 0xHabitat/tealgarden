@@ -31,8 +31,7 @@ export const SectionWrapper = styled.section`
 
 // FeatureBlock wrapper style
 const ListItemWrapper = styled.div`
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 35px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

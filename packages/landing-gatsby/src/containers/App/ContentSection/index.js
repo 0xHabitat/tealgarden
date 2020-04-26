@@ -79,6 +79,7 @@ Content.defaultProps = {
     fontWeight: '700',
     width: ['100%', '100%', '100%', '80%', '45%'],
     color: '#091632',
+    pt: '30px',
     letterSpacing: '1.2px',
     lineHeight: '32px',
   },
