@@ -208,16 +208,21 @@ const BasicTemplate = (props) => {
                         Mandatory roles that are affected or created for this
                         process to work properly.{' '}
                       </p>
-                      <FlexWrapper>
-                        {roles.map((role) => (
-                          <ContentScrollSmall>
-                            <Heading content={role.title} />
-                            <Text content={role.purpose} />
-                            <Text content={role.domains} />
-                            <Text content={role.accountabilities} />
-                          </ContentScrollSmall>
-                        ))}
-                      </FlexWrapper>
+                      {roles.map((role) => (
+                        <ContentScrollSmall>
+                          <Heading content={role.title} />
+                          <Text content={role.purpose} />
+                          {role.domains.map((domain, domIndex) => (
+                            <Text content={domain} key={`domain-${domIndex}`} />
+                          ))}
+                          {role.accountabilities.map((account, accIndex) => (
+                            <Text
+                              content={account}
+                              key={`account-${accIndex}`}
+                            />
+                          ))}
+                        </ContentScrollSmall>
+                      ))}
                     </ContentWrapper>
                     <ContentWrapper active={active === 3}>
                       <p>Tools that are used in this process.</p>
