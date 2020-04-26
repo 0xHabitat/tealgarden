@@ -63,7 +63,7 @@ Now that you have a feeling for the matter, let's build:
 
 **2.** Connect several free, open-source or web3 tools. Define the different to-dos in each step and give some important insights within the practice of your choice.
 
-**3.** Copy this empty [template.md](https://github.com/deora-earth/tealgarden/blob/develop/docs/start_here_blank_template.md) file and hold onto our [template explainer](https://https://hackmd.io/@5-YIdqM_TiWI7n-xRmaUqg/H1ywNR6_I).
+**3.** Copy this empty [template.md](https://github.com/deora-earth/tealgarden/blob/develop/docs/start_here_blank_template.md) file and hold onto our [template explainer](https://hackmd.io/@5-YIdqM_TiWI7n-xRmaUqg/H1ywNR6_I).
 
 **4.** Fill everything and maybe even give us important feedback.
 
