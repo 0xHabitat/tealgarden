@@ -212,8 +212,15 @@ const BasicTemplate = (props) => {
                         <ContentScrollSmall>
                           <Heading content={role.title} />
                           <Text content={role.purpose} />
-                          <Text content={role.domains} />
-                          <Text content={role.accountabilities} />
+                          {role.domains.map((domain, domIndex) => (
+                            <Text content={domain} key={`domain-${domIndex}`} />
+                          ))}
+                          {role.accountabilities.map((account, accIndex) => (
+                            <Text
+                              content={account}
+                              key={`account-${accIndex}`}
+                            />
+                          ))}
                         </ContentScrollSmall>
                       ))}
                     </ContentWrapper>
