@@ -6,7 +6,6 @@ import { GlobalStyle, AppWrapper, Sun } from '../containers/App/app.style';
 import {
   Tabs,
   Tab,
-  Content,
   ContentWrapper,
   ContentWrapperIntegration,
   ContentWrapperAccordion,
