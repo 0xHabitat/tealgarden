@@ -85,7 +85,7 @@
       ],
       "tool": {
         "name": "github",
-        "description": "Software development platform used for us to keep track of files and issues.",
+        "description": "Software development platform used for us to keep track of bounties, description and their size.",
         "link": "https://github.githubassets.com/favicons/favicon.svg",
         "type": "tool"
       }

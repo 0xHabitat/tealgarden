@@ -16,6 +16,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
             title="Teal.Garden by Deora"
             logoStyle={logoStyle}
           />
+          {/*
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <a
               href="/"
@@ -46,8 +47,8 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
               onClick={handleLoginModal}
               icon={<i className="flaticon-user" />}
               aria-label="login"
-            /> */}
-          </div>
+            />
+          </div> */}
         </Container>
         <svg
           width="2500"

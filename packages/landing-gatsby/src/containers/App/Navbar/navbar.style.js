@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Divider = styled.div`
-  position: relative;
+  position: absolute;
+  top: 10px;
   width: 100%;
   left: -16px;
 `;
