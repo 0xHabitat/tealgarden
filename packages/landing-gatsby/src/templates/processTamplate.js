@@ -34,6 +34,8 @@ import {
   OpenIcon,
   CloseIcon,
 } from 'common/src/components/Accordion';
+import { MobileBlocker } from './tamplateComponents/MobileBlocker/mobileBlocker.style';
+import { isMobile } from 'react-device-detect';
 import MDReactComponent from 'markdown-react-js';
 import { ExternalLink } from 'react-external-link';
 import { ResetCSS } from 'common/src/assets/css/style';
@@ -92,251 +94,267 @@ const BasicTemplate = (props) => {
   const tools = pageContent.components.filter(byType('tool'));
   tools.push(...pageContent.addoptionRequirements.filter(byType('tool')));
   const values = pageContent.addoptionRequirements.filter(byType('value'));
-  return (
-    <ThemeProvider theme={appTheme}>
-      <Fragment>
-        <SEO title="The best processes for self-managed and distributed teams" />
-        <Modal />
-        <ResetCSS />
-        <GlobalStyle />
+  if (isMobile) {
+    return (
+      <ThemeProvider theme={appTheme}>
         <AppWrapper>
-          <CookieBanner
-            styles={{
-              banner: { backgroundColor: 'rgba(9, 22, 50, 0.1)' },
-              message: {
-                fontWeight: 500,
-                fontFamily: 'poppins, sans-serif',
-                color: '#091632',
-              },
-            }}
-            message="Yes, we use cookies. To enhance the user experience."
-            onAccept={() => {}}
-            cookie="user-has-accepted-cookies"
-          />
-          <Sun />
-          <Navbar />
-          <Title
-            icon1={pageContent.icons.startIconUrl}
-            icon2={pageContent.icons.endIconUrl}
-            title={pageContent.title}
-            description={pageContent.summary.abstract.substr(0, 180) + '...'}
-          />
-          <Container>
-            <SectionWrapperSmall>
-              <YellowHighliter>
-                <Heading content="Summary" />
-              </YellowHighliter>
-              <MDReactComponent text={pageContent.summary.abstract} />
-            </SectionWrapperSmall>
-            <SectionWrapperSmall>
-              <YellowHighliter>
-                <Heading content="Benefits" />
-              </YellowHighliter>
-              <List text={pageContent.summary.benefits} />
-            </SectionWrapperSmall>
-            <SectionWrapper>
-              <YellowHighliter>
-                <Heading content="Adoption Requirements" />
-              </YellowHighliter>
-              <div>
-                <Tabs>
-                  <Tab onClick={handleClick} active={active === 0} id={0}>
-                    <span role="img" aria-label="Organisation">
-                      🌐
-                    </span>{' '}
-                    Org Structure
-                  </Tab>
+          <MobileBlocker>
+            This Website is currently only available on Desktop devices. Pleas
+            come back to enjoy the full experiance.
+          </MobileBlocker>
+        </AppWrapper>
+      </ThemeProvider>
+    );
+  } else
+    return (
+      <ThemeProvider theme={appTheme}>
+        <Fragment>
+          <SEO title="The best processes for self-managed and distributed teams" />
+          <Modal />
+          <ResetCSS />
+          <GlobalStyle />
+          <AppWrapper>
+            <CookieBanner
+              styles={{
+                banner: { backgroundColor: 'rgba(9, 22, 50, 0.1)' },
+                message: {
+                  fontWeight: 500,
+                  fontFamily: 'poppins, sans-serif',
+                  color: '#091632',
+                },
+              }}
+              message="Yes, we use cookies. To enhance the user experience."
+              cookie="gatsby-gdpr-google-analytics"
+            />
+            <Sun />
+            <Navbar />
+            <Title
+              icon1={pageContent.icons.startIconUrl}
+              icon2={pageContent.icons.endIconUrl}
+              title={pageContent.title}
+              description={pageContent.summary.abstract.substr(0, 180) + '...'}
+            />
+            <Container>
+              <SectionWrapperSmall>
+                <YellowHighliter>
+                  <Heading content="Summary" />
+                </YellowHighliter>
+                <MDReactComponent text={pageContent.summary.abstract} />
+              </SectionWrapperSmall>
+              <SectionWrapperSmall>
+                <YellowHighliter>
+                  <Heading content="Benefits" />
+                </YellowHighliter>
+                <List text={pageContent.summary.benefits} />
+              </SectionWrapperSmall>
+              <SectionWrapper>
+                <YellowHighliter>
+                  <Heading content="Adoption Requirements" />
+                </YellowHighliter>
+                <div>
+                  <Tabs>
+                    <Tab onClick={handleClick} active={active === 0} id={0}>
+                      <span role="img" aria-label="Organisation">
+                        🌐
+                      </span>{' '}
+                      Org Structure
+                    </Tab>
 
-                  <Tab onClick={handleClick} active={active === 1} id={1}>
-                    <span role="img" aria-label="Policies">
-                      📜
-                    </span>{' '}
-                    Policies
-                  </Tab>
-                  <Tab onClick={handleClick} active={active === 2} id={2}>
-                    <span role="img" aria-label="Roles">
-                      🎭
-                    </span>{' '}
-                    Roles
-                  </Tab>
-                  <Tab onClick={handleClick} active={active === 3} id={3}>
-                    <span role="img" aria-label="Tools">
-                      ⚒️
-                    </span>{' '}
-                    Tools
-                  </Tab>
-                  <Tab onClick={handleClick} active={active === 4} id={4}>
-                    <span role="img" aria-label="Values">
-                      💖
-                    </span>{' '}
-                    Values
-                  </Tab>
-                </Tabs>
-                <>
-                  <Fragment>
-                    <ContentWrapper active={active === 0}>
-                      <p>
-                        Organisational structures, formats and style of
-                        governance that is needed to adapt the process."
-                      </p>
-                      {structures.map((structure) => (
-                        <ExternalLink href={structure.link}>
-                          <Fragment>
-                            <ContentHover>
-                              <Heading content={structure.name} />
-                              <MDReactComponent text={structure.description} />
-                            </ContentHover>
-                          </Fragment>
-                        </ExternalLink>
-                      ))}
-                    </ContentWrapper>
-                    <ContentWrapper active={active === 1}>
-                      <p>
-                        Policies and frameworks used in this process. These can
-                        be individualized based on the organisation’s need and
-                        background.
-                      </p>
-                      {policies.map((policy) => (
-                        <ContentScroll>
-                          <Heading content={policy.name} />
-                          <MDReactComponent text={policy.description} />
-                        </ContentScroll>
-                      ))}
-                    </ContentWrapper>
-                    <ContentWrapper active={active === 2}>
-                      <p>
-                        Mandatory roles that are affected or created for this
-                        process to work properly.{' '}
-                      </p>
-                      {roles.map((role) => (
-                        <ContentScrollSmall>
-                          <Heading content={role.title} />
-                          <Text content={role.purpose} />
-                          {role.domains.map((domain, domIndex) => (
-                            <Text content={domain} key={`domain-${domIndex}`} />
-                          ))}
-                          {role.accountabilities.map((account, accIndex) => (
-                            <Text
-                              content={account}
-                              key={`account-${accIndex}`}
-                            />
-                          ))}
-                        </ContentScrollSmall>
-                      ))}
-                    </ContentWrapper>
-                    <ContentWrapper active={active === 3}>
-                      <p>Tools that are used in this process.</p>
-                      <FlexWrapper>
-                        {tools.map((tool, index) => (
-                          <ExternalLink href={tool.link}>
-                            <ContentHoverTools key={index}>
-                              <ToolImg src={tool.link} />
-                              <ToolContent>
-                                <Heading content={tool.name} />
-                                <Text content={tool.description} />
-                              </ToolContent>
-                            </ContentHoverTools>
+                    <Tab onClick={handleClick} active={active === 1} id={1}>
+                      <span role="img" aria-label="Policies">
+                        📜
+                      </span>{' '}
+                      Policies
+                    </Tab>
+                    <Tab onClick={handleClick} active={active === 2} id={2}>
+                      <span role="img" aria-label="Roles">
+                        🎭
+                      </span>{' '}
+                      Roles
+                    </Tab>
+                    <Tab onClick={handleClick} active={active === 3} id={3}>
+                      <span role="img" aria-label="Tools">
+                        ⚒️
+                      </span>{' '}
+                      Tools
+                    </Tab>
+                    <Tab onClick={handleClick} active={active === 4} id={4}>
+                      <span role="img" aria-label="Values">
+                        💖
+                      </span>{' '}
+                      Values
+                    </Tab>
+                  </Tabs>
+                  <>
+                    <Fragment>
+                      <ContentWrapper active={active === 0}>
+                        <p>
+                          Organisational structures, formats and style of
+                          governance that is needed to adapt the process."
+                        </p>
+                        {structures.map((structure) => (
+                          <ExternalLink href={structure.link}>
+                            <Fragment>
+                              <ContentHover>
+                                <Heading content={structure.name} />
+                                <MDReactComponent
+                                  text={structure.description}
+                                />
+                              </ContentHover>
+                            </Fragment>
                           </ExternalLink>
                         ))}
-                      </FlexWrapper>
-                    </ContentWrapper>
-                    <ContentWrapper active={active === 4}>
-                      <p>
-                        Values drive the organisation and the following are
-                        needed to fully adapt this process.
-                      </p>
-                      {values.map((value) => (
-                        <ContentScroll>
-                          <Heading content={value.name} />
-                          <MDReactComponent text={value.description} />
-                        </ContentScroll>
-                      ))}
-                    </ContentWrapper>
-                  </Fragment>
-                </>
-              </div>
-            </SectionWrapper>
-            <SectionWrapper>
-              <YellowHighliter>
-                <Heading content="Integration Steps" />
-              </YellowHighliter>
-              <ContentWrapperIntegration>
-                <StepNavigation>
-                  {pageContent.instructions.map((instruction, index) => (
-                    <StepNavigationElement
-                      active={active === 0 + index}
-                      id={index}
-                      onClick={handleClick}
-                    >
-                      <ToolImg src={instruction.tool.link} />
-                      <TealHighliter active={active === 0 + index}>
-                        <Heading content={instruction.name} />
-                      </TealHighliter>
-                    </StepNavigationElement>
-                  ))}
-                </StepNavigation>
-                <HorizontalDivider />
-                <SetpsAccordion>
-                  <Container>
-                    <Box className="row">
-                      <Accordion>
-                        <Fragment>
-                          {pageContent.instructions.map(
-                            (instruction, index) => (
-                              <ContentWrapperAccordion
-                                active={active === index}
-                              >
-                                {instruction.steps.map((step, index) => (
-                                  <AccordionItem
-                                    key={`accordion_key-${index}`}
-                                    active={active === index}
-                                  >
-                                    <Fragment>
-                                      <AccordionTitle>
-                                        <Fragment>
-                                          <Heading
-                                            mt={3}
-                                            content={step.name}
-                                            as="h4"
+                      </ContentWrapper>
+                      <ContentWrapper active={active === 1}>
+                        <p>
+                          Policies and frameworks used in this process. These
+                          can be individualized based on the organisation’s need
+                          and background.
+                        </p>
+                        {policies.map((policy) => (
+                          <ContentScroll>
+                            <Heading content={policy.name} />
+                            <MDReactComponent text={policy.description} />
+                          </ContentScroll>
+                        ))}
+                      </ContentWrapper>
+                      <ContentWrapper active={active === 2}>
+                        <p>
+                          Mandatory roles that are affected or created for this
+                          process to work properly.{' '}
+                        </p>
+                        {roles.map((role) => (
+                          <ContentScrollSmall>
+                            <Heading content={role.title} />
+                            <Text content={role.purpose} />
+                            {role.domains.map((domain, domIndex) => (
+                              <Text
+                                content={domain}
+                                key={`domain-${domIndex}`}
+                              />
+                            ))}
+                            {role.accountabilities.map((account, accIndex) => (
+                              <Text
+                                content={account}
+                                key={`account-${accIndex}`}
+                              />
+                            ))}
+                          </ContentScrollSmall>
+                        ))}
+                      </ContentWrapper>
+                      <ContentWrapper active={active === 3}>
+                        <p>Tools that are used in this process.</p>
+                        <FlexWrapper>
+                          {tools.map((tool, index) => (
+                            <ExternalLink href={tool.link}>
+                              <ContentHoverTools key={index}>
+                                <ToolImg src={tool.link} />
+                                <ToolContent>
+                                  <Heading content={tool.name} />
+                                  <Text content={tool.description} />
+                                </ToolContent>
+                              </ContentHoverTools>
+                            </ExternalLink>
+                          ))}
+                        </FlexWrapper>
+                      </ContentWrapper>
+                      <ContentWrapper active={active === 4}>
+                        <p>
+                          Values drive the organisation and the following are
+                          needed to fully adapt this process.
+                        </p>
+                        {values.map((value) => (
+                          <ContentScroll>
+                            <Heading content={value.name} />
+                            <MDReactComponent text={value.description} />
+                          </ContentScroll>
+                        ))}
+                      </ContentWrapper>
+                    </Fragment>
+                  </>
+                </div>
+              </SectionWrapper>
+              <SectionWrapper>
+                <YellowHighliter>
+                  <Heading content="Integration Steps" />
+                </YellowHighliter>
+                <ContentWrapperIntegration>
+                  <StepNavigation>
+                    {pageContent.instructions.map((instruction, index) => (
+                      <StepNavigationElement
+                        active={active === 0 + index}
+                        id={index}
+                        onClick={handleClick}
+                      >
+                        <ToolImg src={instruction.tool.link} />
+                        <TealHighliter active={active === 0 + index}>
+                          <Heading content={instruction.name} />
+                        </TealHighliter>
+                      </StepNavigationElement>
+                    ))}
+                  </StepNavigation>
+                  <HorizontalDivider />
+                  <SetpsAccordion>
+                    <Container>
+                      <Box className="row">
+                        <Accordion>
+                          <Fragment>
+                            {pageContent.instructions.map(
+                              (instruction, index) => (
+                                <ContentWrapperAccordion
+                                  active={active === index}
+                                >
+                                  {instruction.steps.map((step, index) => (
+                                    <AccordionItem
+                                      key={`accordion_key-${index}`}
+                                      active={active === index}
+                                    >
+                                      <Fragment>
+                                        <AccordionTitle>
+                                          <Fragment>
+                                            <Heading
+                                              mt={3}
+                                              content={step.name}
+                                              as="h4"
+                                            />
+                                            <IconWrapper>
+                                              <OpenIcon>
+                                                <Icon icon={minus} size={18} />
+                                              </OpenIcon>
+                                              <CloseIcon>
+                                                <Icon icon={plus} size={18} />
+                                              </CloseIcon>
+                                            </IconWrapper>
+                                          </Fragment>
+                                        </AccordionTitle>
+                                        <AccordionBody>
+                                          <MDReactComponent
+                                            text={step.description}
                                           />
-                                          <IconWrapper>
-                                            <OpenIcon>
-                                              <Icon icon={minus} size={18} />
-                                            </OpenIcon>
-                                            <CloseIcon>
-                                              <Icon icon={plus} size={18} />
-                                            </CloseIcon>
-                                          </IconWrapper>
-                                        </Fragment>
-                                      </AccordionTitle>
-                                      <AccordionBody>
-                                        <MDReactComponent
-                                          text={step.description}
-                                        />
-                                      </AccordionBody>
-                                    </Fragment>
-                                  </AccordionItem>
-                                ))}
-                              </ContentWrapperAccordion>
-                            )
-                          )}
-                        </Fragment>
-                      </Accordion>
-                    </Box>
-                  </Container>
-                </SetpsAccordion>
-              </ContentWrapperIntegration>
+                                        </AccordionBody>
+                                      </Fragment>
+                                    </AccordionItem>
+                                  ))}
+                                </ContentWrapperAccordion>
+                              )
+                            )}
+                          </Fragment>
+                        </Accordion>
+                      </Box>
+                    </Container>
+                  </SetpsAccordion>
+                </ContentWrapperIntegration>
+              </SectionWrapper>
+            </Container>
+            <SectionWrapper>
+              <Newsletter />
             </SectionWrapper>
-          </Container>
-          <SectionWrapper>
-            <Newsletter />
-          </SectionWrapper>
-          <SupportBlock />
-          <Footer />
-        </AppWrapper>
-      </Fragment>
-    </ThemeProvider>
-  );
+            <SupportBlock />
+            <Footer />
+          </AppWrapper>
+        </Fragment>
+      </ThemeProvider>
+    );
 };
 
 export default BasicTemplate;

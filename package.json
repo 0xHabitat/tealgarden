@@ -67,6 +67,7 @@
     "gatsby-plugin-gdpr-cookies": "^1.0.7",
     "markdown-react-js": "^1.0.2",
     "react-cookie-banner": "^4.1.0",
+    "react-device-detect": "^1.12.0",
     "react-external-link": "^1.1.1",
     "react-markdown": "^4.3.1",
     "shape-library": "^1.0.7"
