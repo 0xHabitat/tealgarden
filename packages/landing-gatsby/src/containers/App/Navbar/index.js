@@ -1,78 +1,46 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import NavbarWrapper from 'common/src/components/Navbar';
-import Button from 'common/src/components/Button';
-import LoginModal from '../LoginModal';
 import Logo from 'common/src/components/UIElements/Logo';
-import { openModal, closeModal } from '@redq/reuse-modal';
 import { Container, Divider } from './navbar.style';
 import LogoImage from 'common/src/assets/image/app/logo.png';
 
-// Default close button for modal
-const CloseModalButton = () => (
-  <Button
-    className="modalCloseBtn"
-    variant="fab"
-    onClick={() => closeModal()}
-    icon={<i className="flaticon-plus-symbol" />}
-  />
-);
-
 const Navbar = ({ navbarStyle, logoStyle }) => {
-  // Authentication modal handler
-  const handleLoginModal = () => {
-    openModal({
-      config: {
-        className: 'login-modal',
-        disableDragging: true,
-        width: '100%',
-        height: '100%',
-        animationFrom: { transform: 'translateY(100px)' }, // react-spring <Spring from={}> props value
-        animationTo: { transform: 'translateY(0)' }, //  react-spring <Spring to={}> props value
-        transition: {
-          mass: 1,
-          tension: 180,
-          friction: 26,
-        },
-      },
-      component: LoginModal,
-      componentProps: {},
-      closeComponent: CloseModalButton,
-      closeOnClickOutside: false,
-    });
-  };
-
   return (
     <NavbarWrapper {...navbarStyle}>
       <Divider>
         <Container>
           <Logo
-            href="#"
+            href="/"
             logoSrc={LogoImage}
             title="Teal.Garden by Deora"
             logoStyle={logoStyle}
           />
-          {/*
           <div style={{ display: 'flex', alignItems: 'center' }}>
-            <a href="#!" style={{ color: '#091632', fontWeight: '600' }}>
+            <a
+              href="/"
+              style={{
+                color: '#091632',
+                fontWeight: '700',
+                paddingRight: '20px',
+                fontStyle: 'italic',
+              }}
+            >
               {' '}
-              Home
+              HOME
             </a>
-            <a href="#!" style={{ color: '#091632', fontWeight: '600' }}>
+            <a
+              href="/about"
+              style={{
+                color: '#091632',
+                fontWeight: '700',
+                fontStyle: 'italic',
+              }}
+            >
               {' '}
-              About
+              ABOUT
             </a>
-            <a href="#!" style={{ color: '#091632', fontWeight: '600' }}>
-              {' '}
-              Blog
-            </a>
-            <Button
-              className="icon"
-              onClick={handleLoginModal}
-              icon={<i className="flaticon-user" />}
-              aria-label="login"
-            />
-          </div> */}
+          </div>
         </Container>
         <svg
           width="2500"
@@ -117,8 +85,9 @@ Navbar.defaultProps = {
   },
   navElement: {
     color: '#091632',
-    fontWeight: '600',
+    fontWeight: '700',
     pl: '5px',
+    fontStyle: 'italic',
   },
 };
 

@@ -5,7 +5,7 @@
 :chart_with_upwards_trend:`SDG 8: Decent Work & Economic Growth`  
 :milky_way: `SDG 9: Industry, Innovation and Infrastructure`  
 :house_with_garden: `SDG 11: Sustainable Cities and Communities`  
-:handshake: `SDG 17: Partnerships for the Goals`  
+:handshake: `SDG 17: Partnerships for the Goals`
 
 The current health and economic crises have created vast & sudden change. Now it is up to us to rebuild communities and organizations. Let's take the chance and create the better world our hearts know is possible.
 

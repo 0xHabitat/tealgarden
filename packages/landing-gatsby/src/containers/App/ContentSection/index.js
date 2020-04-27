@@ -5,7 +5,6 @@ import Heading from 'common/src/components/Heading';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import ProcessList from '../ProcessList';
 import Container from 'common/src/components/UI/Container';
-import { Sun } from './content.style';
 
 const Content = ({
   SectionWrapper,
@@ -17,7 +16,6 @@ const Content = ({
 }) => {
   return (
     <Box {...SectionWrapper}>
-      <Sun />
       <Container>
         <Box {...row}>
           <Box {...col}>
@@ -81,6 +79,7 @@ Content.defaultProps = {
     fontWeight: '700',
     width: ['100%', '100%', '100%', '80%', '45%'],
     color: '#091632',
+    pt: '30px',
     letterSpacing: '1.2px',
     lineHeight: '32px',
   },

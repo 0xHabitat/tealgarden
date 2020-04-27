@@ -1,11 +1,11 @@
 # Bounty Rewards Practice
 
-
 If you have any questions reach out to us over the [discord channel](https://discord.gg/T5NU2q5). You can always check our more in-depth explainer [here](https://github.com/deora-earth/tealgarden/blob/track/docs/teal-basics.md).
 
 You'll find format requirements and important info about each step in the [submission template](https://hackmd.io/@5-YIdqM_TiWI7n-xRmaUqg/H1ywNR6_I). Practice examples can be found the GitHub `/submission` folder.
 
---- 
+---
+
 :writing_hand: :`Please enter your input here`
 
 ---
@@ -25,9 +25,9 @@ Size: `Crew` `Organisation` `Community`
 
 ## 3. Summary
 
-In our organisation bounties are an alternative to a monthly or weekly payout schedule to our members. They are payed out the moment after a set task has been accomplished. Bounties combine task management and incentives. They promote the autonomy of members and their respective roles by allowing them to create new bounties or fulfill existing ones. 
+In our organisation bounties are an alternative to a monthly or weekly payout schedule to our members. They are payed out the moment after a set task has been accomplished. Bounties combine task management and incentives. They promote the autonomy of members and their respective roles by allowing them to create new bounties or fulfill existing ones.
 
-Bounties allow an agile process of **"sense & respond"** within self-managed teams. Once a tension or opportunity is sensed and alligned with the purpose + current strategies of the organisation bounties can be created and tackled immediately. They are announced via the official communication channels for objections, clarification or support. 
+Bounties allow an agile process of **"sense & respond"** within self-managed teams. Once a tension or opportunity is sensed and alligned with the purpose + current strategies of the organisation bounties can be created and tackled immediately. They are announced via the official communication channels for objections, clarification or support.
 
 They incentivize creative bounty creators (bounty gardener) and motivated bounty hunters (bounty worker) alike.
 
@@ -58,39 +58,42 @@ Full Bounty Policy can be found here: https://github.com/leapdao/meta/blob/maste
 
 ### 5.3 :performing_arts: Roles
 
-*Role Title*
+_Role Title_
 🔑 Keybearer
 
-*Purpose*
+_Purpose_
+
 - responsible for signing transaction in a responsible & honourable manner
 - holding a key in the multisig wallet and sign according to policies.
 
-*Domains*
+_Domains_
+
 - multisginature wallet
 
-*Accountabilities*
+_Accountabilities_
+
 - holding only one key and not loosing/revealing it.
 - reporting on lost or revealed key asap.
 - signing on proposals within short timeframe (hours and days, not weeks).
 
-### 5.4 :hammer_and_wrench: Tools 
+### 5.4 :hammer_and_wrench: Tools
 
 - Slack
-https://slack.com/
-Digital collaboration chat to announce and discuss bounties.
+  https://slack.com/
+  Digital collaboration chat to announce and discuss bounties.
 
 - Github
-https://github.com/
-Software development platform used for us to keep track of bounties, description and their size.
+  https://github.com/
+  Software development platform used for us to keep track of bounties, description and their size.
 
 - G Forms
-https://docs.google.com/forms/u/0/
-Easy way of creating forms that help us funnel the bounties and auto announce them on our communication channel.
+  https://docs.google.com/forms/u/0/
+  Easy way of creating forms that help us funnel the bounties and auto announce them on our communication channel.
 
 ### 5.5 :heart: Values
 
 **👑 Individual Autonomy & Decision Making**
-Bounties promote initiatives of team members. They allow purpose driven direction by designing tasks for others or themselves. 
+Bounties promote initiatives of team members. They allow purpose driven direction by designing tasks for others or themselves.
 
 **👀 Full Transparency**
 Every bounty is announced via the official communications channels of the organisations. Allowing them to be questioned, supporterd or approved.
@@ -123,7 +126,6 @@ To easily size your bounty you can add new labels as seen here. They are defined
 
 Once the issue is created you can find under “Labels” your created bounty sizes of Step 2.
 
-        
 ### 6.2 "Title of Second Step"
 
 **Submit Bounty via GoogleForm**
@@ -149,6 +151,7 @@ Find out your webhookURL of your Slack workspace. Read the following for more [i
 Copy your Webhook URL (❌) in the following script and change the parameters of channel, text, icons etc.
 
 Script:
+
 ```
 // This Google Sheets script will post to a slack channel when a user submits data to a Google Forms Spreadsheet
 // View the README for installation instructions. Don't forget to add the required slack information below.
@@ -188,7 +191,7 @@ function submitValuesToSlack(e) {
   //   messagePretext = "Debugging our Sheets to Slack integration";
   // }
   var attachments = constructAttachments(e.values);
-  
+
   var columnNames = getColumnNames();
   for (var i = 0; i < columnNames.length; i++) {
     var colName = columnNames[i];

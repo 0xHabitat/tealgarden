@@ -1,22 +1,13 @@
 import React, { Fragment } from 'react';
-import Link from 'next/link';
 import { ListWrapper } from './list.style';
 
-const List = ({ className, icon, text, link, ...props }) => (
+const List = ({ className, text, ...props }) => (
   <ListWrapper className={className}>
-    {link ? (
-      <Link href={link}>
-        <a>
-          {icon}
-          {text}
-        </a>
-      </Link>
-    ) : (
-      <Fragment>
-        {icon}
-        {text}
-      </Fragment>
-    )}
+    <Fragment>
+      {text.map((benefit, index) => (
+        <li key={`benefit-${index}`}>{benefit}</li>
+      ))}
+    </Fragment>
   </ListWrapper>
 );
 

@@ -1,11 +1,11 @@
-# teal.garden track template :seedling: :sunny: 
-
+# teal.garden track template :seedling: :sunny:
 
 If you have any questions reach out to us over the [discord channel](https://discord.gg/T5NU2q5). You can always check our more in-depth explainer [here](https://github.com/deora-earth/tealgarden/blob/develop/docs/teal-basics.md).
 
 You'll find format requirements and important info about each step in the [submission template](https://hackmd.io/@5-YIdqM_TiWI7n-xRmaUqg/H1ywNR6_I). Practice examples can be found in the GitHub folder.
 
 ---
+
 :writing_hand: :`Please enter your input here`
 
 ---
@@ -13,11 +13,9 @@ You'll find format requirements and important info about each step in the [submi
 Mail: name@mail.com  
 Address: `0x...` Required for TEAL airdrop
 
-
 ## 1. Practice / Process ID
 
 :writing_hand: :
-
 
 ## 2. Category
 
@@ -32,10 +30,13 @@ Address: `0x...` Required for TEAL airdrop
 :writing_hand: :
 
 ## 5. Adoption Requirements
+
 :
+
 ### 5.1 :globe_with_meridians: Org Structure
 
-:writing_hand: : 
+:writing_hand: :
+
 ### 5.2 :scroll: Policies
 
 :writing_hand: :
@@ -44,19 +45,19 @@ Address: `0x...` Required for TEAL airdrop
 
 :writing_hand: :
 
-*Role Title*
+_Role Title_
 (...)
 
-*Purpose*
+_Purpose_
 (...)
 
-*Domains*
+_Domains_
 (...)
 
-*Accountabilities*
-(...) 
+_Accountabilities_
+(...)
 
-### 5.4 :hammer_and_wrench: Tools 
+### 5.4 :hammer_and_wrench: Tools
 
 :writing_hand: :
 
@@ -82,10 +83,12 @@ Address: `0x...` Required for TEAL airdrop
 
 :writing_hand: :
 
-___
+---
+
 :point_down: Please **add** or **remove** as many steps or actions you need for your practice
 
 > ### 6.2 "Title of Second Step"
+>
 > :writing_hand: :
 >
 > #### A. "First Action"
@@ -95,6 +98,5 @@ ___
 > #### B. "Second Action"
 >
 > :writing_hand: :
->
 
 ## (...)

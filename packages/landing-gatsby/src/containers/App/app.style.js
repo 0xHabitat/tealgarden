@@ -960,34 +960,36 @@ const BannerCircleShape = styled.div`
   }
 `;
 
-const SunCircleShape = styled.div`
-  width: 450px;
-  height: 450px;
-  background: #fff85a;
-  border-radius: 50%;
-  position: absolute;
-  left: -12%;
-  top: -12%;
+const Sun = styled.div`
+  width: 350px;
+  height: 350px;
+  position: fixed;
+  display: block;
+  top: -20%;
+  left: -5%;
   z-index: -1;
-  transform: translateY(-50%);
-  pointer-events: none;
-  @media (max-width: 1300px) {
-    width: 400px;
-    height: 400px;
-    left: 63%;
+  background-color: #ffde00;
+  border-radius: 50%;
+  box-shadow: 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040, 0 0 0 60px #ffde0020,
+    0 0 0 80px #ffde0010, 0 0 0 100px #ffde0000, 0 0 40px 100px #ffde0010;
+  animation: sunrise 2s infinite linear forwards, rays 2s 2s infinite linear;
+
+  @keyframes sunrise {
+    0% {
+      box-shadow: none;
+    }
   }
-  @media (max-width: 1100px) {
-    width: 400px;
-    height: 400px;
-    left: 60%;
-  }
-  @media (max-width: 991px) {
-    width: 345px;
-    height: 345px;
-    left: 54%;
-  }
-  @media (max-width: 767px) {
-    display: none;
+
+  @keyframes rays {
+    0% {
+      box-shadow: 0 0 0 0 #ffde0080, 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040,
+        0 0 0 60px #ffde0020, 0 0 0 80px #ffde0010, 0 0 40px 100px #ffde0010;
+    }
+    100% {
+      box-shadow: 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040,
+        0 0 0 60px #ffde0020, 0 0 0 80px #ffde0010, 0 0 0 100px #ffde0000,
+        0 0 40px 100px #ffde0010;
+    }
   }
 `;
 
@@ -1028,7 +1030,7 @@ const ConditionWrapper = styled.div`
 export {
   GlobalStyle,
   AppWrapper,
-  SunCircleShape,
+  Sun,
   BannerSquareShape,
   BannerCircleShape,
   PaymentCircleShape,

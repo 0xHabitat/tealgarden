@@ -10,7 +10,7 @@ import FeatureBlock from 'common/src/components/FeatureBlock';
 import ParticlesComponent from '../particles';
 import Container from 'common/src/components/UI/Container';
 import { BannerSquareShape } from '../app.style';
-import { ButtonWrapper, EmailInputWrapper, Sun } from './banner.style';
+import { ButtonWrapper, EmailInputWrapper } from './banner.style';
 
 const DomainSection = ({
   SectionWrapper,
@@ -39,7 +39,6 @@ const DomainSection = ({
   return (
     <Box {...SectionWrapper}>
       <ParticlesComponent />
-      <Sun />
       <BannerSquareShape />
       <Container>
         <Box {...row}>

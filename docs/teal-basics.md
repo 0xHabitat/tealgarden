@@ -1,12 +1,8 @@
-
-
 # Teal Garden Track - Basic Explainers :books:
 
 **Hackers**, welcome to our quick explainers, to give you a conception of what you need to consider building with us at **ETH Turin**.
 
 Don't feel overwhelmed by all the materials, we simply want to give you a little primer to get started more easily :)
-
-
 
 ## What is a process?
 
@@ -18,8 +14,6 @@ We created an evaluation page to make sure we & you know what a good process is 
 
 - [What is a valid submission to teal.garden?](https://github.com/deora-earth/tealgarden/tree/develop/docs/submission-evaluation.md)
 
-
-
 ## What is a adoption requirement ?
 
 While collecting ideas and checking the components, ask yourself the following questions:
@@ -27,15 +21,11 @@ While collecting ideas and checking the components, ask yourself the following q
 - What is essential to perform this process?
 - Which prerequisites are needed to adopt this process as practice?
 
-
-
 **Examples:**
 
 - "The organization needs to practice holacracy v4.1 or higher"
 
 - "Each team-member needs a web-3 enabled wallet."
-
-  
 
 ## What is a Role?
 
@@ -47,10 +37,7 @@ A role is not a job description; its definition follows a clear format including
 
 Roles are defined by each circle —or team— via a collective governance process, and are updated regularly in order to adapt to the ever-evolving needs of the organization.
 
-
 #### For every role, there is a purpose, domains & accountabilities:
-
-
 
 ##### Purpose
 
@@ -58,10 +45,9 @@ The purpose helps to define the identity of a role. It features a sentence or ex
 
 **Examples:**
 
-* e.g. Facilitator: "Circle governance and operational practices aligned with the Constitution."
-  
+- e.g. Facilitator: "Circle governance and operational practices aligned with the Constitution."
 
-##### Domain 
+##### Domain
 
 A Domain is a "property" of the organization (e.g. asset, function, or process) given to a **role** or circle in order to give it **exclusive control** of that resource.
 
@@ -71,21 +57,17 @@ A Domain is a "property" of the organization (e.g. asset, function, or process) 
 - Event registration process
 - Financial transaction processing systems & processes
 
-
-
 ##### Accountabilities
 
 For every role there are accountabilities connected to each domain. These are ongoing activities expected to be performed by the role to benefit the organization. The Accountabilities grant authority to the role to take any action necessary to perform the activities.
 
 **Examples:**
 
-* updating the companies website when contents are added
-* spellchecking blog posts before they are published
-* reporting on metrics of specific domain
+- updating the companies website when contents are added
+- spellchecking blog posts before they are published
+- reporting on metrics of specific domain
 
-#### 
-
-
+####
 
 ## What is a Policy ?
 
@@ -100,8 +82,6 @@ Policies are proposed by the roles which feel a need to implement them. The gove
 
 -- **Draft a simple policy if it is necessary for your process, make sure to mention it in the instructions.**
 
-
-
 ## What is holacracy?
 
 **Holacracy** is a new way of structuring and running your organization that replaces the conventional management hierarchy. Instead of operating top-down, power is distributed throughout the organization – giving individuals and teams freedom while staying aligned to the organization’s purpose.
@@ -110,8 +90,6 @@ Policies are proposed by the roles which feel a need to implement them. The gove
 
 Since Holacracy emerged, organizations adapted and changed the concept to their structure. The [Holacracy Constitution](https://www.holacracy.org/constitution#art1) is the first touch point with Holcracy for most self-managed teams.
 
-
-
 ## What is a Teal Organization?
 
 Characterized by **self-management, wholeness, and a deeper sense of purpose**, these organizations – which are described as **“Teal”** – operate largely without organization charts, management hierarchies, quarterly goals or other traditional management strategies.
@@ -119,8 +97,6 @@ Characterized by **self-management, wholeness, and a deeper sense of purpose**, 
 Instead, they’re characterized by features like **self-managed teams**, intuitive reasoning and **decentralized decision-making**. Because these practices are so new, the conversation around what they are and how to implement them is **ongoing**.
 
 Check the official [Reinventing Organizations Wiki](https://reinventingorganizationswiki.com/Main_Page) to learn more about the concept of Teal Organizations.
-
-
 
 ## :tada: Bonus:
 
@@ -131,11 +107,7 @@ Check the official [Reinventing Organizations Wiki](https://reinventingorganizat
 **Organisational Categories**
 Laloux’s research consolidates and builds upon previous work, setting it all within a framework that is easier to understand. Each paradigm shift in organisation is identified and categorised with the ones we see today being shown in the following table:
 
-
-
 ![Colors of organizations](https://i.imgur.com/rbkvzdp.png)
-
-
 
 **Want to learn [more](http://pragmaticscrum.info/what-colour-is-your-organisation/)?**
 
@@ -143,11 +115,6 @@ Laloux’s research consolidates and builds upon previous work, setting it all w
 
 **--> You reached the end of our explainers <--**
 
-
-
 :medal: **You are on the way to become a true organization-architect, now back to the [repo](https://github.com/deora-earth/tealgarden)!** :medal:
 
-
-
 :question: **If you have any questions, please reach out to us on [discord](https://discord.gg/T5NU2q5)**:question:
-

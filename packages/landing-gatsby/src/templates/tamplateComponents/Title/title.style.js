@@ -29,42 +29,15 @@ export const SectionWrapper = styled.section`
   }
 `;
 
-export const ButtonWrapper = styled.button`
-  background-color: none;
-  border: none;
-`;
-
-export const ProcessLink = styled.a`
-  text-decoration: inherit;
-  color: inherit;
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-`;
-
-export const CardBg = styled.div`
-  margin-left: -30px;
-  padding: 10px;
-  width: 100%;
-  min-height: 440px;
-  background: #ffffff;
-  border: 2px solid #091632;
-  box-sizing: border-box;
-  box-shadow: 2px 2px 0px #091632;
-  border-radius: 5px;
-`;
-
 // FeatureBlock wrapper style
 const ListItemWrapper = styled.div`
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 35px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 
     .icon__wrapper {
-        margin: 20px 10px 0px 10px;
+        margin: 5px 10px 0px 10px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;

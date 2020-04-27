@@ -86,4 +86,5 @@ Heading.defaultProps = {
   mt: 0,
   mb: '1rem',
   fontWeight: 'bold',
+  textAlign: 'left',
 };
