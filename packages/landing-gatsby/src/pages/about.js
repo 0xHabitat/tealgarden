@@ -24,23 +24,23 @@ export default () => {
     <ThemeProvider theme={appTheme}>
       <Fragment>
         <SEO title="The best processes for self-managed and distributed teams" />
-        <CookieBanner
-          styles={{
-            banner: { backgroundColor: '#FFDE00' },
-            message: {
-              fontWeight: 500,
-              fontFamily: 'poppins, sans-serif',
-              color: '#091632',
-            },
-          }}
-          message="Yes, we use cookies. To enhance the user experience."
-          onAccept={() => {}}
-          cookie="user-has-accepted-cookies"
-        />
         <Modal />
         <ResetCSS />
         <GlobalStyle />
         <AppWrapper>
+          <CookieBanner
+            styles={{
+              banner: { backgroundColor: '#FFDE00' },
+              message: {
+                fontWeight: 500,
+                fontFamily: 'poppins, sans-serif',
+                color: '#091632',
+              },
+            }}
+            message="Yes, we use cookies. To enhance the user experience."
+            onAccept={() => {}}
+            cookie="user-has-accepted-cookies"
+          />
           <Sun />
           <Navbar />
           <DomainSection />

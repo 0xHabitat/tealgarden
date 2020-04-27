@@ -18,6 +18,7 @@ import {
 } from 'styled-system';
 
 export const SectionWrapper = styled.section`
+  text-align: left;
 
   /* styled system prop support */
   ${display}
