@@ -30,7 +30,7 @@ export default () => {
         <AppWrapper>
           <CookieBanner
             styles={{
-              banner: { backgroundColor: '#FFDE00' },
+              banner: { backgroundColor: 'rgba(9, 22, 50, 0.1)' },
               message: {
                 fontWeight: 500,
                 fontFamily: 'poppins, sans-serif',
