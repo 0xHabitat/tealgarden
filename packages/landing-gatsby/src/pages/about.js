@@ -28,6 +28,7 @@ export default () => {
         <ResetCSS />
         <GlobalStyle />
         <AppWrapper>
+          <Sun />
           <CookieBanner
             styles={{
               banner: { backgroundColor: 'rgba(9, 22, 50, 0.1)' },
@@ -40,7 +41,6 @@ export default () => {
             message="Yes, we use cookies. To enhance the user experience."
             cookie="gatsby-gdpr-google-analytics"
           />
-          <Sun />
           <Navbar />
           <DomainSection />
           <FeatureSection />

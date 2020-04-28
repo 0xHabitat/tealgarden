@@ -114,6 +114,7 @@ const BasicTemplate = (props) => {
           <ResetCSS />
           <GlobalStyle />
           <AppWrapper>
+            <Sun />
             <CookieBanner
               styles={{
                 banner: { backgroundColor: 'rgba(9, 22, 50, 0.1)' },
@@ -126,7 +127,6 @@ const BasicTemplate = (props) => {
               message="Yes, we use cookies. To enhance the user experience."
               cookie="gatsby-gdpr-google-analytics"
             />
-            <Sun />
             <Navbar />
             <Title
               icon1={pageContent.icons.startIconUrl}

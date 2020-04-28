@@ -965,8 +965,8 @@ const Sun = styled.div`
   height: 350px;
   position: fixed;
   display: block;
-  top: -20%;
-  left: -5%;
+  top: -22%;
+  left: -10%;
   z-index: -1;
   background-color: #ffde00;
   border-radius: 50%;
