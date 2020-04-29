@@ -123,7 +123,7 @@ _Accountabilities_
 
 ### Supporting Examples:
 
-Task sizes can be modeled as GitHubgithub issue labels. An example allocation of reputation points can be mapped to t-shirt sizes:
+Task sizes can be modeled as GitHub issue labels. An example allocation of reputation points can be mapped to t-shirt sizes:
 
 - size-XS: < 3 hours - 200 reputation points
 - size-S: < 5 hours - 350 reputation points
