@@ -6,6 +6,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Text from 'common/src/components/Text';
 import Heading from 'common/src/components/Heading';
 import Box from 'common/src/components/Box';
+import CategoryLabels from 'common/src/components/CategoryLabels';
 import ListItemWrapper, {
   SectionWrapper,
   CardBg,
@@ -37,6 +38,7 @@ const ProcessList = ({
               startIconUrl
             }
             title
+            categories
           }
         }
       }
@@ -71,6 +73,9 @@ const ProcessList = ({
                         process.node.summary.abstract.substr(0, 120) + '...'
                       }
                     />
+                    {process.node.categories.map((categorie) => (
+                      <CategoryLabels>{categorie}</CategoryLabels>
+                    ))}
                   </ContentWrapper>
                 </ProcessLink>
               </ListItemWrapper>
