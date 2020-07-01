@@ -3,7 +3,7 @@ const path = require('path');
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
-  const processTemplate = path.resolve(`./src/templates/processTamplate.js`);
+  const processTemplate = path.resolve(`./src/templates/tealgardenPost.js`);
 
   return graphql(`
     {
