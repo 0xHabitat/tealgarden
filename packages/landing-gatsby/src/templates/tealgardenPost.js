@@ -4,36 +4,10 @@ import { Modal } from '@redq/reuse-modal';
 import { appTheme } from 'common/src/theme/app';
 import { GlobalStyle, AppWrapper, Sun } from '../containers/App/app.style';
 import {
-  Tabs,
-  Tab,
-  ContentWrapper,
-  ContentWrapperIntegration,
-  ContentWrapperAccordion,
-  FlexWrapper,
-  ContentScroll,
-  ContentScrollSmall,
-  ContentHover,
-  ContentHoverTools,
-  ToolImg,
   SectionWrapper,
   SectionWrapperSmall,
-  StepNavigation,
-  StepNavigationElement,
-  HorizontalDivider,
-  SetpsAccordion,
-  ToolContent,
   YellowHighliter,
-  TealHighliter,
 } from './tamplateComponents/tealgardenPost.style';
-import {
-  Accordion,
-  AccordionItem,
-  AccordionTitle,
-  AccordionBody,
-  IconWrapper,
-  OpenIcon,
-  CloseIcon,
-} from 'common/src/components/Accordion';
 import { MobileBlocker } from './tamplateComponents/MobileBlocker/mobileBlocker.style';
 import { isMobile } from 'react-device-detect';
 import MDReactComponent from 'markdown-react-js';
@@ -56,24 +30,6 @@ import { plus } from 'react-icons-kit/entypo/plus';
 import { minus } from 'react-icons-kit/entypo/minus';
 import List from 'common/src/components/List';
 
-// allows to group components and adoptionRequirements by type
-const byType = (componentType) => {
-  return function (elem) {
-    // filter roles, as they don't have a type field
-    if (
-      elem.accountabilities !== null &&
-      componentType.localeCompare('role') === 0
-    ) {
-      return true;
-    }
-    // filter values, tools, policies and structures
-    if (elem.type !== null && elem.type.localeCompare(componentType) === 0) {
-      return true;
-    }
-    return false;
-  };
-};
-
 const BasicTemplate = (props) => {
   const { pageContext } = props;
   const { pageContent } = pageContext;
@@ -86,14 +42,9 @@ const BasicTemplate = (props) => {
     }
   };
   const structures = pageContent.components.filter(byType('structure'));
-  structures.push(
-    ...pageContent.addoptionRequirements.filter(byType('structure'))
-  );
-  const policies = pageContent.components.filter(byType('policy'));
-  const roles = pageContent.components.filter(byType('role'));
+  structures.push(...pageContent.content.filter(byType('structure')));
   const tools = pageContent.components.filter(byType('tool'));
-  tools.push(...pageContent.addoptionRequirements.filter(byType('tool')));
-  const values = pageContent.addoptionRequirements.filter(byType('value'));
+  tools.push(...pageContent.content.filter(byType('tool')));
   if (isMobile) {
     return (
       <ThemeProvider theme={appTheme}>
@@ -141,133 +92,6 @@ const BasicTemplate = (props) => {
                 </YellowHighliter>
                 <MDReactComponent text={pageContent.summary.abstract} />
               </SectionWrapperSmall>
-              <SectionWrapper>
-                <YellowHighliter>
-                  <Heading content="Adoption Requirements" />
-                </YellowHighliter>
-                <div>
-                  <Tabs>
-                    <Tab onClick={handleClick} active={active === 0} id={0}>
-                      <span role="img" aria-label="Organisation">
-                        🌐
-                      </span>{' '}
-                      Org Structure
-                    </Tab>
-
-                    <Tab onClick={handleClick} active={active === 1} id={1}>
-                      <span role="img" aria-label="Policies">
-                        📜
-                      </span>{' '}
-                      Policies
-                    </Tab>
-                    <Tab onClick={handleClick} active={active === 2} id={2}>
-                      <span role="img" aria-label="Roles">
-                        🎭
-                      </span>{' '}
-                      Roles
-                    </Tab>
-                    <Tab onClick={handleClick} active={active === 3} id={3}>
-                      <span role="img" aria-label="Tools">
-                        ⚒️
-                      </span>{' '}
-                      Tools
-                    </Tab>
-                    <Tab onClick={handleClick} active={active === 4} id={4}>
-                      <span role="img" aria-label="Values">
-                        💖
-                      </span>{' '}
-                      Values
-                    </Tab>
-                  </Tabs>
-                  <>
-                    <Fragment>
-                      <ContentWrapper active={active === 0}>
-                        <p>
-                          Organisational structures, formats and style of
-                          governance that is needed to adapt the process."
-                        </p>
-                        {structures.map((structure) => (
-                          <ExternalLink href={structure.link}>
-                            <Fragment>
-                              <ContentHover>
-                                <Heading content={structure.name} />
-                                <MDReactComponent
-                                  text={structure.description}
-                                />
-                              </ContentHover>
-                            </Fragment>
-                          </ExternalLink>
-                        ))}
-                      </ContentWrapper>
-                      <ContentWrapper active={active === 1}>
-                        <p>
-                          Policies and frameworks used in this process. These
-                          can be individualized based on the organisation’s need
-                          and background.
-                        </p>
-                        {policies.map((policy) => (
-                          <ContentScroll>
-                            <Heading content={policy.name} />
-                            <MDReactComponent text={policy.description} />
-                          </ContentScroll>
-                        ))}
-                      </ContentWrapper>
-                      <ContentWrapper active={active === 2}>
-                        <p>
-                          Mandatory roles that are affected or created for this
-                          process to work properly.{' '}
-                        </p>
-                        {roles.map((role) => (
-                          <ContentScrollSmall>
-                            <Heading content={role.title} />
-                            <Text content={role.purpose} />
-                            {role.domains.map((domain, domIndex) => (
-                              <Text
-                                content={domain}
-                                key={`domain-${domIndex}`}
-                              />
-                            ))}
-                            {role.accountabilities.map((account, accIndex) => (
-                              <Text
-                                content={account}
-                                key={`account-${accIndex}`}
-                              />
-                            ))}
-                          </ContentScrollSmall>
-                        ))}
-                      </ContentWrapper>
-                      <ContentWrapper active={active === 3}>
-                        <p>Tools that are used in this process.</p>
-                        <FlexWrapper>
-                          {tools.map((tool, index) => (
-                            <ExternalLink href={tool.link}>
-                              <ContentHoverTools key={index}>
-                                <ToolImg src={tool.link} />
-                                <ToolContent>
-                                  <Heading content={tool.name} />
-                                  <Text content={tool.description} />
-                                </ToolContent>
-                              </ContentHoverTools>
-                            </ExternalLink>
-                          ))}
-                        </FlexWrapper>
-                      </ContentWrapper>
-                      <ContentWrapper active={active === 4}>
-                        <p>
-                          Values drive the organisation and the following are
-                          needed to fully adapt this process.
-                        </p>
-                        {values.map((value) => (
-                          <ContentScroll>
-                            <Heading content={value.name} />
-                            <MDReactComponent text={value.description} />
-                          </ContentScroll>
-                        ))}
-                      </ContentWrapper>
-                    </Fragment>
-                  </>
-                </div>
-              </SectionWrapper>
             </Container>
             <SectionWrapper>
               <Newsletter />

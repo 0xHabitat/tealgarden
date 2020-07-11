@@ -1,0 +1,24 @@
+{
+  "id": "Test1623581",
+  "title": "Dummy Post Tealgarden",
+  "categories": [
+    "Payment & Incentives",
+    "To-dos",
+    "Commitment: Working Hours and Flexibility",
+    "Crypto"
+  ],
+  "icons": {
+    "startIconUrl": "https://github.githubassets.com/favicons/favicon.png",
+    "endIconUrl": "https://a.slack-edge.com/80588/marketing/img/meta/favicon-32.png"
+  },
+  "summary": {
+    "abstract": "In our organisation bounties are an alternative to a monthly or weekly payout schedule to our members. They are payed out the moment after a set task has been accomplished. Bounties combine task management and incentives. They promote the autonomy of members and their respective roles by allowing them to create new bounties or fulfil existing ones. \r\n\r\nBounties allow an agile process of **\"sense & respond\"** within self-managed teams. Once a tension or opportunity is sensed and alligned with the purpose + current strategies of the organisation bounties can be created and tackled immediately. They are announced via the official communication channels for objections, clarification or support. \r\n\r\nThey incentivize creative bounty creators (bounty gardener) and motivated bounty hunters (bounty worker) alike.\r\n\r\nThe given process gives an exemplary insight about the structure, rules and parameters that are used in proven in our organisation. See **\"Bounty Policy\"** under **\"Adoption Requirements\"** for more info."
+  },
+  "content": [
+    {
+      "text": "Holacracy Constitution"
+    }
+  ],
+  "author": "simon@deora.earth",
+  "authorWallet": "0x41C3Fa96942d19043450Ec963EB4DF44336d8035"
+}

@@ -3,7 +3,7 @@ const path = require('path');
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
-  const processTemplate = path.resolve(`./src/templates/tealgardenPost.js`);
+  const tealgardenPost = path.resolve(`./src/templates/tealgardenPost.js`);
 
   return graphql(`
     {
@@ -13,7 +13,6 @@ exports.createPages = ({ actions, graphql }) => {
             id
             summary {
               abstract
-              benefits
             }
             icons {
               endIconUrl
@@ -23,35 +22,9 @@ exports.createPages = ({ actions, graphql }) => {
             author
             authorWallet
             categories
-            examples
-            addoptionRequirements {
-              description
-              link
-              name
-              type
+            content {
+              text
             }
-            components {
-              accountabilities
-              description
-              domains
-              name
-              purpose
-              title
-              type
-            }
-            instructions {
-              name
-              steps {
-                description
-                name
-                type
-              }
-              tool {
-                description
-                link
-                name
-                type
-              }
             }
           }
         }
@@ -68,7 +41,7 @@ exports.createPages = ({ actions, graphql }) => {
         context: {
           pageContent: node,
         },
-        component: processTemplate,
+        component: tealgardenPost,
       });
     });
   });
