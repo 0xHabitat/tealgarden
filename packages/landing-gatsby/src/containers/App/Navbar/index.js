@@ -16,31 +16,6 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
             title="Teal.Garden by Deora"
             logoStyle={logoStyle}
           />
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-            <a
-              href="/"
-              style={{
-                color: '#091632',
-                fontWeight: '700',
-                paddingRight: '20px',
-                fontStyle: 'italic',
-              }}
-            >
-              {' '}
-              HOME
-            </a>
-            <a
-              href="/about"
-              style={{
-                color: '#091632',
-                fontWeight: '700',
-                fontStyle: 'italic',
-              }}
-            >
-              {' '}
-              ABOUT
-            </a>
-          </div>
         </Container>
         <svg
           width="2500"

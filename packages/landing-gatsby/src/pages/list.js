@@ -5,19 +5,13 @@ import { appTheme } from 'common/src/theme/app';
 import { GlobalStyle, AppWrapper, Sun } from '../containers/App/app.style';
 import { ResetCSS } from 'common/src/assets/css/style';
 import Navbar from '../containers/App/Navbar';
-import DomainSection from '../containers/App/Banner';
-import FeatureSection from '../containers/App/FeatureSection';
-import ControllSection from '../containers/App/Control';
-import PartnerHistory from '../containers/App/PartnerHistory';
-import PaymentSection from '../containers/App/PaymentSection';
+import Newsletter from '../containers/App/Newsletter';
 import SupportBlock from '../containers/App/SupportBlock';
 import Footer from '../containers/App/Footer';
-import UpdateScreen from '../containers/App/UpdateScreen';
-import Newsletter from '../containers/App/Newsletter';
-import TrialSection from '../containers/App/Trial';
-import CookieBanner from 'react-cookie-banner';
 import '@redq/reuse-modal/es/index.css';
 import SEO from '../components/seo';
+import Content from '../containers/App/ContentSection';
+import CookieBanner from 'react-cookie-banner';
 
 export default () => {
   return (
@@ -42,13 +36,7 @@ export default () => {
             cookie="gatsby-gdpr-google-analytics"
           />
           <Navbar />
-          <DomainSection />
-          <FeatureSection />
-          <ControllSection />
-          <UpdateScreen />
-          <PartnerHistory />
-          <PaymentSection />
-          <TrialSection />
+          <Content />
           <Newsletter />
           <SupportBlock />
           <Footer />
