@@ -238,7 +238,7 @@ export const SetpsAccordion = styled.section`
 
   .reusecore__accordion {
     margin: 0 auto;
-    width: 700px;
+    width: 90%;
 
     .accordion__item {
       border: 2px solid #e6ebf0;
